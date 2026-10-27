@@ -1,100 +1,77 @@
 # 📋 Agentic Report
 
-Hermes Agent 周期性信息收集 → 网页展示 + 知识图谱。所有报告与实体都来自 4 个 GitHub 仓库的定时任务,数据可溯源。
+Hermes Agent 驱动的**自动情报知识库**:两个定时研究任务(物理 AI 进展 + AMD 市场)每天产出报告,自动沉淀为可检索的网页站点与知识图谱。纯静态站、无后端、无数据库,部署在 GitHub Pages,电脑/手机直接访问。
+
+🌐 **在线站点**:https://alexhegit.github.io/agentic-report/
+
+## ✨ 功能
+
+- 🗞 **报告时间线** — 100+ 份 AI 日报/周报,按日期分组,月历点选、全文搜索、域名筛选,支持 `?date=&site=` 深链直达
+- 🗺 **知识图谱** — 370+ 项目/论文/公司实体,力导向布局,显式关系(复现/构建)与同周期共现分线型,离线可用
+- 📇 **实体目录** — 卡片式浏览每个项目/论文/公司,按提及热度排序
+- 📬 **飞书同步** — 每份报告推送时附站点深链,点进即见当天内容
+- 🔄 **自动积累** — 每个交易日/工作日持续入库,历史只增不删,所有条目可溯源到原文
+- 📦 **可迁移** — 任务定义 + skill + 部署器全部在仓库内,任何一台 Hermes 主机 `git clone` 即可接管
 
 ## 🛣 定时任务
 
-| 任务 | 周期 (北京时间) | 说明 |
+| 任务 | 周期 (北京时间) | 内容 |
 |---|---|---|
 | 🤖 Physical AI 日报 | 周一~五 08:00 | VLA / 世界模型 / 具身智能 / 触觉 |
-| 🤖 Physical AI 周报 | 周日 08:00 | 周度趋势 + 融资/合同/论文 |
-| 📈 AMD 美股日报 | 周一~五 19:00 | 总结最近一个已收盘交易日;美股休市日自动跳过 |
+| 🤖 Physical AI 周报 | 周日 08:00 | 周度趋势 + 融资 / 合同 / 论文 |
+| 📈 AMD 美股日报 | 周一~五 19:00 | 最近一个已收盘交易日总结;美股休市日跳过 |
 | 📈 AMD 股市周报 | 周日 08:00 | 上一完整交易周综述 |
 
-## 🧭 三页结构
+## 🚀 安装 / 部署
 
-- **index.html** — 106+ 份报告时间线 · 按日期分组 · 域名筛选 + 全文搜索
-- **graph.html** — 知识图谱 (Cytoscape.js fcose 力导向) · 节点大小 = 被提及次数 · 实线 = 明确关系 / 淡虚线 = 同周期共现 · 悬停看简介 · 点击看关系列表
-- **entities.html** — 实体卡片目录 · 按 kind/提及次数排序 · 搜索
-
-## 🏗 设计:数据驱动静态站
-
-页面只 `fetch` JSON,不嵌内容。定时任务只要更新 `data/*.json` 与 `logs/*.md` 并 push,页面自动刷新 — 不需要重新构建。
-
-```
-.
-├── index.html                 ← 报告时间线
-├── graph.html                 ← 知识图谱 (cytoscape@3 + fcose)
-├── entities.html              ← 实体目录
-├── data/
-│   ├── reports.json           ← 106+ 报告 (含 full_text)
-│   ├── entities.json          ← 372 个实体 (项目/论文/公司/概念)
-│   └── edges.json             ← 2910 条边 (明确 + 隐式共现)
-├── logs/                      ← 每期原文 (Markdown, 含 frontmatter)
-├── scripts/
-│   ├── install.sh             ← 新机器一键部署(装 skill + 重建 cron 任务)
-│   ├── ingest.py              ← 定时任务产出 → data/ + logs/ + git push
-│   └── state.json             ← 幂等标记
-├── jobs/
-│   ├── jobs.json              ← 4 个任务的权威定义(slug 为键:周期/prompt/skills)
-│   └── local_map.json         ← 本机 job UUID → slug 映射(install.sh 生成)
-├── skills/robotics-ai-digest/ ← Physical AI 日报/周报所用 skill
-├── vendor/                    ← cytoscape + fcose 本地副本(图谱页零 CDN 依赖)
-├── site.json                  ← 站点域名(迁移改站点时唯一需改的常量)
-├── SCHEMA.md                  ← 实体/边 schema
-└── .nojekyll                  ← GitHub Pages
-```
-
-## 🔁 自动更新
-
-每次一个 Physical AI / AMD 定时任务跑完后:
-
-```bash
-python3 /root/agentic-report/scripts/ingest.py
-```
-
-它会:
-1. 读 `~/.hermes/cron/output/{job_id}/latest.md`
-2. 抽实体 (GitHub repos / arXiv / 公司) → 追加到 entities.json
-3. 加共现边
-4. 写日志 logs/{date}_{timestamp}_{job6}.md(文件名稳定带时间戳,避免同日多份覆盖)
-5. git commit && push origin main → GitHub Pages 自动刷新
-
-## 📦 迁移 / 部署到新机器
-
-本仓库即完整系统:前端 + 数据 + 4 个任务的权威定义(prompt 逐字) + skill + 部署器,全部在仓库内,不依赖任何单一机器。
-
-**前置**:目标机装了 Hermes Agent(`hermes` CLI 可用),且配置了本仓库的 push 凭据(仓库 remote 是 SSH 时:一个已加到 GitHub 账号的 SSH key;或把 remote 换成 HTTPS + token)。`ingest.py` 推送时尊重环境变量 `GIT_SSH_COMMAND`,默认尝试 `~/.ssh/id_ed25519`。
+**前提**:目标机已安装 Hermes Agent(`hermes` CLI 可用),并已配置本仓库的 git push 凭据(SSH key 加到 GitHub 账号,或 remote 改 HTTPS + token)。
 
 ```bash
 git clone git@github.com:alexhegit/agentic-report.git
 cd agentic-report
-bash scripts/install.sh        # ① 装 skill ② 按 jobs/jobs.json 重建 4 个定时任务 ③ 生成 jobs/local_map.json
-python3 scripts/ingest.py     # ③ 验证数据链路(无新报告时打印 no new reports 即正常)
+bash scripts/install.sh    # 装 skill + 重建 4 个定时任务 + 生成本机任务映射(幂等,可重复执行)
+python3 scripts/ingest.py # 验证数据链路(无新报告时打印 no new reports 即正常)
 ```
 
-**install.sh 的行为(幂等)**:
-- 把 `skills/` 下的 skill 安装到 `~/.hermes/skills/`
-- 从 `jobs/jobs.json`(slug 为键:physical-ai-daily / physical-ai-weekly / amd-daily / amd-weekly)读取周期 + prompt + skills,`hermes cron create` 逐个建任务
-- 把本机新分配的 job UUID 写回 `jobs/local_map.json`(uuid → slug 映射,ingest.py 靠它找产出目录)
-- 再跑一次不会重复建任务:同名任务已存在则只挂映射
+完成后,4 个任务按上表周期自动运行;每期报告入库后自动 commit + push,站点即刷新。无需配置数据库、无需构建步骤、无需后端服务。
 
-**跨机约定**:定时任务产出统一落到 Hermes 的 cron output 目录(默认 `~/.hermes/cron/output/<uuid>/latest.md`,可用环境变量 `HERMES_CRON_DIR` 覆盖),`ingest.py` 按 slug 找目录、抽报告与实体、写 `data/*.json` + `logs/*.md`,然后 `git commit && push` → Pages 自动刷新。
+> 本地预览:`python3 -m http.server 8731` → http://localhost:8731
 
-**改站点域名**:若换仓库/账号部署,需改两处:`site.json` 的 `site_base`(站点自引用),以及 4 个任务 prompt 末尾的 📎 深链 URL——在新机器上用 `hermes cron update --prompt` 逐条改,并回写 `jobs/jobs.json` 保持权威定义一致。
+### 仓库结构
 
-## 🌐 GitHub Pages
+```
+├── index.html / graph.html / entities.html   ← 三个页面(纯静态)
+├── data/                                      ← reports / entities / edges JSON(站点唯一数据源)
+├── logs/                                      ← 每期报告原文(Markdown + frontmatter)
+├── jobs/jobs.json                             ← 4 个任务的权威定义(prompt/周期)
+├── jobs/local_map.json                        ← 本机 job UUID → slug(install.sh 生成)
+├── skills/robotics-ai-digest/                 ← 任务所用 skill(方法论+脚本)
+├── scripts/install.sh · ingest.py             ← 部署器 · 数据入库器
+├── vendor/                                    ← cytoscape + fcose 本地副本(离线可开)
+├── site.json                                  ← 站点 base(换部署位置时改这里)
+├── design.md                                  ← 架构与原理
+└── SCHEMA.md                                  ← 数据字段定义
+```
 
-仓库设置 → Pages → Source: `Deploy from a branch` → 分支 `main` / 根目录 `/`。Pages 仅 Free 版 public 仓库支持。
+### 换账号 / 换仓库名部署
 
-启用后访问: [https://alexhegit.github.io/agentic-report/](https://alexhegit.github.io/agentic-report/)
+1. `git remote set-url origin <新仓库>`
+2. 改 `site.json` 的 `site_base` 为新 Pages 地址
+3. 用 `hermes cron update` 把 4 个任务 prompt 末尾的 📎 深链同步为新地址,并回写 `jobs/jobs.json`
+4. 新仓库 Settings 开启 Pages(分支 `main`,根目录;Free 版要求仓库 public)
+
+## 📚 文档
+
+- **[design.md](design.md)** — 架构、数据模型、更新管道、可迁移机制、安全边界、踩坑记录
+- **[SCHEMA.md](SCHEMA.md)** — reports / entities / edges 字段定义
+- **skills/robotics-ai-digest** — 物理 AI 报告任务的 skill(方法论 + 参考 + 脚本)
 
 ## 🐞 FAQ
 
-- **本机预览**: `cd /root/agentic-report && python3 -m http.server 8731`
-- **图谱加载失败?** JS 已内置于 `vendor/`(优先本地,CDN 兜底),应可离线打开;仍失败时检查 vendor 两个文件是否齐全。
-- **页面显示 file:// 错误?** 直接用 HTTP,浏览器禁止 file:// 域 fetch。
+- **本机预览**:`cd agentic-report && python3 -m http.server 8731`
+- **图谱打不开?** JS 已内置 `vendor/`(本地优先、CDN 兜底),检查两个 vendor 文件是否齐全
+- **file:// 打开报错?** 浏览器禁止本地文件 fetch JSON,请用 HTTP
 
 ## 许可
 
-CC BY-SA 4.0 (报告内容) · MIT (页面 / 脚本)。
+CC BY-SA 4.0(报告内容)· MIT(页面/脚本)

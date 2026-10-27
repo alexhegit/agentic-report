@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>实体目录 · Agentic Report</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#faf9f5;--ink:#2a2a28;--muted:#7c7b75;--paper:#fff;--border:#e4e2da;--accent:#b04a3f;--accent2:#8a5433}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:14px}
+.top{background:var(--paper);border-bottom:2px solid var(--accent);padding:18px 24px;margin-bottom:16px}
+.top h1{font-size:19px}
+.top .sub{color:var(--muted);font-size:13px;margin-top:5px}
+.top a{color:var(--accent2);font-size:13px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px 40px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;align-items:center}
+.btn{background:var(--paper);border:1px solid var(--border);border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer}
+.btn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.bar .count{margin-left:auto;color:var(--muted);font-size:12.5px}
+input{flex:1;min-width:160px;border:1px solid var(--border);border-radius:999px;padding:6px 14px;font-size:13px;background:var(--paper)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.card{background:var(--paper);border:1px solid var(--border);border-radius:12px;padding:14px 15px;border-top:3px solid var(--border)}
+.card.project{border-top-color:#d97757}.card.paper{border-top-color:#788c5d}
+.card.company{border-top-color:#b04a3f}.card.trend{border-top-color:#b98a3d}
+.card h3{font-size:14.5px;margin-bottom:3px;word-break:break-word}
+.meta{font-size:11.5px;color:var(--muted);margin-bottom:7px}
+.kind{display:inline-block;font-size:10.5px;padding:1px 8px;border-radius:999px;background:var(--bg);border:1px solid var(--border);margin-left:6px}
+.extra{font-size:12.5px;text-align:justify;color:#3a3a36;margin-bottom:9px}
+.card a{color:var(--accent2);font-size:12.5px;word-break:break-all}
+.empty{color:var(--muted);padding:60px;text-align:center}
+</style>
+</head>
+<body>
+<div class="top">
+  <h1>📁 实体目录</h1>
+  <div class="sub">从所有报告中抽取的项目 / 论文 / 公司 / 概念 · 节点大小来自"被提及次数" · <a href="graph.html">查看知识图谱</a> · <a href="index.html">← 报告</a></div>
+</div>
+<div class="wrap">
+  <div class="bar">
+    <button class="btn on" data-k="all">全部</button>
+    <button class="btn" data-k="project">🔥 项目</button>
+    <button class="btn" data-k="paper">📄 论文</button>
+    <button class="btn" data-k="company">🏢 公司</button>
+    <button class="btn" data-k="trend">📊 趋势</button>
+    <button class="btn" data-k="concept">💡 概念</button>
+    <input id="q" placeholder="搜索实体名称 / 简介…">
+    <span class="count" id="count"></span>
+  </div>
+  <div class="grid" id="grid"><div class="empty">加载中…</div></div>
+</div>
+<script>
+let ALL = [];
+let kindF='all', q='';
+const esc = s=>String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+function render(){
+  const ql = q.toLowerCase();
+  let list = ALL.filter(e =>
+    (kindF==='all' || e.kind===kindF) &&
+    (!ql || (e.id+e.label+e.extra).toLowerCase().includes(ql)));
+  list = list.slice().sort((a,b)=> (b.mentions||0)-(a.mentions||0) || String(b.last_seen||'').localeCompare(String(a.last_seen||'')));
+  document.getElementById('count').textContent = list.length + ' 个实体';
+  if (!list.length) { document.getElementById('grid').innerHTML='<div class="empty">没有匹配的实体</div>'; return; }
+  document.getElementById('grid').innerHTML = list.map(e=>`
+    <div class="card ${esc(e.kind)||''}">
+      <h3>${esc(e.label||e.id)}<span class="kind">${esc(e.kind)}</span></h3>
+      <div class="meta">提及 ${e.mentions||0} 次${e.last_seen?` · 最近 ${esc(e.last_seen)}`:''}${e.first_seen&&e.first_seen!==e.last_seen?` · 首现 ${esc(e.first_seen)}`:''}</div>
+      <div class="extra">${esc(e.extra)}</div>
+      ${e.url?`<a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">${esc(e.url)}</a>`:''}
+    </div>`).join('');
+}
+fetch('data/entities.json').then(r=>r.json()).then(d=>{ ALL=d; render(); })
+ .catch(e=>{ document.getElementById('grid').innerHTML='<div class="empty">加载失败:'+e.message+' <br>请通过 HTTP 访问</div>'; });
+document.querySelectorAll('.btn').forEach(b=>b.addEventListener('click',()=>{
+  kindF=b.dataset.k;
+  document.querySelectorAll('.btn').forEach(x=>x.classList.toggle('on',x===b));
+  render();
+}));
+document.getElementById('q').addEventListener('input',e=>{ q=e.target.value; render(); });
+</script>
+</body>
+</html>

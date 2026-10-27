@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agentic Report · 周期性报告集</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#faf9f5;--ink:#2a2a28;--muted:#7c7b75;--paper:#fff;--border:#e4e2da;--accent:#b04a3f;--accent2:#8a5433;--soft:#f5f3ec;--green:#788c5d}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:15px}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+.top{background:var(--paper);border-bottom:2px solid var(--accent);padding:22px 28px 16px;margin-bottom:18px}
+.top h1{font-size:22px;letter-spacing:.4px}
+.top .sub{color:var(--muted);font-size:13px;margin-top:6px}
+.top .stats{display:flex;gap:14px;margin-top:12px;flex-wrap:wrap}
+.chip{background:var(--soft);border:1px solid var(--border);border-radius:10px;padding:6px 12px;font-size:12.5px}
+.chip b{color:var(--accent)}
+.layout{display:grid;grid-template-columns:250px 1fr;gap:18px;padding:0 28px 40px;max-width:1280px;margin:0 auto}
+.side{position:sticky;top:16px;align-self:start;display:flex;flex-direction:column;gap:10px}
+.side a.pill{display:block;background:var(--paper);border:1px solid var(--border);border-radius:10px;padding:9px 12px;font-size:13.5px}
+.side a.pill:hover{border-color:var(--accent2);transform:translateY(-1px)}
+.side a.pill b{display:block;font-size:14px}
+.side a.pill span{color:var(--muted);font-size:12px}
+.filterbar{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center}
+.filterbar .btn{background:var(--paper);border:1px solid var(--border);border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer}
+.filterbar .btn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.search{flex:1;min-width:140px}
+.search input{width:100%;border:1px solid var(--border);border-radius:999px;padding:6px 14px;font-size:13px;background:var(--paper)}
+.day{background:var(--paper);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden}
+.day>button{width:100%;background:none;border:none;padding:13px 16px;display:flex;align-items:center;gap:12px;cursor:pointer;font:inherit;text-align:left}
+.day .date{font-weight:700;font-size:14px;width:92px;flex:none}
+.day .tags{display:flex;gap:6px}
+.tag{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--soft);border:1px solid var(--border)}
+.tag.pa{background:#efe9df;border-color:#d8cbb4;color:var(--accent2)}
+.tag.amd{background:#e7ece2;border-color:#cbd5c0;color:var(--green)}
+.day .kind{font-size:12px;color:var(--muted)}
+.day .chev{margin-left:auto;color:var(--muted);transition:transform .15s}
+.day[open] .chev{transform:rotate(90deg)}
+.day .body{padding:4px 16px 16px;border-top:1px dashed var(--border);font-size:14px}
+.md h1{font-size:16px;border-bottom:2px solid var(--accent);padding-bottom:5px;margin:14px 0 8px}
+.md h2{font-size:15px;color:var(--accent);margin:14px 0 6px}
+.md h3{font-size:14px;margin:12px 0 5px}
+.md p{margin:7px 0;text-align:justify}
+.md ul,.md ol{margin:6px 0 8px 20px}
+.md li{margin:3px 0}
+.md table{border-collapse:collapse;width:100%;margin:8px 0;font-size:13px}
+.md th,.md td{border:1px solid var(--border);padding:5px 9px}
+.md th{background:var(--soft)}
+.md code{background:var(--soft);padding:1px 5px;border-radius:5px;font-size:12.5px}
+.md .src{font-size:12px;color:var(--muted);margin-bottom:8px}
+.empty{color:var(--muted);padding:60px;text-align:center}
+@media (max-width:900px){.layout{grid-template-columns:1fr}.side{position:static;flex-direction:row;flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div class="top">
+  <h1>📋 Agentic Report <span style="font-size:13px;color:var(--muted);font-weight:400">· Hermes Agent 周期性信息收集</span></h1>
+  <div class="sub">4 个定时任务(cron)自动产出 · Physical AI 研究前沿 / AMD 股市 · 数据可溯源到每期报告原文</div>
+  <div class="stats" id="stats"></div>
+</div>
+<div class="layout">
+  <div class="side">
+    <a class="pill" href="graph.html"><b>🗺 知识图谱</b><span>实体 & 关系网络</span></a>
+    <a class="pill" href="entities.html"><b>📁 实体目录</b><span>项目/论文/公司卡片</span></a>
+    <a class="pill" href="https://github.com/alexhegit/agentic-report"><b>📢 GitHub</b><span>源码 & 全部报告</span></a>
+  </div>
+  <div>
+    <div class="filterbar">
+      <button class="btn on" data-s="all">全部</button>
+      <button class="btn" data-s="physical-ai">🤖 Physical AI</button>
+      <button class="btn" data-s="amd">📈 AMD</button>
+      <div class="search"><input id="q" placeholder="搜索报告标题/摘要/全文…"></div>
+    </div>
+    <div id="list"><div class="empty">加载中…</div></div>
+  </div>
+</div>
+<script>
+let REPORTS = [];
+let siteFilter = 'all';
+let query = '';
+async function load(){
+  try {
+    const r = await fetch('data/reports.json');
+    REPORTS = await r.json();
+    renderStats();
+    render();
+  } catch(e) {
+    document.getElementById('list').innerHTML = '<div class="empty">加载 data/reports.json 失败 — 请通过 HTTP 服务访问。<br>本机可用 <code>cd /root/agentic-report && python3 -m http.server 8731</code></div>';
+  }
+}
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function mdLite(md){
+  let s = esc(md);
+  // links (markdown + bare urls)
+  s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  s = s.replace(/(^|[^"\'>"])\b(https?:\/\/[^\s<]+)/g, '$1<a href="$2" target="_blank" rel="noopener">$2</a>');
+  s = s.replace(/^######\s?(.*)$/gm, '<h3>$1</h3>');
+  s = s.replace(/^#####\s?(.*)$/gm, '<h3>$1</h3>');
+  s = s.replace(/^####\s?(.*)$/gm, '<h3>$1</h3>');
+  s = s.replace(/^###\s?(.*)$/gm, '<h3>$1</h3>');
+  s = s.replace(/^##\s?(.*)$/gm, '<h2>$1</h2>');
+  s = s.replace(/^#\s?(.*)$/gm, '<h1>$1</h1>');
+  s = s.replace(/^---+$/gm, '');
+  s = s.replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
+  s = s.replace(/\*([^*\n]+)\*/g, '<i>$1</i>');
+  s = s.replace(/^[-*]\s+(.*)$/gm, '<li>$1</li>');
+  s = s.replace(/(<li>[\s\S]*?<\/li>)(?!\s*<li>)/g, '<ul>$1</ul>');
+  s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+  s = s.replace(/\n{3,}/g, '\n\n').trim();
+  const blocks = s.split('\n\n');
+  s = blocks.map(b => {
+    if (/^<(h1|h2|h3|ul|table)/.test(b)) return b;
+    if (/^<li>/.test(b)) return '<ul>'+b+'</ul>';
+    return '<p>'+b.replace(/\n/g,'<br>')+'</p>';
+  }).join('\n');
+  return s;
+}
+function slug(r){ return r.source.split('/').pop().replace(/\.md$/,''); }
+function renderStats(){
+  const dates = [...new Set(REPORTS.map(r=>r.date))].sort();
+  const sites = {};
+  REPORTS.forEach(r=>sites[r.site]=true);
+  document.getElementById('stats').innerHTML =
+    `<span class="chip"><b>${REPORTS.length}</b> 份报告</span>` +
+    `<span class="chip"><b>${Math.min(...dates)} ~ ${Math.max(...dates)}</b></span>` +
+    `<span class="chip"><b>${Object.keys(sites).map(s=>s==='physical-ai'?'🤖 Physical AI':'📈 AMD').join(' · ')}</b></span>` +
+    `<span class="chip">自动更新:每个定时任务完成后</span>`;
+}
+function render(){
+  const q = query.toLowerCase();
+  let list = REPORTS.filter(r =>
+    (siteFilter==='all' || r.site===siteFilter) &&
+    (!q || (r.title+r.summary+r.full_text).toLowerCase().includes(q)));
+  list = list.slice().sort((a,b)=>b.date.localeCompare(a.date));
+  // group by date
+  const groups = {};
+  list.forEach(r=>{ (groups[r.date]=groups[r.date]||[]).push(r); });
+  if (!Object.keys(groups).length) {
+    document.getElementById('list').innerHTML = '<div class="empty">没有匹配的报告</div>';
+    return;
+  }
+  let html = '';
+  for (const d of Object.keys(groups).sort().reverse()) {
+    const reps = groups[d];
+    html += `<details class="day"><button><span class="date">${d}</span>` +
+      reps.map(r=>`<span class="tag ${r.site}">${r.site==='physical-ai'?'Physical AI':'AMD'} · ${r.kind}</span>`).join('') +
+      `<span class="kind">${reps.length} 份</span><span class="chev">▶</span></button><div class="body">` +
+      reps.map(r=>`<div class="md">
+        <div class="src">📎 ${esc(r.title)} · <a href="https://github.com/alexhegit/agentic-report/blob/main/logs/${esc(slug(r))}" target="_blank">GitHub 原文</a></div>
+        ${mdLite(r.full_text || r.summary)}
+      </div>`).join('') +
+      `</div></details>`;
+  }
+  document.getElementById('list').innerHTML = html;
+}
+document.querySelectorAll('.filterbar .btn').forEach(b=>b.addEventListener('click',()=>{
+  siteFilter = b.dataset.s;
+  document.querySelectorAll('.filterbar .btn').forEach(x=>x.classList.toggle('on',x===b));
+  render();
+}));
+document.getElementById('q').addEventListener('input',e=>{ query=e.target.value; render(); });
+load();
+</script>
+</body>
+</html>

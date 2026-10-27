@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>知识图谱 · Agentic Report</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#faf9f5;--ink:#2a2a28;--muted:#7c7b75;--paper:#fff;--border:#e4e2da;--accent:#b04a3f}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);font-size:14px;height:100vh;overflow:hidden}
+.top{background:var(--paper);border-bottom:2px solid var(--accent);padding:14px 22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.top h1{font-size:17px}
+.top a{color:#8a5433;font-size:13px}
+.layout{display:grid;grid-template-columns:230px 1fr;height:calc(100vh - 56px)}
+.legend{background:var(--paper);border-right:1px solid var(--border);padding:14px;overflow:auto}
+.legend h3{font-size:13px;color:var(--accent);margin:10px 0 6px}
+.legend .row{display:flex;align-items:center;gap:8px;font-size:12.5px;padding:3px 0}
+.sw{width:12px;height:12px;border-radius:3px;flex:none}
+.hint{font-size:11.5px;color:var(--muted);line-height:1.55;border-top:1px dashed var(--border);margin-top:12px;padding-top:10px}
+#graph{width:100%;height:100%;background:var(--bg)}
+#tip{position:fixed;max-width:340px;background:#1f1e1c;color:#f5f3ec;font-size:12px;padding:10px 12px;border-radius:10px;z-index:99;pointer-events:none;display:none;line-height:1.5;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+#tip .t{font-weight:700;font-size:13px}
+#tip .k{color:#b6b4ac;font-size:11px;margin:2px 0}
+#tip a{color:#a9c4e0}
+#tip button{margin-top:8px;background:#3a3a36;border:none;color:#f5f3ec;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:11.5px}
+#detail{position:fixed;top:70px;right:14px;width:330px;background:var(--paper);border:1px solid var(--border);border-radius:12px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.12);display:none}
+#detail h2{font-size:15px;margin-bottom:6px;word-break:break-word}
+#detail .k{font-size:12px;color:var(--muted);margin-bottom:8px}
+#detail .extra{font-size:13px;margin:8px 0;background:var(--bg);border-radius:8px;padding:8px 10px;text-align:justify}
+#detail .rel{margin-top:8px;font-size:12.5px}
+#detail .rel li{margin:2px 0 2px 16px}
+#detail a{color:#8a5433;font-size:12.5px;word-break:break-all}
+#detail .close{position:absolute;top:8px;right:10px;background:none;border:none;font-size:16px;cursor:pointer;color:var(--muted)}
+.controls{display:flex;gap:6px;align-items:center}
+.controls button{border:1px solid var(--border);background:var(--paper);border-radius:8px;padding:5px 10px;font-size:12px;cursor:pointer}
+</style>
+<script src="https://unpkg.com/cytoscape@3.33.1/dist/cytoscape.min.js"></script>
+<script src="https://unpkg.com/layout-base@2.1.0/demo/layout-base.js" onerror=""></script>
+<script type="module">
+import('https://cdn.jsdelivr.net/npm/fcose@1.0.9/lib/index.js').then(m=>{window.FC= m.default||m;}).catch(()=>{});
+</script>
+</head>
+<body>
+<div class="top">
+  <h1>🗺 知识图谱</h1>
+  <span style="color:var(--muted);font-size:12.5px">节点 = 实体(项目/论文/公司/概念) · 实线 = 明确关系 · 淡虚线 = 同周期共现</span>
+  <div class="controls" style="margin-left:auto">
+    <button id="expand">展开全部</button>
+    <button id="focus">聚焦 Top 实体</button>
+    <a href="index.html">← 回到报告</a>
+    <a href="entities.html">📁 实体目录</a>
+  </div>
+</div>
+<div class="layout">
+  <div class="legend">
+    <h3>图例</h3>
+    <div class="row"><span class="sw" style="background:#d97757"></span>project · 项目/repo</div>
+    <div class="row"><span class="sw" style="background:#788c5d"></span>paper · 论文</div>
+    <div class="row"><span class="sw" style="background:#b04a3f"></span>company · 公司</div>
+    <div class="row"><span class="sw" style="background:#b98a3d"></span>trend · 趋势</div>
+    <div class="row"><span class="sw" style="background:#6b6f76"></span>concept/reference/其他</div>
+    <div class="hint">
+      · 节点大小 = 被提及次数<br>
+      · 悬停:查看简介与链接<br>
+      · 点击:高亮该实体的全部关系,右侧显示详情<br>
+      · 滚轮缩放 / 拖拽平移<br>
+      · 数据驱动:定时任务更新 data/*.json 即自动刷新
+    </div>
+  </div>
+  <div id="graph"></div>
+</div>
+<div id="tip"></div>
+<div id="detail">
+  <button class="close" id="dclose">✕</button>
+  <h2 id="dname"></h2>
+  <div class="k" id="dkind"></div>
+  <div class="extra" id="dextra"></div>
+  <div id="durl"></div>
+  <div class="rel">关系:<ul id="drels"></ul></div>
+</div>
+<script>
+const COLORS = {project:'#d97757', paper:'#788c5d', company:'#b04a3f', trend:'#b98a3d', concept:'#6b6f76', reference:'#8c8f94', node:'#a3a29b', product:'#8a5433'};
+let NODES = [], EDGES = [];
+let cy = null;
+const tip = document.getElementById('tip');
+
+function bind(){ /* noop, defined after cy creation below */ }
+function showDetail(d){
+  const box = document.getElementById('detail');
+  box.style.display='block';
+  document.getElementById('dname').textContent = d.label;
+  document.getElementById('dkind').textContent = `${d.kind} · 提及 ${d.mentions} 次${d.first?` · ${d.first} ~ ${d.last}`:''}`;
+  const ex = document.getElementById('dextra');
+  ex.textContent = d.extra || ''; ex.style.display = d.extra ? '' : 'none';
+  document.getElementById('durl').innerHTML = d.url ? `<a href="${d.url}" target="_blank" rel="noopener noreferrer">${d.url}</a>` : '';
+  const rels = EDGES.filter(e => e.source===d.id || e.target===d.id)
+    .map(e => {
+      const other = e.source===d.id ? e.target : e.source;
+      const dir = e.source===d.id ? '→' : '←';
+      return `<li>${dir} <b>${other}</b> · <span style="color:#7c7b75">${e.relation}</span></li>`;
+    }).join('');
+  document.getElementById('drels').innerHTML = rels || '<li>(暂无显式关系 — 淡虚线为同周期共现)</li>';
+}
+
+fetch('data/entities.json').then(r=>r.json()).then(n=>{
+  NODES = n;
+  return fetch('data/edges.json').then(r=>r.json());
+}).then(e=>{
+  EDGES = e;
+  const loadScript = (src) => new Promise((res) => {
+    const s = document.createElement('script');
+    s.src = src; s.onload = () => res(); s.onerror = () => res();
+    document.head.appendChild(s);
+  });
+  return loadScript('https://unpkg.com/cytoscape@3.33.1/dist/cytoscape.min.js')
+    .then(()=>loadScript('https://unpkg.com/cytoscape-fcose@2.3.0/dist/cytoscape-fcose.js'));
+}).then(async () => {
+  const cytoscape = window.cytoscape;
+  const maxM = Math.max(...NODES.map(x=>x.mentions||0), 1);
+  const ids = new Set(NODES.map(x=>x.id));
+  const el = [];
+  NODES.forEach(n=>{
+    el.push({data:{
+      id:n.id, label:n.label||n.id, kind:n.kind,
+      color:COLORS[n.kind]||'#a3a29b',
+      size: 9 + 26*Math.sqrt((n.mentions||0)/maxM),
+      extra:n.extra||'', url:n.url||'', mentions:n.mentions||0,
+      first:n.first_seen||'', last:n.last_seen||''
+    }});
+  });
+  EDGES.forEach((e,i)=>{
+    if (!ids.has(e.source)||!ids.has(e.target)||e.source===e.target) return;
+    el.push({data:{id:'e'+i, source:e.source, target:e.target, rel:e.relation||'', implicit:!!e.implicit}});
+  });
+  cy = cytoscape({
+    container: document.getElementById('graph'),
+    elements: el,
+    style: [
+      {selector:'node', style:{
+        'background-color':'data(color)',
+        'label':'data(label)',
+        'font-size':'9px','color':'#2a2a28','text-valign':'bottom','text-margin-y':'4px',
+        'width':'data(size)','height':'data(size)',
+        'border-width':'1.5','border-color':'rgba(0,0,0,.25)',
+        'text-wrap':'break-word','text-max-width':'90px'
+      }},
+      {selector:'edge', style:{
+        'width':'1.3','line-color':'#8a6f4b','opacity':'.5',
+        'curve-style':'bezier','target-arrow-shape':'triangle',
+        'arrow-scale':'.55','arrow-color':'#8a6f4b'
+      }},
+      {selector:'edge[?implicit]', style:{'line-color':'#c9c7be','dashed':'true','opacity':'.35','target-arrow-shape':'null','width':'1'}},
+      {selector:'node.dim', style:{'opacity':'.12'}},
+      {selector:'edge.dim', style:{'opacity':'.05'}},
+      {selector:'node.hl', style:{'border-color':'#1f1e1c','border-width':'3px'}},
+      {selector:'edge.hl', style:{'opacity':'1','width':'2.2','line-color':'#b04a3f'}}
+    ],
+    layout: (cytoscape.extensions && cytoscape.extensions('layout','fcose'))
+      ? {name:'fcose', quality:'proof', animate:true, animationDuration:600,
+         nodeRepulsion:80000, idealEdgeLength:()=>110, gravity:0.12, padding:28}
+      : {name:'cose', animate:true, nodeRepulsion:60000, idealEdgeLength:100, padding:30}
+  });
+  cy.on('mouseover','node',evt=>{
+    const d = evt.target.data();
+    tip.innerHTML = `<div style="font-weight:700;font-size:13px">${d.label}</div>
+      <div style="color:#b6b4ac;font-size:11px;margin:2px 0">${d.kind} · mentions ${d.mentions}${d.last?` · 最近 ${d.last}`:''}</div>
+      ${d.extra?`<div>${d.extra}</div>`:''}${d.url?`<a href="${d.url}" target="_blank" rel="noopener noreferrer" style="color:#a9c4e0">${d.url}</a>`:''}`;
+    tip.style.display='block';
+    const r = evt.target.renderedBoundingBox();
+    tip.style.left = Math.min(r.x2+8, window.innerWidth-360)+'px';
+    tip.style.top = Math.max(60, (r.y1+r.y2)/2 - 30)+'px';
+  });
+  cy.on('mouseout','node',()=>{tip.style.display='none';});
+  cy.on('tap','node',evt=>{
+    const n = evt.target;
+    cy.elements().addClass('dim');
+    n.removeClass('dim').addClass('hl');
+    n.closedNeighborhood().removeClass('dim').removeClass('hl');
+    n.addClass('hl');
+    n.neighborhood('edge').removeClass('dim').addClass('hl');
+    showDetail(n.data());
+  });
+  cy.on('tap', evt=>{ if(evt.target===cy){ cy.elements().removeClass('dim hl'); document.getElementById('detail').style.display='none'; }});
+  document.getElementById('dclose').onclick = ()=>{ cy.elements().removeClass('dim hl'); document.getElementById('detail').style.display='none'; };
+  document.getElementById('expand').onclick = ()=>{ cy.elements().removeClass('dim hl'); cy.fit(); };
+  document.getElementById('focus').onclick = ()=>{
+    const top = cy.nodes().sort((a,b)=>b.data('mentions')-a.data('mentions')).slice(0,35);
+    cy.elements().addClass('dim');
+    top.nUnion(top.closedNeighborhood()).removeClass('dim');
+    top.fit();
+  };
+  window.addEventListener('keydown',e=>{ if(e.key==='Escape'){cy.elements().removeClass('dim hl'); document.getElementById('detail').style.display='none';}});
+  window.addEventListener('resize', ()=>cy.resize());
+}).catch(e=>{
+  document.getElementById('graph').innerHTML = '<div style="padding:60px;text-align:center;color:#7c7b75">加载失败: '+e+'<br>请通过 HTTP 访问(本机 <code>python3 -m http.server</code>)</div>';
+});
+</script>
+</body>
+</html>

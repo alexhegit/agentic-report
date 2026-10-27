@@ -81,7 +81,7 @@ python3 scripts/ingest.py     # ③ 验证数据链路(无新报告时打印 no 
 
 **跨机约定**:定时任务产出统一落到 Hermes 的 cron output 目录(默认 `~/.hermes/cron/output/<uuid>/latest.md`,可用环境变量 `HERMES_CRON_DIR` 覆盖),`ingest.py` 按 slug 找目录、抽报告与实体、写 `data/*.json` + `logs/*.md`,然后 `git commit && push` → Pages 自动刷新。
 
-**改站点域名**:若换仓库/账号名部署,只需改 `site.json` 的 `site_base` 并同步更新 4 个任务 prompt 里的 📎 深链(或让任务自行读 site.json)。
+**改站点域名**:若换仓库/账号部署,需改两处:`site.json` 的 `site_base`(站点自引用),以及 4 个任务 prompt 末尾的 📎 深链 URL——在新机器上用 `hermes cron update --prompt` 逐条改,并回写 `jobs/jobs.json` 保持权威定义一致。
 
 ## 🌐 GitHub Pages
 

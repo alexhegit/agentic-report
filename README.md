@@ -64,7 +64,7 @@ python3 /root/agentic-report/scripts/ingest.py
 
 本仓库即完整系统:前端 + 数据 + 4 个任务的权威定义(prompt 逐字) + skill + 部署器,全部在仓库内,不依赖任何单一机器。
 
-**前置**:目标机装了 Hermes Agent(`hermes` CLI 可用)且有本仓库的 push 凭据(SSH key 或 token,`ingest.py` 会优先用 `~/.ssh/id_ed25519`)。
+**前置**:目标机装了 Hermes Agent(`hermes` CLI 可用),且配置了本仓库的 push 凭据(仓库 remote 是 SSH 时:一个已加到 GitHub 账号的 SSH key;或把 remote 换成 HTTPS + token)。`ingest.py` 推送时尊重环境变量 `GIT_SSH_COMMAND`,默认尝试 `~/.ssh/id_ed25519`。
 
 ```bash
 git clone git@github.com:alexhegit/agentic-report.git

@@ -28,7 +28,8 @@ a:hover{text-decoration:underline}
 .search{flex:1;min-width:140px}
 .search input{width:100%;border:1px solid var(--border);border-radius:999px;padding:6px 14px;font-size:13px;background:var(--paper)}
 .day{background:var(--paper);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden}
-.day>button{width:100%;background:none;border:none;padding:13px 16px;display:flex;align-items:center;gap:12px;cursor:pointer;font:inherit;text-align:left}
+.day>summary{width:100%;background:none;border:none;padding:13px 16px;display:flex;align-items:center;gap:12px;cursor:pointer;font:inherit;text-align:left;list-style:none}
+.day>summary::-webkit-details-marker{display:none}
 .day .date{font-weight:700;font-size:14px;width:92px;flex:none}
 .day .tags{display:flex;gap:6px}
 .tag{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--soft);border:1px solid var(--border)}
@@ -50,7 +51,25 @@ a:hover{text-decoration:underline}
 .md code{background:var(--soft);padding:1px 5px;border-radius:5px;font-size:12.5px}
 .md .src{font-size:12px;color:var(--muted);margin-bottom:8px}
 .empty{color:var(--muted);padding:60px;text-align:center}
-@media (max-width:900px){.layout{grid-template-columns:1fr}.side{position:static;flex-direction:row;flex-wrap:wrap}}
+.cal{background:var(--paper);border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-bottom:14px}
+.cal .head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.cal .head .m{font-weight:700;font-size:15px;min-width:130px;text-align:center}
+.cal .nav{border:1px solid var(--border);background:var(--paper);border-radius:8px;width:30px;height:28px;cursor:pointer;font-size:14px}
+.cal .nav:hover{border-color:var(--accent)}
+.cal .grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cal .wd{text-align:center;font-size:11px;color:var(--muted);padding:2px 0}
+.cal .d{position:relative;border:1px solid transparent;border-radius:8px;min-height:40px;padding:4px 3px 2px;cursor:default;font-size:12.5px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.cal .d.has{cursor:pointer;border-color:var(--border);background:var(--soft)}
+.cal .d.has:hover{border-color:var(--accent)}
+.cal .d.sel{background:#f2e4e0;border-color:var(--accent);box-shadow:0 0 0 1.5px var(--accent)}
+.cal .d .num{font-weight:600}
+.cal .d .dots{display:flex;gap:3px;height:6px}
+.dot{width:6px;height:6px;border-radius:50%}
+.dot.pa{background:#8a5433}.dot.amd{background:#788c5d}
+.cal .d.today .num{color:var(--accent)}
+.cal .d.off{opacity:.35}
+.cal .legend{margin-top:8px;font-size:11.5px;color:var(--muted);display:flex;gap:12px;align-items:center}
+@media (max-width:900px){.layout{grid-template-columns:1fr}.side{position:static;flex-direction:row;flex-wrap:wrap}.cal .d{min-height:34px}}
 </style>
 </head>
 <body>
@@ -72,6 +91,18 @@ a:hover{text-decoration:underline}
       <button class="btn" data-s="amd">📈 AMD</button>
       <div class="search"><input id="q" placeholder="搜索报告标题/摘要/全文…"></div>
     </div>
+    <div class="cal">
+      <div class="head">
+        <button class="nav" id="calPrev">←</button>
+        <span class="m" id="calMonth"></span>
+        <button class="nav" id="calNext">→</button>
+        <button class="nav" id="calTod" style="width:auto;padding:0 8px;font-size:12px">今天</button>
+        <span id="calSel" style="margin-left:auto;font-size:12.5px;color:var(--accent2)"></span>
+        <button class="nav" id="calClear" style="width:auto;padding:0 8px;font-size:12px;display:none">✕ 清除</button>
+      </div>
+      <div class="grid" id="calGrid"></div>
+      <div class="legend"><span><span class="dot pa"></span> Physical AI</span><span><span class="dot amd"></span> AMD</span><span style="margin-left:auto">点击带点的日期查看当天报告</span></div>
+    </div>
     <div id="list"><div class="empty">加载中…</div></div>
   </div>
 </div>
@@ -79,11 +110,52 @@ a:hover{text-decoration:underline}
 let REPORTS = [];
 let siteFilter = 'all';
 let query = '';
+let dateFilter = '';
+let calYM = null; // {y, m} currently displayed month; null = month of most recent report
+let dateIdx = {}; // 'YYYY-MM-DD' -> {pa:bool, amd:bool}
+
+function todayStr(){ const t=new Date(); return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0'); }
+function renderCal(){
+  const grid = document.getElementById('calGrid');
+  if (!REPORTS.length) return;
+  if (!calYM) { const d = REPORTS.map(r=>r.date).sort().at(-1); calYM = {y:+d.slice(0,4), m:+d.slice(5,7)}; }
+  const {y, m} = calYM;
+  const first = new Date(y, m-1, 1);
+  const startWd = (first.getDay()+6)%7; // Mon=0
+  const daysInMonth = new Date(y, m, 0).getDate();
+  document.getElementById('calMonth').textContent = y+'年'+m+'月';
+  let html = ['一','二','三','四','五','六','日'].map(w=>`<div class="wd">${w}</div>`).join('');
+  for (let i=0;i<startWd;i++) html += '<div></div>';
+  const tds = todayStr();
+  for (let d=1; d<=daysInMonth; d++){
+    const key = y+'-'+String(m).padStart(2,'0')+'-'+String(d).padStart(2,'0');
+    const info = dateIdx[key];
+    const cls = ['d'];
+    if (info) cls.push('has');
+    if (key===dateFilter) cls.push('sel');
+    if (key===tds) cls.push('today');
+    const dots = info ? (info.pa?'<span class="dot pa"></span>':'') + (info.amd?'<span class="dot amd"></span>':'') : '';
+    html += `<div class="${cls.join(' ')}" data-date="${info?key:''}"><span class="num">${d}</span><span class="dots">${dots}</span></div>`;
+  }
+  grid.innerHTML = html;
+  grid.querySelectorAll('.d.has').forEach(el=>el.onclick=()=>selectDate(el.dataset.date));
+  const sel = document.getElementById('calSel');
+  sel.textContent = dateFilter ? ('已选:'+dateFilter) : '';
+  document.getElementById('calClear').style.display = dateFilter ? '' : 'none';
+}
+function selectDate(key){
+  dateFilter = key;
+  renderCal();
+  render();
+  document.getElementById('list').scrollIntoView({behavior:'smooth', block:'start'});
+}
 async function load(){
   try {
     const r = await fetch('data/reports.json');
     REPORTS = await r.json();
+    REPORTS.forEach(r0=>{ const a = (dateIdx[r0.date] = dateIdx[r0.date] || {}); if(r0.site==='physical-ai') a.pa=true; else a.amd=true; });
     renderStats();
+    renderCal();
     render();
   } catch(e) {
     document.getElementById('list').innerHTML = '<div class="empty">加载 data/reports.json 失败 — 请通过 HTTP 服务访问。<br>本机可用 <code>cd /root/agentic-report && python3 -m http.server 8731</code></div>';
@@ -131,6 +203,7 @@ function render(){
   const q = query.toLowerCase();
   let list = REPORTS.filter(r =>
     (siteFilter==='all' || r.site===siteFilter) &&
+    (!dateFilter || r.date===dateFilter) &&
     (!q || (r.title+r.summary+r.full_text).toLowerCase().includes(q)));
   list = list.slice().sort((a,b)=>b.date.localeCompare(a.date));
   // group by date
@@ -143,9 +216,9 @@ function render(){
   let html = '';
   for (const d of Object.keys(groups).sort().reverse()) {
     const reps = groups[d];
-    html += `<details class="day"><button><span class="date">${d}</span>` +
-      reps.map(r=>`<span class="tag ${r.site}">${r.site==='physical-ai'?'Physical AI':'AMD'} · ${r.kind}</span>`).join('') +
-      `<span class="kind">${reps.length} 份</span><span class="chev">▶</span></button><div class="body">` +
+    html += `<details class="day"${d===dateFilter?' open':''}><summary><span class="date">${d}</span>` +
+      reps.map(r2=>`<span class="tag ${r2.site}">${r2.site==='physical-ai'?'Physical AI':'AMD'} · ${r2.kind}</span>`).join('') +
+      `<span class="kind">${reps.length} 份</span><span class="chev">▶</span></summary><div class="body">` +
       reps.map(r=>`<div class="md">
         <div class="src">📎 ${esc(r.title)} · <a href="https://github.com/alexhegit/agentic-report/blob/main/logs/${esc(slug(r))}" target="_blank">GitHub 原文</a></div>
         ${mdLite(r.full_text || r.summary)}
@@ -160,6 +233,21 @@ document.querySelectorAll('.filterbar .btn').forEach(b=>b.addEventListener('clic
   render();
 }));
 document.getElementById('q').addEventListener('input',e=>{ query=e.target.value; render(); });
+function moveMonth(delta){
+  if (!calYM) calYM = (()=>{ const d=REPORTS.map(r=>r.date).sort().at(-1); return {y:+d.slice(0,4), m:+d.slice(5,7)}; })();
+  let m = calYM.m + delta, y = calYM.y;
+  if (m > 12) { m = 1; y++; } if (m < 1) { m = 12; y--; }
+  calYM = {y, m};
+  renderCal();
+}
+['calPrev','calNext'].forEach(id=>document.getElementById(id).addEventListener('click',()=>moveMonth(id==='calPrev' ? -1 : 1)));
+document.getElementById('calTod').addEventListener('click',()=>{
+  const t = todayStr();
+  calYM = {y:+t.slice(0,4), m:+t.slice(5,7)};
+  if (dateIdx[t]) selectDate(t);
+  else { dateFilter=''; renderCal(); render(); }
+});
+document.getElementById('calClear').addEventListener('click',()=>selectDate(''));
 load();
 </script>
 </body>

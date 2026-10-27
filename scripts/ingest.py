@@ -13,7 +13,7 @@ ENV = '/root/.hermes/.env'
 JOBS = {
     '17abfd193223': ('physical-ai', '日报', 'Physical AI 日报'),
     'e3325cc31dd3': ('physical-ai', '周报', 'Physical AI 周报'),
-    '2bb7831e0820': ('amd',        '日报', 'AMD 股价监控'),
+    '2bb7831e0820': ('amd',        '日报', 'AMD 美股日报'),
     '8245979b3f86': ('amd',        '周报', 'AMD 股市周报'),
 }
 
@@ -52,11 +52,12 @@ def main():
     reports = load_json(f'{REPO}/data/reports.json', [])
     entities = {e['id']: e for e in load_json(f'{REPO}/data/entities.json', [])}
     edges = load_json(f'{REPO}/data/edges.json', [])
-    seen_edge = {(e['source'], e['target']) for e in edges} | {(e['target'], e['source']) for e in edges}
+    edge_seen = {frozenset((e['source'], e['target'])) for e in edges}
     done_files = set(load_state().get('done_files', [])) if os.path.exists(STATE) else set()
     added = 0
 
     seen_reports = {r['id'] for r in reports}
+    seen_sources = {r.get('source') for r in reports}
 
     for job, (site, kind, title) in JOBS.items():
         d = os.path.join(CRON, job)
@@ -67,9 +68,12 @@ def main():
             date = fname[:10]
             body = extract_response(path)
             if not body: continue
-            rid = f'{job[:6]}_{date}'
-            if rid in seen_reports: continue
-            bd = first_date(body) or date
+            bd = date  # 文件名时间戳 = 生成日,避免正文引用日期导致归错天
+            tstamp = fname[11:19].replace('-', '').replace(':', '') if len(fname) >= 19 else ''
+            rid = f'{job[:6]}_{date}_{tstamp}' if tstamp else f'{job[:6]}_{date}'
+            src = f'{job}/{fname}'
+            if src in seen_sources: continue
+            seen_sources.add(src)
             summary = re.sub(r'\s+', ' ', re.sub(r'[#*\`\[\]\-]', '', body))[:240]
             reports.append({
                 'id': rid, 'date': bd, 'site': site, 'kind': kind,

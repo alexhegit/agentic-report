@@ -1332,12 +1332,6 @@
     "implicit": true
   },
   {
-    "source": "Amazon",
-    "target": "NVIDIA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
     "source": "Figure AI",
     "target": "Tesla",
     "relation": "同周期共现 (co-mentioned in same report)",
@@ -1790,6 +1784,12 @@
   {
     "source": "2606.20458",
     "target": "2602.13977",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Amazon",
+    "target": "NVIDIA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -2600,186 +2600,6 @@
   {
     "source": "2606.26006",
     "target": "Google",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "Tesla",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "AtsushiSakai/PythonRobotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "search/repositories",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "2607.12345",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "2607.67890",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "2607.54321",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "Tesla",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "AtsushiSakai/PythonRobotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "search/repositories",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "2607.12345",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "2607.67890",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "2607.54321",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Tesla",
-    "target": "search/repositories",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Tesla",
-    "target": "2607.12345",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Tesla",
-    "target": "2607.67890",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Tesla",
-    "target": "2607.54321",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AtsushiSakai/PythonRobotics",
-    "target": "search/repositories",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AtsushiSakai/PythonRobotics",
-    "target": "2607.12345",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AtsushiSakai/PythonRobotics",
-    "target": "2607.67890",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AtsushiSakai/PythonRobotics",
-    "target": "2607.54321",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Figure",
-    "target": "search/repositories",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Figure",
-    "target": "2607.12345",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Figure",
-    "target": "2607.67890",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Figure",
-    "target": "2607.54321",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "search/repositories",
-    "target": "2607.12345",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "search/repositories",
-    "target": "2607.67890",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "search/repositories",
-    "target": "2607.54321",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2607.12345",
-    "target": "2607.67890",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2607.12345",
-    "target": "2607.54321",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2607.67890",
-    "target": "2607.54321",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -4699,234 +4519,6 @@
   },
   {
     "source": "sii-research/tau-0-vla",
-    "target": "huggingface/lerobot",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "sii-research/tau-0-vla",
-    "target": "Unichem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "sii-research/tau-0-vla",
-    "target": "NVIDIA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "sii-research/tau-0-vla",
-    "target": "Schaeffler",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "sii-research/tau-0-vla",
-    "target": "Genesis-Embodied-AI/genesis-world",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "sii-research/tau-0-vla",
-    "target": "lightwheelai/leisaac",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "sii-research/tau-0-vla",
-    "target": "2608.16885",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "sii-research/tau-0-vla",
-    "target": "Pudu",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "Unichem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "Schaeffler",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "lightwheelai/leisaac",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "2608.16885",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "Pudu",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Unichem",
-    "target": "NVIDIA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Unichem",
-    "target": "Schaeffler",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Unichem",
-    "target": "Genesis-Embodied-AI/genesis-world",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Unichem",
-    "target": "Figure",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Unichem",
-    "target": "lightwheelai/leisaac",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Unichem",
-    "target": "2608.16885",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Unichem",
-    "target": "Pudu",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NVIDIA",
-    "target": "Schaeffler",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NVIDIA",
-    "target": "lightwheelai/leisaac",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NVIDIA",
-    "target": "2608.16885",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NVIDIA",
-    "target": "Pudu",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Schaeffler",
-    "target": "Genesis-Embodied-AI/genesis-world",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Schaeffler",
-    "target": "Figure",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Schaeffler",
-    "target": "lightwheelai/leisaac",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Schaeffler",
-    "target": "2608.16885",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Schaeffler",
-    "target": "Pudu",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "lightwheelai/leisaac",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "2608.16885",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "Pudu",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Figure",
-    "target": "lightwheelai/leisaac",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Figure",
-    "target": "2608.16885",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Figure",
-    "target": "Pudu",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "lightwheelai/leisaac",
-    "target": "2608.16885",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "lightwheelai/leisaac",
-    "target": "Pudu",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.16885",
-    "target": "Pudu",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "sii-research/tau-0-vla",
     "target": "limxdynamics/tron2_openpi",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
@@ -4952,6 +4544,12 @@
   {
     "source": "sii-research/tau-0-vla",
     "target": "Gravis Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "sii-research/tau-0-vla",
+    "target": "Unichem",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -5406,6 +5004,12 @@
     "implicit": true
   },
   {
+    "source": "huggingface/lerobot",
+    "target": "Unichem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
     "source": "Hebbian-Robotics/hflow",
     "target": "isaac-sim/IsaacLab",
     "relation": "同周期共现 (co-mentioned in same report)",
@@ -5496,680 +5100,218 @@
     "implicit": true
   },
   {
-    "source": "huggingface/lerobot",
-    "target": "2608.24199",
+    "source": "sii-research/tau-0-vla",
+    "target": "huggingface/lerobot",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "huggingface/lerobot",
-    "target": "Gatik",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "2608.27384",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "Teradyne Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "NSF",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "Teradyne",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "Physical-Intelligence/openpi",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "zhangzaibin/future-robots",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "2608.25757",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "2608.26058",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "2608.27406",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "huggingface/lerobot",
-    "target": "EXL",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "isaac-sim/IsaacLab",
-    "target": "2608.24199",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "isaac-sim/IsaacLab",
-    "target": "Gatik",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "isaac-sim/IsaacLab",
-    "target": "2608.27384",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "isaac-sim/IsaacLab",
-    "target": "Teradyne Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "isaac-sim/IsaacLab",
-    "target": "NSF",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "isaac-sim/IsaacLab",
-    "target": "Teradyne",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "isaac-sim/IsaacLab",
-    "target": "Physical-Intelligence/openpi",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "isaac-sim/IsaacLab",
-    "target": "zhangzaibin/future-robots",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "isaac-sim/IsaacLab",
-    "target": "2608.25757",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "isaac-sim/IsaacLab",
-    "target": "2608.26058",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "isaac-sim/IsaacLab",
-    "target": "2608.27406",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "isaac-sim/IsaacLab",
-    "target": "EXL",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.24199",
+    "source": "sii-research/tau-0-vla",
     "target": "NVIDIA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.24199",
-    "target": "Gatik",
+    "source": "sii-research/tau-0-vla",
+    "target": "Schaeffler",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.24199",
-    "target": "2608.27384",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.24199",
-    "target": "Teradyne Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.24199",
-    "target": "NSF",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.24199",
+    "source": "sii-research/tau-0-vla",
     "target": "Genesis-Embodied-AI/genesis-world",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.24199",
-    "target": "Teradyne",
+    "source": "sii-research/tau-0-vla",
+    "target": "lightwheelai/leisaac",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.24199",
-    "target": "Physical-Intelligence/openpi",
+    "source": "sii-research/tau-0-vla",
+    "target": "2608.16885",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.24199",
-    "target": "zhangzaibin/future-robots",
+    "source": "sii-research/tau-0-vla",
+    "target": "Pudu",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.24199",
-    "target": "2608.25757",
+    "source": "huggingface/lerobot",
+    "target": "Schaeffler",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.24199",
-    "target": "2608.26058",
+    "source": "huggingface/lerobot",
+    "target": "lightwheelai/leisaac",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.24199",
-    "target": "2608.27406",
+    "source": "huggingface/lerobot",
+    "target": "2608.16885",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.24199",
-    "target": "EXL",
+    "source": "huggingface/lerobot",
+    "target": "Pudu",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "Gatik",
+    "source": "Unichem",
+    "target": "NVIDIA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "2608.27384",
+    "source": "Unichem",
+    "target": "Schaeffler",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "Teradyne Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NVIDIA",
-    "target": "NSF",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NVIDIA",
-    "target": "Teradyne",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NVIDIA",
-    "target": "Physical-Intelligence/openpi",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NVIDIA",
-    "target": "zhangzaibin/future-robots",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NVIDIA",
-    "target": "2608.25757",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NVIDIA",
-    "target": "2608.26058",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NVIDIA",
-    "target": "2608.27406",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NVIDIA",
-    "target": "EXL",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Gatik",
-    "target": "2608.27384",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Gatik",
-    "target": "Teradyne Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Gatik",
-    "target": "NSF",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Gatik",
+    "source": "Unichem",
     "target": "Genesis-Embodied-AI/genesis-world",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gatik",
-    "target": "Teradyne",
+    "source": "Unichem",
+    "target": "Figure",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gatik",
-    "target": "Physical-Intelligence/openpi",
+    "source": "Unichem",
+    "target": "lightwheelai/leisaac",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gatik",
-    "target": "zhangzaibin/future-robots",
+    "source": "Unichem",
+    "target": "2608.16885",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gatik",
-    "target": "2608.25757",
+    "source": "Unichem",
+    "target": "Pudu",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gatik",
-    "target": "2608.26058",
+    "source": "NVIDIA",
+    "target": "Schaeffler",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gatik",
-    "target": "2608.27406",
+    "source": "NVIDIA",
+    "target": "lightwheelai/leisaac",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gatik",
-    "target": "EXL",
+    "source": "NVIDIA",
+    "target": "2608.16885",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.27384",
-    "target": "Teradyne Robotics",
+    "source": "NVIDIA",
+    "target": "Pudu",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.27384",
-    "target": "NSF",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.27384",
+    "source": "Schaeffler",
     "target": "Genesis-Embodied-AI/genesis-world",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.27384",
-    "target": "Teradyne",
+    "source": "Schaeffler",
+    "target": "Figure",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.27384",
-    "target": "Physical-Intelligence/openpi",
+    "source": "Schaeffler",
+    "target": "lightwheelai/leisaac",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.27384",
-    "target": "zhangzaibin/future-robots",
+    "source": "Schaeffler",
+    "target": "2608.16885",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "2608.27384",
-    "target": "2608.25757",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.27384",
-    "target": "2608.26058",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.27384",
-    "target": "2608.27406",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.27384",
-    "target": "EXL",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "NSF",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "Genesis-Embodied-AI/genesis-world",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "Physical-Intelligence/openpi",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "zhangzaibin/future-robots",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "2608.25757",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "2608.26058",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "2608.27406",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "EXL",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NSF",
-    "target": "Genesis-Embodied-AI/genesis-world",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NSF",
-    "target": "Teradyne",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NSF",
-    "target": "Physical-Intelligence/openpi",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NSF",
-    "target": "zhangzaibin/future-robots",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NSF",
-    "target": "2608.25757",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NSF",
-    "target": "2608.26058",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NSF",
-    "target": "2608.27406",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "NSF",
-    "target": "EXL",
+    "source": "Schaeffler",
+    "target": "Pudu",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "Teradyne",
+    "target": "lightwheelai/leisaac",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "Physical-Intelligence/openpi",
+    "target": "2608.16885",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "zhangzaibin/future-robots",
+    "target": "Pudu",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "2608.25757",
+    "source": "Figure",
+    "target": "lightwheelai/leisaac",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "2608.26058",
+    "source": "Figure",
+    "target": "2608.16885",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "2608.27406",
+    "source": "Figure",
+    "target": "Pudu",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Genesis-Embodied-AI/genesis-world",
-    "target": "EXL",
+    "source": "lightwheelai/leisaac",
+    "target": "2608.16885",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Teradyne",
-    "target": "Physical-Intelligence/openpi",
+    "source": "lightwheelai/leisaac",
+    "target": "Pudu",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Teradyne",
-    "target": "zhangzaibin/future-robots",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "2608.25757",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "2608.26058",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "2608.27406",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "EXL",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Physical-Intelligence/openpi",
-    "target": "zhangzaibin/future-robots",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Physical-Intelligence/openpi",
-    "target": "2608.25757",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Physical-Intelligence/openpi",
-    "target": "2608.26058",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Physical-Intelligence/openpi",
-    "target": "2608.27406",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Physical-Intelligence/openpi",
-    "target": "EXL",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "zhangzaibin/future-robots",
-    "target": "2608.25757",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "zhangzaibin/future-robots",
-    "target": "2608.26058",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "zhangzaibin/future-robots",
-    "target": "2608.27406",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "zhangzaibin/future-robots",
-    "target": "EXL",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.25757",
-    "target": "2608.26058",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.25757",
-    "target": "2608.27406",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.25757",
-    "target": "EXL",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.26058",
-    "target": "2608.27406",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.26058",
-    "target": "EXL",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2608.27406",
-    "target": "EXL",
+    "source": "2608.16885",
+    "target": "Pudu",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -6816,6 +5958,12 @@
     "implicit": true
   },
   {
+    "source": "2608.24199",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
     "source": "2608.24101",
     "target": "NVIDIA",
     "relation": "同周期共现 (co-mentioned in same report)",
@@ -6902,6 +6050,12 @@
   {
     "source": "NVIDIA",
     "target": "2608.25659",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "Gatik",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -7099,7 +6253,25 @@
   },
   {
     "source": "NVIDIA",
+    "target": "2608.27384",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
     "target": "2608.26583",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "Teradyne Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "Teradyne",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -7242,6 +6414,18 @@
     "implicit": true
   },
   {
+    "source": "2608.27384",
+    "target": "Teradyne Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.27384",
+    "target": "Teradyne",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
     "source": "2608.26583",
     "target": "Teradyne Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
@@ -7250,6 +6434,642 @@
   {
     "source": "2608.26583",
     "target": "Teradyne",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "2608.24199",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "Gatik",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "2608.27384",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "Teradyne Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "NSF",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "Teradyne",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "Physical-Intelligence/openpi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "zhangzaibin/future-robots",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "2608.25757",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "2608.24199",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "Gatik",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "2608.27384",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "Teradyne Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "NSF",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "Teradyne",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "Physical-Intelligence/openpi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "zhangzaibin/future-robots",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "2608.25757",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.24199",
+    "target": "Gatik",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.24199",
+    "target": "2608.27384",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.24199",
+    "target": "Teradyne Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.24199",
+    "target": "NSF",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.24199",
+    "target": "Genesis-Embodied-AI/genesis-world",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.24199",
+    "target": "Teradyne",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.24199",
+    "target": "Physical-Intelligence/openpi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.24199",
+    "target": "zhangzaibin/future-robots",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.24199",
+    "target": "2608.25757",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.24199",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.24199",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.24199",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "NSF",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "Physical-Intelligence/openpi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "zhangzaibin/future-robots",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2608.25757",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gatik",
+    "target": "2608.27384",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gatik",
+    "target": "Teradyne Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gatik",
+    "target": "NSF",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gatik",
+    "target": "Genesis-Embodied-AI/genesis-world",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gatik",
+    "target": "Teradyne",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gatik",
+    "target": "Physical-Intelligence/openpi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gatik",
+    "target": "zhangzaibin/future-robots",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gatik",
+    "target": "2608.25757",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gatik",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gatik",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gatik",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.27384",
+    "target": "NSF",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.27384",
+    "target": "Genesis-Embodied-AI/genesis-world",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.27384",
+    "target": "Physical-Intelligence/openpi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.27384",
+    "target": "zhangzaibin/future-robots",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.27384",
+    "target": "2608.25757",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.27384",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.27384",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.27384",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "NSF",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "Genesis-Embodied-AI/genesis-world",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "Physical-Intelligence/openpi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "zhangzaibin/future-robots",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "2608.25757",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NSF",
+    "target": "Genesis-Embodied-AI/genesis-world",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NSF",
+    "target": "Teradyne",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NSF",
+    "target": "Physical-Intelligence/openpi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NSF",
+    "target": "zhangzaibin/future-robots",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NSF",
+    "target": "2608.25757",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NSF",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NSF",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NSF",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "Teradyne",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "Physical-Intelligence/openpi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "zhangzaibin/future-robots",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "2608.25757",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "Physical-Intelligence/openpi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "zhangzaibin/future-robots",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "2608.25757",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Physical-Intelligence/openpi",
+    "target": "zhangzaibin/future-robots",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Physical-Intelligence/openpi",
+    "target": "2608.25757",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Physical-Intelligence/openpi",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Physical-Intelligence/openpi",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Physical-Intelligence/openpi",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "zhangzaibin/future-robots",
+    "target": "2608.25757",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "zhangzaibin/future-robots",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "zhangzaibin/future-robots",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "zhangzaibin/future-robots",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.25757",
+    "target": "2608.26058",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.25757",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.25757",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.26058",
+    "target": "2608.27406",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.26058",
+    "target": "EXL",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2608.27406",
+    "target": "EXL",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -9036,6 +8856,12 @@
     "implicit": true
   },
   {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "Tesla",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
     "source": "2609.12345",
     "target": "Figure AI",
     "relation": "同周期共现 (co-mentioned in same report)",
@@ -9114,6 +8940,180 @@
     "implicit": true
   },
   {
+    "source": "huggingface/lerobot",
+    "target": "Tesla",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "AtsushiSakai/PythonRobotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "search/repositories",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "2607.12345",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "2607.67890",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "2607.54321",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "AtsushiSakai/PythonRobotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "search/repositories",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "2607.12345",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "2607.67890",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "2607.54321",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Tesla",
+    "target": "search/repositories",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Tesla",
+    "target": "2607.12345",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Tesla",
+    "target": "2607.67890",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Tesla",
+    "target": "2607.54321",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AtsushiSakai/PythonRobotics",
+    "target": "search/repositories",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AtsushiSakai/PythonRobotics",
+    "target": "2607.12345",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AtsushiSakai/PythonRobotics",
+    "target": "2607.67890",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AtsushiSakai/PythonRobotics",
+    "target": "2607.54321",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Figure",
+    "target": "search/repositories",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Figure",
+    "target": "2607.12345",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Figure",
+    "target": "2607.67890",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Figure",
+    "target": "2607.54321",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "search/repositories",
+    "target": "2607.12345",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "search/repositories",
+    "target": "2607.67890",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "search/repositories",
+    "target": "2607.54321",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2607.12345",
+    "target": "2607.67890",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2607.12345",
+    "target": "2607.54321",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2607.67890",
+    "target": "2607.54321",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
     "source": "Figure AI",
     "target": "2605.12345",
     "relation": "同周期共现 (co-mentioned in same report)",
@@ -9182,630 +9182,6 @@
   {
     "source": "2406.01234",
     "target": "Figure",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "Teradyne Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "Teradyne",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "Boston Dynamics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "AetherLabsAI/Video2World",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "seohongpark/ocbench",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "2610.12468",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "2610.12407",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "AWS",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "BinceQu/RoboHarness",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "wyhuai/HumanX",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "swirl-uk/BiGym2",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "2610.08970",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Amazon",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "Boston Dynamics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "AetherLabsAI/Video2World",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "seohongpark/ocbench",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "2610.12468",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "2610.12407",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "AWS",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "BinceQu/RoboHarness",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "wyhuai/HumanX",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "swirl-uk/BiGym2",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "2610.08970",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne Robotics",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "Boston Dynamics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "AetherLabsAI/Video2World",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "seohongpark/ocbench",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "2610.12468",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "2610.12407",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "AWS",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "BinceQu/RoboHarness",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "wyhuai/HumanX",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "swirl-uk/BiGym2",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "2610.08970",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Teradyne",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Boston Dynamics",
-    "target": "AetherLabsAI/Video2World",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Boston Dynamics",
-    "target": "seohongpark/ocbench",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Boston Dynamics",
-    "target": "2610.12468",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Boston Dynamics",
-    "target": "2610.12407",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Boston Dynamics",
-    "target": "AWS",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Boston Dynamics",
-    "target": "BinceQu/RoboHarness",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Boston Dynamics",
-    "target": "wyhuai/HumanX",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Boston Dynamics",
-    "target": "swirl-uk/BiGym2",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Boston Dynamics",
-    "target": "2610.08970",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Boston Dynamics",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Boston Dynamics",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AetherLabsAI/Video2World",
-    "target": "seohongpark/ocbench",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AetherLabsAI/Video2World",
-    "target": "2610.12468",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AetherLabsAI/Video2World",
-    "target": "2610.12407",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AetherLabsAI/Video2World",
-    "target": "AWS",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AetherLabsAI/Video2World",
-    "target": "BinceQu/RoboHarness",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AetherLabsAI/Video2World",
-    "target": "wyhuai/HumanX",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AetherLabsAI/Video2World",
-    "target": "swirl-uk/BiGym2",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AetherLabsAI/Video2World",
-    "target": "2610.08970",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AetherLabsAI/Video2World",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AetherLabsAI/Video2World",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "seohongpark/ocbench",
-    "target": "2610.12468",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "seohongpark/ocbench",
-    "target": "2610.12407",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "seohongpark/ocbench",
-    "target": "AWS",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "seohongpark/ocbench",
-    "target": "BinceQu/RoboHarness",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "seohongpark/ocbench",
-    "target": "wyhuai/HumanX",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "seohongpark/ocbench",
-    "target": "swirl-uk/BiGym2",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "seohongpark/ocbench",
-    "target": "2610.08970",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "seohongpark/ocbench",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "seohongpark/ocbench",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12468",
-    "target": "2610.12407",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12468",
-    "target": "AWS",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12468",
-    "target": "BinceQu/RoboHarness",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12468",
-    "target": "wyhuai/HumanX",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12468",
-    "target": "swirl-uk/BiGym2",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12468",
-    "target": "2610.08970",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12468",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12468",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12407",
-    "target": "AWS",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12407",
-    "target": "BinceQu/RoboHarness",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12407",
-    "target": "wyhuai/HumanX",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12407",
-    "target": "swirl-uk/BiGym2",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12407",
-    "target": "2610.08970",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12407",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.12407",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AWS",
-    "target": "BinceQu/RoboHarness",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AWS",
-    "target": "wyhuai/HumanX",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AWS",
-    "target": "swirl-uk/BiGym2",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AWS",
-    "target": "2610.08970",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AWS",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AWS",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "BinceQu/RoboHarness",
-    "target": "wyhuai/HumanX",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "BinceQu/RoboHarness",
-    "target": "swirl-uk/BiGym2",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "BinceQu/RoboHarness",
-    "target": "2610.08970",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "BinceQu/RoboHarness",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "BinceQu/RoboHarness",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "wyhuai/HumanX",
-    "target": "swirl-uk/BiGym2",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "wyhuai/HumanX",
-    "target": "2610.08970",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "wyhuai/HumanX",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "wyhuai/HumanX",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "swirl-uk/BiGym2",
-    "target": "2610.08970",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "swirl-uk/BiGym2",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "swirl-uk/BiGym2",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.08970",
-    "target": "2610.09283",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.08970",
-    "target": "Jabil",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.09283",
-    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -10026,6 +9402,12 @@
     "implicit": true
   },
   {
+    "source": "Teradyne",
+    "target": "Boston Dynamics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
     "source": "Amazon",
     "target": "2610.06617",
     "relation": "同周期共现 (co-mentioned in same report)",
@@ -10034,6 +9416,18 @@
   {
     "source": "Amazon",
     "target": "Runway",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Amazon",
+    "target": "Teradyne",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Amazon",
+    "target": "Boston Dynamics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -10273,6 +9667,18 @@
   },
   {
     "source": "Amazon",
+    "target": "AetherLabsAI/Video2World",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Amazon",
+    "target": "seohongpark/ocbench",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Amazon",
     "target": "2610.10528",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
@@ -10447,6 +9853,18 @@
   },
   {
     "source": "Teradyne",
+    "target": "AetherLabsAI/Video2World",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "seohongpark/ocbench",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
     "target": "2610.10528",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
@@ -10490,6 +9908,18 @@
   {
     "source": "Boston Dynamics",
     "target": "KingKongRobotics/jumper",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Boston Dynamics",
+    "target": "AetherLabsAI/Video2World",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Boston Dynamics",
+    "target": "seohongpark/ocbench",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -10586,6 +10016,12 @@
   {
     "source": "KingKongRobotics/jumper",
     "target": "TwelveLabs",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AetherLabsAI/Video2World",
+    "target": "seohongpark/ocbench",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -10819,13 +10255,31 @@
   },
   {
     "source": "Amazon",
+    "target": "2610.12468",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Amazon",
     "target": "2610.12435",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Amazon",
+    "target": "2610.12407",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Amazon",
     "target": "2606.30988",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Amazon",
+    "target": "AWS",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -10921,7 +10375,19 @@
   },
   {
     "source": "Teradyne",
+    "target": "2610.12468",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
     "target": "2610.12435",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "2610.12407",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -10933,6 +10399,12 @@
   },
   {
     "source": "Teradyne",
+    "target": "AWS",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
     "target": "Helm.ai",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
@@ -10957,13 +10429,31 @@
   },
   {
     "source": "Boston Dynamics",
+    "target": "2610.12468",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Boston Dynamics",
     "target": "2610.12435",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Boston Dynamics",
+    "target": "2610.12407",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Boston Dynamics",
     "target": "2606.30988",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Boston Dynamics",
+    "target": "AWS",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -10993,13 +10483,31 @@
   },
   {
     "source": "AetherLabsAI/Video2World",
+    "target": "2610.12468",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AetherLabsAI/Video2World",
     "target": "2610.12435",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "AetherLabsAI/Video2World",
+    "target": "2610.12407",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AetherLabsAI/Video2World",
     "target": "2606.30988",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AetherLabsAI/Video2World",
+    "target": "AWS",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -11029,13 +10537,31 @@
   },
   {
     "source": "seohongpark/ocbench",
+    "target": "2610.12468",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "seohongpark/ocbench",
     "target": "2610.12435",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "seohongpark/ocbench",
+    "target": "2610.12407",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "seohongpark/ocbench",
     "target": "2606.30988",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "seohongpark/ocbench",
+    "target": "AWS",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -11179,7 +10705,19 @@
   },
   {
     "source": "2610.12468",
+    "target": "2610.12407",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.12468",
     "target": "2606.30988",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.12468",
+    "target": "AWS",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -11216,6 +10754,12 @@
   {
     "source": "2610.12407",
     "target": "2606.30988",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.12407",
+    "target": "AWS",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -11244,704 +10788,458 @@
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "rzc156/dreamforge",
+    "source": "Amazon",
+    "target": "Teradyne Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "Stryker",
+    "source": "Amazon",
+    "target": "BinceQu/RoboHarness",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "robosimstudio/robosimstudio",
+    "source": "Amazon",
+    "target": "wyhuai/HumanX",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "cocacola-lab/Recursia",
+    "source": "Amazon",
+    "target": "swirl-uk/BiGym2",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "robot-agent-exploration/rax",
+    "source": "Amazon",
+    "target": "2610.08970",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "hao-ai-lab/ORA",
+    "source": "Amazon",
+    "target": "2610.09283",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "2610.22363",
+    "source": "Amazon",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "2610.22146",
+    "source": "Teradyne Robotics",
+    "target": "Boston Dynamics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "2610.22368",
+    "source": "Teradyne Robotics",
+    "target": "AetherLabsAI/Video2World",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "2610.21798",
+    "source": "Teradyne Robotics",
+    "target": "seohongpark/ocbench",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "2610.22372",
+    "source": "Teradyne Robotics",
+    "target": "2610.12468",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "Promise Robotics",
+    "source": "Teradyne Robotics",
+    "target": "2610.12407",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility Robotics",
-    "target": "FastVLA",
+    "source": "Teradyne Robotics",
+    "target": "AWS",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "BinceQu/RoboHarness",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "wyhuai/HumanX",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "swirl-uk/BiGym2",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "2610.08970",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "2610.09283",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne Robotics",
+    "target": "Jabil",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "BinceQu/RoboHarness",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "wyhuai/HumanX",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "swirl-uk/BiGym2",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "2610.08970",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "2610.09283",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Teradyne",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Boston Dynamics",
-    "target": "rzc156/dreamforge",
+    "target": "BinceQu/RoboHarness",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Boston Dynamics",
-    "target": "Stryker",
+    "target": "wyhuai/HumanX",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Boston Dynamics",
-    "target": "robosimstudio/robosimstudio",
+    "target": "swirl-uk/BiGym2",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Boston Dynamics",
-    "target": "cocacola-lab/Recursia",
+    "target": "2610.08970",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Boston Dynamics",
-    "target": "robot-agent-exploration/rax",
+    "target": "2610.09283",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Boston Dynamics",
-    "target": "hao-ai-lab/ORA",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Boston Dynamics",
-    "target": "2610.22363",
+    "source": "AetherLabsAI/Video2World",
+    "target": "BinceQu/RoboHarness",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Boston Dynamics",
-    "target": "2610.22146",
+    "source": "AetherLabsAI/Video2World",
+    "target": "wyhuai/HumanX",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Boston Dynamics",
-    "target": "2610.22368",
+    "source": "AetherLabsAI/Video2World",
+    "target": "swirl-uk/BiGym2",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Boston Dynamics",
-    "target": "2610.21798",
+    "source": "AetherLabsAI/Video2World",
+    "target": "2610.08970",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Boston Dynamics",
-    "target": "2610.22372",
+    "source": "AetherLabsAI/Video2World",
+    "target": "2610.09283",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Boston Dynamics",
-    "target": "Promise Robotics",
+    "source": "AetherLabsAI/Video2World",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Boston Dynamics",
-    "target": "FastVLA",
+    "source": "seohongpark/ocbench",
+    "target": "BinceQu/RoboHarness",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "Stryker",
+    "source": "seohongpark/ocbench",
+    "target": "wyhuai/HumanX",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "Agility",
+    "source": "seohongpark/ocbench",
+    "target": "swirl-uk/BiGym2",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "robosimstudio/robosimstudio",
+    "source": "seohongpark/ocbench",
+    "target": "2610.08970",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "cocacola-lab/Recursia",
+    "source": "seohongpark/ocbench",
+    "target": "2610.09283",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "robot-agent-exploration/rax",
+    "source": "seohongpark/ocbench",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "hao-ai-lab/ORA",
+    "source": "2610.12468",
+    "target": "BinceQu/RoboHarness",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "2610.22363",
+    "source": "2610.12468",
+    "target": "wyhuai/HumanX",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "2610.22146",
+    "source": "2610.12468",
+    "target": "swirl-uk/BiGym2",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "2610.22368",
+    "source": "2610.12468",
+    "target": "2610.08970",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "2610.21798",
+    "source": "2610.12468",
+    "target": "2610.09283",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "2610.22372",
+    "source": "2610.12468",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "Promise Robotics",
+    "source": "2610.12407",
+    "target": "BinceQu/RoboHarness",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "FastVLA",
+    "source": "2610.12407",
+    "target": "wyhuai/HumanX",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stryker",
-    "target": "Agility",
+    "source": "2610.12407",
+    "target": "swirl-uk/BiGym2",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stryker",
-    "target": "robosimstudio/robosimstudio",
+    "source": "2610.12407",
+    "target": "2610.08970",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stryker",
-    "target": "cocacola-lab/Recursia",
+    "source": "2610.12407",
+    "target": "2610.09283",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stryker",
-    "target": "robot-agent-exploration/rax",
+    "source": "2610.12407",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stryker",
-    "target": "hao-ai-lab/ORA",
+    "source": "AWS",
+    "target": "BinceQu/RoboHarness",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stryker",
-    "target": "2610.22363",
+    "source": "AWS",
+    "target": "wyhuai/HumanX",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stryker",
-    "target": "2610.22146",
+    "source": "AWS",
+    "target": "swirl-uk/BiGym2",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stryker",
-    "target": "2610.22368",
+    "source": "AWS",
+    "target": "2610.08970",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stryker",
-    "target": "2610.21798",
+    "source": "AWS",
+    "target": "2610.09283",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stryker",
-    "target": "2610.22372",
+    "source": "AWS",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stryker",
-    "target": "Promise Robotics",
+    "source": "BinceQu/RoboHarness",
+    "target": "wyhuai/HumanX",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stryker",
-    "target": "FastVLA",
+    "source": "BinceQu/RoboHarness",
+    "target": "swirl-uk/BiGym2",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "robosimstudio/robosimstudio",
+    "source": "BinceQu/RoboHarness",
+    "target": "2610.08970",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "cocacola-lab/Recursia",
+    "source": "BinceQu/RoboHarness",
+    "target": "2610.09283",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "robot-agent-exploration/rax",
+    "source": "BinceQu/RoboHarness",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "hao-ai-lab/ORA",
+    "source": "wyhuai/HumanX",
+    "target": "swirl-uk/BiGym2",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "2610.22363",
+    "source": "wyhuai/HumanX",
+    "target": "2610.08970",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "2610.22146",
+    "source": "wyhuai/HumanX",
+    "target": "2610.09283",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "2610.22368",
+    "source": "wyhuai/HumanX",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "2610.21798",
+    "source": "swirl-uk/BiGym2",
+    "target": "2610.08970",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "2610.22372",
+    "source": "swirl-uk/BiGym2",
+    "target": "2610.09283",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "Promise Robotics",
+    "source": "swirl-uk/BiGym2",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "FastVLA",
+    "source": "2610.08970",
+    "target": "2610.09283",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "robosimstudio/robosimstudio",
-    "target": "cocacola-lab/Recursia",
+    "source": "2610.08970",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "robosimstudio/robosimstudio",
-    "target": "robot-agent-exploration/rax",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robosimstudio/robosimstudio",
-    "target": "hao-ai-lab/ORA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robosimstudio/robosimstudio",
-    "target": "2610.22363",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robosimstudio/robosimstudio",
-    "target": "2610.22146",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robosimstudio/robosimstudio",
-    "target": "2610.22368",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robosimstudio/robosimstudio",
-    "target": "2610.21798",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robosimstudio/robosimstudio",
-    "target": "2610.22372",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robosimstudio/robosimstudio",
-    "target": "Promise Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robosimstudio/robosimstudio",
-    "target": "FastVLA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "cocacola-lab/Recursia",
-    "target": "robot-agent-exploration/rax",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "cocacola-lab/Recursia",
-    "target": "hao-ai-lab/ORA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "cocacola-lab/Recursia",
-    "target": "2610.22363",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "cocacola-lab/Recursia",
-    "target": "2610.22146",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "cocacola-lab/Recursia",
-    "target": "2610.22368",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "cocacola-lab/Recursia",
-    "target": "2610.21798",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "cocacola-lab/Recursia",
-    "target": "2610.22372",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "cocacola-lab/Recursia",
-    "target": "Promise Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "cocacola-lab/Recursia",
-    "target": "FastVLA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robot-agent-exploration/rax",
-    "target": "hao-ai-lab/ORA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robot-agent-exploration/rax",
-    "target": "2610.22363",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robot-agent-exploration/rax",
-    "target": "2610.22146",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robot-agent-exploration/rax",
-    "target": "2610.22368",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robot-agent-exploration/rax",
-    "target": "2610.21798",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robot-agent-exploration/rax",
-    "target": "2610.22372",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robot-agent-exploration/rax",
-    "target": "Promise Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "robot-agent-exploration/rax",
-    "target": "FastVLA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "hao-ai-lab/ORA",
-    "target": "2610.22363",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "hao-ai-lab/ORA",
-    "target": "2610.22146",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "hao-ai-lab/ORA",
-    "target": "2610.22368",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "hao-ai-lab/ORA",
-    "target": "2610.21798",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "hao-ai-lab/ORA",
-    "target": "2610.22372",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "hao-ai-lab/ORA",
-    "target": "Promise Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "hao-ai-lab/ORA",
-    "target": "FastVLA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22363",
-    "target": "2610.22146",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22363",
-    "target": "2610.22368",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22363",
-    "target": "2610.21798",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22363",
-    "target": "2610.22372",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22363",
-    "target": "Promise Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22363",
-    "target": "FastVLA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22146",
-    "target": "2610.22368",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22146",
-    "target": "2610.21798",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22146",
-    "target": "2610.22372",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22146",
-    "target": "Promise Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22146",
-    "target": "FastVLA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22368",
-    "target": "2610.21798",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22368",
-    "target": "2610.22372",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22368",
-    "target": "Promise Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22368",
-    "target": "FastVLA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.21798",
-    "target": "2610.22372",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.21798",
-    "target": "Promise Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.21798",
-    "target": "FastVLA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22372",
-    "target": "Promise Robotics",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.22372",
-    "target": "FastVLA",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Promise Robotics",
-    "target": "FastVLA",
+    "source": "2610.09283",
+    "target": "Jabil",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -12410,6 +11708,12 @@
   {
     "source": "Amazon",
     "target": "2610.13945",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Boston Dynamics",
+    "target": "rzc156/dreamforge",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -13128,6 +12432,12 @@
     "implicit": true
   },
   {
+    "source": "Boston Dynamics",
+    "target": "Stryker",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
     "source": "rerun-io/rerun",
     "target": "2610.21985",
     "relation": "同周期共现 (co-mentioned in same report)",
@@ -13248,1244 +12558,692 @@
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "kyutai-labs/reki",
+    "source": "Stryker",
+    "target": "Agility",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "Stanford-TML/FoveaVLA",
+    "source": "Agility Robotics",
+    "target": "rzc156/dreamforge",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "Gecko Robotics",
+    "source": "Agility Robotics",
+    "target": "Stryker",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "Eka Robotics",
+    "source": "Agility Robotics",
+    "target": "robosimstudio/robosimstudio",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "AGCO",
+    "source": "Agility Robotics",
+    "target": "cocacola-lab/Recursia",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "Agility Digit",
+    "source": "Agility Robotics",
+    "target": "robot-agent-exploration/rax",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "FCC",
+    "source": "Agility Robotics",
+    "target": "hao-ai-lab/ORA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "source": "Agility Robotics",
+    "target": "2610.22363",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "opentac/opentac",
+    "source": "Agility Robotics",
+    "target": "2610.22146",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "2610.31661",
+    "source": "Agility Robotics",
+    "target": "2610.22368",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "2604.07993",
+    "source": "Agility Robotics",
+    "target": "2610.21798",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "2610.31166",
+    "source": "Agility Robotics",
+    "target": "2610.22372",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "2602.12628",
+    "source": "Agility Robotics",
+    "target": "Promise Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "2610.31423",
+    "source": "Agility Robotics",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "2607.00272",
+    "source": "Boston Dynamics",
+    "target": "robosimstudio/robosimstudio",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "Enact Intelligence",
+    "source": "Boston Dynamics",
+    "target": "cocacola-lab/Recursia",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "Formic",
+    "source": "Boston Dynamics",
+    "target": "robot-agent-exploration/rax",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "NVIDIA",
-    "target": "WholeBodyMem",
+    "source": "Boston Dynamics",
+    "target": "hao-ai-lab/ORA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "kyutai-labs/reki",
+    "source": "Boston Dynamics",
+    "target": "2610.22363",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "Stanford-TML/FoveaVLA",
+    "source": "Boston Dynamics",
+    "target": "2610.22146",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "Gecko Robotics",
+    "source": "Boston Dynamics",
+    "target": "2610.22368",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "Eka Robotics",
+    "source": "Boston Dynamics",
+    "target": "2610.21798",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "AGCO",
+    "source": "Boston Dynamics",
+    "target": "2610.22372",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "Agility Digit",
+    "source": "Boston Dynamics",
+    "target": "Promise Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "rzc156/dreamforge",
-    "target": "FCC",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "rzc156/dreamforge",
-    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "source": "Boston Dynamics",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "rzc156/dreamforge",
-    "target": "opentac/opentac",
+    "target": "Stryker",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "rzc156/dreamforge",
-    "target": "2610.31661",
+    "target": "Agility",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "rzc156/dreamforge",
-    "target": "2604.07993",
+    "target": "robosimstudio/robosimstudio",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "rzc156/dreamforge",
-    "target": "2610.31166",
+    "target": "cocacola-lab/Recursia",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "rzc156/dreamforge",
-    "target": "2602.12628",
+    "target": "robot-agent-exploration/rax",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "rzc156/dreamforge",
-    "target": "2610.31423",
+    "target": "hao-ai-lab/ORA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "rzc156/dreamforge",
-    "target": "2607.00272",
+    "target": "2610.22363",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "rzc156/dreamforge",
-    "target": "Enact Intelligence",
+    "target": "2610.22146",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "rzc156/dreamforge",
-    "target": "Formic",
+    "target": "2610.22368",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "rzc156/dreamforge",
-    "target": "WholeBodyMem",
+    "target": "2610.21798",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "2610.22372",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "Promise Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "FastVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stryker",
+    "target": "robosimstudio/robosimstudio",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stryker",
+    "target": "cocacola-lab/Recursia",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stryker",
+    "target": "robot-agent-exploration/rax",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stryker",
+    "target": "hao-ai-lab/ORA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stryker",
+    "target": "2610.22363",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stryker",
+    "target": "2610.22146",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stryker",
+    "target": "2610.22368",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stryker",
+    "target": "2610.21798",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stryker",
+    "target": "2610.22372",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stryker",
+    "target": "Promise Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stryker",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Agility",
-    "target": "kyutai-labs/reki",
+    "target": "robosimstudio/robosimstudio",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Agility",
-    "target": "Stanford-TML/FoveaVLA",
+    "target": "cocacola-lab/Recursia",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Agility",
-    "target": "Gecko Robotics",
+    "target": "robot-agent-exploration/rax",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Agility",
-    "target": "Eka Robotics",
+    "target": "hao-ai-lab/ORA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Agility",
-    "target": "AGCO",
+    "target": "2610.22363",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Agility",
-    "target": "Agility Digit",
+    "target": "2610.22146",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Agility",
-    "target": "FCC",
+    "target": "2610.22368",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Agility",
-    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "target": "2610.21798",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Agility",
-    "target": "opentac/opentac",
+    "target": "2610.22372",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Agility",
-    "target": "2610.31661",
+    "target": "Promise Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
     "source": "Agility",
-    "target": "2604.07993",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "2610.31166",
+    "source": "robosimstudio/robosimstudio",
+    "target": "cocacola-lab/Recursia",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "2602.12628",
+    "source": "robosimstudio/robosimstudio",
+    "target": "robot-agent-exploration/rax",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "2610.31423",
+    "source": "robosimstudio/robosimstudio",
+    "target": "hao-ai-lab/ORA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "2607.00272",
+    "source": "robosimstudio/robosimstudio",
+    "target": "2610.22363",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "Enact Intelligence",
+    "source": "robosimstudio/robosimstudio",
+    "target": "2610.22146",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "Formic",
+    "source": "robosimstudio/robosimstudio",
+    "target": "2610.22368",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Agility",
-    "target": "WholeBodyMem",
+    "source": "robosimstudio/robosimstudio",
+    "target": "2610.21798",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "Stanford-TML/FoveaVLA",
+    "source": "robosimstudio/robosimstudio",
+    "target": "2610.22372",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "Gecko Robotics",
+    "source": "robosimstudio/robosimstudio",
+    "target": "Promise Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "Eka Robotics",
+    "source": "robosimstudio/robosimstudio",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "AGCO",
+    "source": "cocacola-lab/Recursia",
+    "target": "robot-agent-exploration/rax",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "Agility Digit",
+    "source": "cocacola-lab/Recursia",
+    "target": "hao-ai-lab/ORA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "FCC",
+    "source": "cocacola-lab/Recursia",
+    "target": "2610.22363",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "source": "cocacola-lab/Recursia",
+    "target": "2610.22146",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "opentac/opentac",
+    "source": "cocacola-lab/Recursia",
+    "target": "2610.22368",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "2610.31661",
+    "source": "cocacola-lab/Recursia",
+    "target": "2610.21798",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "2604.07993",
+    "source": "cocacola-lab/Recursia",
+    "target": "2610.22372",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "2610.31166",
+    "source": "cocacola-lab/Recursia",
+    "target": "Promise Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "2602.12628",
+    "source": "cocacola-lab/Recursia",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "2610.31423",
+    "source": "robot-agent-exploration/rax",
+    "target": "hao-ai-lab/ORA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "2607.00272",
+    "source": "robot-agent-exploration/rax",
+    "target": "2610.22363",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "Enact Intelligence",
+    "source": "robot-agent-exploration/rax",
+    "target": "2610.22146",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "Formic",
+    "source": "robot-agent-exploration/rax",
+    "target": "2610.22368",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "kyutai-labs/reki",
-    "target": "WholeBodyMem",
+    "source": "robot-agent-exploration/rax",
+    "target": "2610.21798",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "Gecko Robotics",
+    "source": "robot-agent-exploration/rax",
+    "target": "2610.22372",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "Eka Robotics",
+    "source": "robot-agent-exploration/rax",
+    "target": "Promise Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "AGCO",
+    "source": "robot-agent-exploration/rax",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "Agility Digit",
+    "source": "hao-ai-lab/ORA",
+    "target": "2610.22363",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "FCC",
+    "source": "hao-ai-lab/ORA",
+    "target": "2610.22146",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "source": "hao-ai-lab/ORA",
+    "target": "2610.22368",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "opentac/opentac",
+    "source": "hao-ai-lab/ORA",
+    "target": "2610.21798",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "2610.31661",
+    "source": "hao-ai-lab/ORA",
+    "target": "2610.22372",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "2604.07993",
+    "source": "hao-ai-lab/ORA",
+    "target": "Promise Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "2610.31166",
+    "source": "hao-ai-lab/ORA",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "2602.12628",
+    "source": "2610.22363",
+    "target": "2610.22146",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "2610.31423",
+    "source": "2610.22363",
+    "target": "2610.22368",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "2607.00272",
+    "source": "2610.22363",
+    "target": "2610.21798",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "Enact Intelligence",
+    "source": "2610.22363",
+    "target": "2610.22372",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "Formic",
+    "source": "2610.22363",
+    "target": "Promise Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Stanford-TML/FoveaVLA",
-    "target": "WholeBodyMem",
+    "source": "2610.22363",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "Eka Robotics",
+    "source": "2610.22146",
+    "target": "2610.22368",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "AGCO",
+    "source": "2610.22146",
+    "target": "2610.21798",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "Agility Digit",
+    "source": "2610.22146",
+    "target": "2610.22372",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "FCC",
+    "source": "2610.22146",
+    "target": "Promise Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "source": "2610.22146",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "opentac/opentac",
+    "source": "2610.22368",
+    "target": "2610.21798",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "2610.31661",
+    "source": "2610.22368",
+    "target": "2610.22372",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "2604.07993",
+    "source": "2610.22368",
+    "target": "Promise Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "2610.31166",
+    "source": "2610.22368",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "2602.12628",
+    "source": "2610.21798",
+    "target": "2610.22372",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "2610.31423",
+    "source": "2610.21798",
+    "target": "Promise Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "2607.00272",
+    "source": "2610.21798",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "Enact Intelligence",
+    "source": "2610.22372",
+    "target": "Promise Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "Formic",
+    "source": "2610.22372",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
   {
-    "source": "Gecko Robotics",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "AGCO",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "Agility Digit",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "FCC",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "AutoLab-SAI-SJTU/WAVE-0",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "opentac/opentac",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "2610.31661",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "2604.07993",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "2610.31166",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "2602.12628",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "2610.31423",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "2607.00272",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "Enact Intelligence",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Eka Robotics",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "Agility Digit",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "FCC",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "AutoLab-SAI-SJTU/WAVE-0",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "opentac/opentac",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "2610.31661",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "2604.07993",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "2610.31166",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "2602.12628",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "2610.31423",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "2607.00272",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "Enact Intelligence",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AGCO",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Agility Digit",
-    "target": "FCC",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Agility Digit",
-    "target": "AutoLab-SAI-SJTU/WAVE-0",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Agility Digit",
-    "target": "opentac/opentac",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Agility Digit",
-    "target": "2610.31661",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Agility Digit",
-    "target": "2604.07993",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Agility Digit",
-    "target": "2610.31166",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Agility Digit",
-    "target": "2602.12628",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Agility Digit",
-    "target": "2610.31423",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Agility Digit",
-    "target": "2607.00272",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Agility Digit",
-    "target": "Enact Intelligence",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Agility Digit",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Agility Digit",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "FCC",
-    "target": "AutoLab-SAI-SJTU/WAVE-0",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "FCC",
-    "target": "opentac/opentac",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "FCC",
-    "target": "2610.31661",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "FCC",
-    "target": "2604.07993",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "FCC",
-    "target": "2610.31166",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "FCC",
-    "target": "2602.12628",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "FCC",
-    "target": "2610.31423",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "FCC",
-    "target": "2607.00272",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "FCC",
-    "target": "Enact Intelligence",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "FCC",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "FCC",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AutoLab-SAI-SJTU/WAVE-0",
-    "target": "opentac/opentac",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AutoLab-SAI-SJTU/WAVE-0",
-    "target": "2610.31661",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AutoLab-SAI-SJTU/WAVE-0",
-    "target": "2604.07993",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AutoLab-SAI-SJTU/WAVE-0",
-    "target": "2610.31166",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AutoLab-SAI-SJTU/WAVE-0",
-    "target": "2602.12628",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AutoLab-SAI-SJTU/WAVE-0",
-    "target": "2610.31423",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AutoLab-SAI-SJTU/WAVE-0",
-    "target": "2607.00272",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AutoLab-SAI-SJTU/WAVE-0",
-    "target": "Enact Intelligence",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AutoLab-SAI-SJTU/WAVE-0",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "AutoLab-SAI-SJTU/WAVE-0",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "opentac/opentac",
-    "target": "2610.31661",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "opentac/opentac",
-    "target": "2604.07993",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "opentac/opentac",
-    "target": "2610.31166",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "opentac/opentac",
-    "target": "2602.12628",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "opentac/opentac",
-    "target": "2610.31423",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "opentac/opentac",
-    "target": "2607.00272",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "opentac/opentac",
-    "target": "Enact Intelligence",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "opentac/opentac",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "opentac/opentac",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31661",
-    "target": "2604.07993",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31661",
-    "target": "2610.31166",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31661",
-    "target": "2602.12628",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31661",
-    "target": "2610.31423",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31661",
-    "target": "2607.00272",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31661",
-    "target": "Enact Intelligence",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31661",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31661",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2604.07993",
-    "target": "2610.31166",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2604.07993",
-    "target": "2602.12628",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2604.07993",
-    "target": "2610.31423",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2604.07993",
-    "target": "2607.00272",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2604.07993",
-    "target": "Enact Intelligence",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2604.07993",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2604.07993",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31166",
-    "target": "2602.12628",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31166",
-    "target": "2610.31423",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31166",
-    "target": "2607.00272",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31166",
-    "target": "Enact Intelligence",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31166",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31166",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2602.12628",
-    "target": "2610.31423",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2602.12628",
-    "target": "2607.00272",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2602.12628",
-    "target": "Enact Intelligence",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2602.12628",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2602.12628",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31423",
-    "target": "2607.00272",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31423",
-    "target": "Enact Intelligence",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31423",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2610.31423",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2607.00272",
-    "target": "Enact Intelligence",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2607.00272",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "2607.00272",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Enact Intelligence",
-    "target": "Formic",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Enact Intelligence",
-    "target": "WholeBodyMem",
-    "relation": "同周期共现 (co-mentioned in same report)",
-    "implicit": true
-  },
-  {
-    "source": "Formic",
-    "target": "WholeBodyMem",
+    "source": "Promise Robotics",
+    "target": "FastVLA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -14666,6 +13424,12 @@
   {
     "source": "Agility",
     "target": "Gen-Verse/RSI-Anything",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "kyutai-labs/reki",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -15379,6 +14143,12 @@
   },
   {
     "source": "NVIDIA",
+    "target": "Stanford-TML/FoveaVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
     "target": "XsparkAI/Spark-0",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
@@ -15398,6 +14168,12 @@
   {
     "source": "NVIDIA",
     "target": "2609.39207",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "Gecko Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -15518,6 +14294,12 @@
   {
     "source": "Stanford-TML/FoveaVLA",
     "target": "2609.39207",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "Gecko Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -15739,6 +14521,18 @@
   },
   {
     "source": "Agility",
+    "target": "Gecko Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "AGCO",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
     "target": "SuperMimic",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
@@ -16147,6 +14941,12 @@
   },
   {
     "source": "Gecko Robotics",
+    "target": "AGCO",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
     "target": "SuperMimic",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
@@ -16220,6 +15020,12 @@
   {
     "source": "rzc156/dreamforge",
     "target": "Dream Labs",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "AGCO",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },
@@ -16520,6 +15326,1200 @@
   {
     "source": "Digit 人形",
     "target": "VQ-WM",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "kyutai-labs/reki",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "Eka Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "AGCO",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "Agility Digit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "FCC",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "opentac/opentac",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2610.31661",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "kyutai-labs/reki",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "Stanford-TML/FoveaVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "Gecko Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "Eka Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "Agility Digit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "FCC",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "opentac/opentac",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "2610.31661",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rzc156/dreamforge",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "Stanford-TML/FoveaVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "Eka Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "Agility Digit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "FCC",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "opentac/opentac",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "2610.31661",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "Stanford-TML/FoveaVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "Gecko Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "Eka Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "AGCO",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "Agility Digit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "FCC",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "opentac/opentac",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "2610.31661",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "kyutai-labs/reki",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "Eka Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "AGCO",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "Agility Digit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "FCC",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "opentac/opentac",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "2610.31661",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Stanford-TML/FoveaVLA",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "Eka Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "Agility Digit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "FCC",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "opentac/opentac",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "2610.31661",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Gecko Robotics",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "AGCO",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "Agility Digit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "FCC",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "opentac/opentac",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "2610.31661",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Eka Robotics",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "Agility Digit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "FCC",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "opentac/opentac",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "2610.31661",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AGCO",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility Digit",
+    "target": "FCC",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility Digit",
+    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility Digit",
+    "target": "opentac/opentac",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility Digit",
+    "target": "2610.31661",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility Digit",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility Digit",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility Digit",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility Digit",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility Digit",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility Digit",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility Digit",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Agility Digit",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "FCC",
+    "target": "AutoLab-SAI-SJTU/WAVE-0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "FCC",
+    "target": "opentac/opentac",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "FCC",
+    "target": "2610.31661",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "FCC",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "FCC",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "FCC",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "FCC",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "FCC",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "FCC",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "FCC",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "FCC",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AutoLab-SAI-SJTU/WAVE-0",
+    "target": "opentac/opentac",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AutoLab-SAI-SJTU/WAVE-0",
+    "target": "2610.31661",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AutoLab-SAI-SJTU/WAVE-0",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AutoLab-SAI-SJTU/WAVE-0",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AutoLab-SAI-SJTU/WAVE-0",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AutoLab-SAI-SJTU/WAVE-0",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AutoLab-SAI-SJTU/WAVE-0",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AutoLab-SAI-SJTU/WAVE-0",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AutoLab-SAI-SJTU/WAVE-0",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "AutoLab-SAI-SJTU/WAVE-0",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "opentac/opentac",
+    "target": "2610.31661",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "opentac/opentac",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "opentac/opentac",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "opentac/opentac",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "opentac/opentac",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "opentac/opentac",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "opentac/opentac",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "opentac/opentac",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "opentac/opentac",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31661",
+    "target": "2604.07993",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31661",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31661",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31661",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31661",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31661",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31661",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31661",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2604.07993",
+    "target": "2610.31166",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2604.07993",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2604.07993",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2604.07993",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2604.07993",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2604.07993",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2604.07993",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31166",
+    "target": "2602.12628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31166",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31166",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31166",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31166",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31166",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2602.12628",
+    "target": "2610.31423",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2602.12628",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2602.12628",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2602.12628",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2602.12628",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31423",
+    "target": "2607.00272",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31423",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31423",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31423",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2607.00272",
+    "target": "Enact Intelligence",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2607.00272",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2607.00272",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Enact Intelligence",
+    "target": "Formic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Enact Intelligence",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Formic",
+    "target": "WholeBodyMem",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
   },

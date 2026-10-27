@@ -188,7 +188,7 @@ function mdLite(md){
   }).join('\n');
   return s;
 }
-function slug(r){ return r.source.split('/').pop().replace(/\.md$/,''); }
+function slug(r){ return (r && r.log) ? r.log : (r.source||'').split('/').pop().replace(/\.md$/,''); }
 function renderStats(){
   const dates = [...new Set(REPORTS.map(r=>r.date))].sort();
   const sites = {};
@@ -233,6 +233,19 @@ document.querySelectorAll('.filterbar .btn').forEach(b=>b.addEventListener('clic
   render();
 }));
 document.getElementById('q').addEventListener('input',e=>{ query=e.target.value; render(); });
+// 深链支持:?date=YYYY-MM-DD&site=amd|physical-ai (从飞书推送链接进入直接定位)
+(function(){
+  const p = new URLSearchParams(location.search);
+  const ds = p.get('date'), ss = p.get('site');
+  if (ss && ss!=='all') {
+    siteFilter = ss;
+    document.querySelectorAll('.filterbar .btn').forEach(x=>x.classList.toggle('on', x.dataset.s===ss));
+  }
+  if (ds) {
+    dateFilter = ds;
+    calYM = {y: +ds.slice(0, 4), m: +ds.slice(5, 7)}; // 日历直接翻到所选月份
+  }
+})();
 function moveMonth(delta){
   if (!calYM) calYM = (()=>{ const d=REPORTS.map(r=>r.date).sort().at(-1); return {y:+d.slice(0,4), m:+d.slice(5,7)}; })();
   let m = calYM.m + delta, y = calYM.y;

@@ -112,8 +112,10 @@ fetch('data/entities.json').then(r=>r.json()).then(n=>{
     s.src = src; s.onload = () => res(); s.onerror = () => res();
     document.head.appendChild(s);
   });
-  return loadScript('https://unpkg.com/cytoscape@3.33.1/dist/cytoscape.min.js')
-    .then(()=>loadScript('https://unpkg.com/cytoscape-fcose@2.3.0/dist/cytoscape-fcose.js'));
+  return loadScript('vendor/cytoscape.min.js')
+    .then(()=>loadScript('vendor/cytoscape-fcose.js'))
+    .then(()=> { if (!window.cytoscape) return loadScript('https://unpkg.com/cytoscape@3.33.1/dist/cytoscape.min.js'); })
+    .then(()=> { try { window.cytoscape.extensions('layout','fcose'); } catch(e) { return loadScript('https://unpkg.com/cytoscape-fcose@2.2.0/cytoscape-fcose.js'); } });
 }).then(async () => {
   const cytoscape = window.cytoscape;
   const maxM = Math.max(...NODES.map(x=>x.mentions||0), 1);

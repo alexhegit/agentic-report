@@ -1,0 +1,4 @@
+{
+  "_comment": "Site base for report deep-links. If deploying to a GitHub Pages repo with a DIFFERENT name, change to https://<user>.github.io/<repo>/ — or empty string to disable links entirely. Also can be any http(s) base that serves this repo (e.g. a nginx path).",
+  "site_base": "https://alexhegit.github.io/agentic-report/"
+}

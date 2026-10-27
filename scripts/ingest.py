@@ -6,16 +6,30 @@ Pure stdlib. Idempotent (skips already-ingested files by report id).
 import json, os, re, sys, hashlib, subprocess
 from datetime import datetime, timezone
 
-REPO = '/root/agentic-report'
-CRON = os.environ.get('HERMES_CRON_DIR', '/root/.hermes/cron/output')
-ENV = '/root/.hermes/.env'
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # 仓库根目录(相对脚本位置,可迁移)
+CRON = os.environ.get('HERMES_CRON_DIR', os.path.expanduser('~/.hermes/cron/output'))
+ENV = os.environ.get('AGENTIC_ENV_FILE', os.path.expanduser('~/.hermes/.env'))
 
+# slug -> 元数据(与 jobs/jobs.json 的 slug 对齐)
 JOBS = {
-    '17abfd193223': ('physical-ai', '日报', 'Physical AI 日报'),
-    'e3325cc31dd3': ('physical-ai', '周报', 'Physical AI 周报'),
-    '2bb7831e0820': ('amd',        '日报', 'AMD 美股日报'),
-    '8245979b3f86': ('amd',        '周报', 'AMD 股市周报'),
+    'physical-ai-daily':   ('physical-ai', '日报', 'Physical AI 日报'),
+    'physical-ai-weekly':  ('physical-ai', '周报', 'Physical AI 周报'),
+    'amd-daily':           ('amd',        '日报', 'AMD 美股日报'),
+    'amd-weekly':          ('amd',        '周报', 'AMD 股市周报'),
 }
+
+# 目录名(cron job uuid) -> slug。本机默认映射(可被 jobs/local_map.json 覆盖/扩展)
+DIR_TO_SLUG = {
+    '17abfd193223': 'physical-ai-daily', 'e3325cc31dd3': 'physical-ai-weekly',
+    '2bb7831e0820': 'amd-daily', '8245979b3f86': 'amd-weekly',
+}
+def load_dir_map():
+    m = dict(DIR_TO_SLUG)
+    p = os.path.join(REPO, 'jobs', 'local_map.json')
+    if os.path.exists(p):
+        for uuid, v in json.load(open(p)).items():
+            m[uuid] = (v or {}).get('slug') if isinstance(v, dict) else v
+    return m
 
 STATE = os.path.join(REPO, 'scripts', 'state.json')
 def load_json(path, default):
@@ -52,15 +66,17 @@ def main():
     reports = load_json(f'{REPO}/data/reports.json', [])
     entities = {e['id']: e for e in load_json(f'{REPO}/data/entities.json', [])}
     edges = load_json(f'{REPO}/data/edges.json', [])
-    edge_seen = {frozenset((e['source'], e['target'])) for e in edges}
+    seen_edge = {frozenset((e['source'], e['target'])) for e in edges}
     done_files = set(load_state().get('done_files', [])) if os.path.exists(STATE) else set()
     added = 0
 
     seen_reports = {r['id'] for r in reports}
     seen_sources = {r.get('source') for r in reports}
 
-    for job, (site, kind, title) in JOBS.items():
-        d = os.path.join(CRON, job)
+    dir_map = load_dir_map()  # uuid -> slug(本机默认 + jobs/local_map.json 覆盖)
+    for job_dir, slug in dir_map.items():
+        site, kind, title = JOBS[slug]
+        d = os.path.join(CRON, job_dir)
         if not os.path.isdir(d): continue
         for fname in sorted(os.listdir(d)):
             if not fname.endswith('.md'): continue
@@ -70,20 +86,21 @@ def main():
             if not body: continue
             bd = date  # 文件名时间戳 = 生成日,避免正文引用日期导致归错天
             tstamp = fname[11:19].replace('-', '').replace(':', '') if len(fname) >= 19 else ''
-            rid = f'{job[:6]}_{date}_{tstamp}' if tstamp else f'{job[:6]}_{date}'
-            src = f'{job}/{fname}'
+            j6 = job_dir[:6]
+            rid = f'{j6}_{date}_{tstamp}' if tstamp else f'{j6}_{date}'
+            src = f'{job_dir}/{fname}'
             if src in seen_sources: continue
             seen_sources.add(src)
-            summary = re.sub(r'\s+', ' ', re.sub(r'[#*\`\[\]\-]', '', body))[:240]
+            summary = re.sub(r'\s+', ' ', re.sub(r'[#*`\[\]\-]', '', body))[:240]
+            logsug = re.sub(r'[^A-Za-z0-9._\-]', '_', f'{bd}_{tstamp}_{j6}' if tstamp else f'{bd}_{j6}') + '.md'
             reports.append({
                 'id': rid, 'date': bd, 'site': site, 'kind': kind,
                 'title': title, 'summary': summary,
-                'full_text': body, 'source': f'{job}/{fname}',
+                'full_text': body, 'source': f'{job_dir}/{fname}', 'log': logsug,
             })
             seen_reports.add(rid)
             os.makedirs(f'{REPO}/logs', exist_ok=True)
-            slug = re.sub(r'[^A-Za-z0-9._\-]', '_', f'{bd}_{site}_{title}.md')
-            with open(f'{REPO}/logs/{slug}', 'w', encoding='utf-8') as f:
+            with open(f'{REPO}/logs/{logsug}', 'w', encoding='utf-8') as f:
                 f.write(f"---\nid: {rid}\ndate: {bd}\ntitle: {title}\ntype: {kind}\n---\n\n{body}\n")
             added += 1
             # entities
@@ -122,9 +139,9 @@ def main():
         for i in range(len(ment)):
             for j in range(i+1, len(ment)):
                 a, b = ment[i], ment[j]
-                if frozenset((a,b)) in seen_edge: continue
-                if (a,b) in seen_edge or (b,a) in seen_edge: continue
-                seen_edge.add((a,b))
+                fs = frozenset((a,b))
+                if fs in seen_edge: continue
+                seen_edge.add(fs)
                 edges.append({'source':a,'target':b,'relation':'同周期共现 (co-mentioned in same report)','implicit':True})
                 added += 1
 
@@ -142,7 +159,11 @@ def main():
     print(f'ingested {added} new entries')
     # git commit and push
     env = dict(os.environ)
-    tok = get_token()
+    # 可选:有 SSH key 时优先走 SSH(本仓库 remote 通常是 git@github.com)
+    sshkey = os.path.expanduser('~/.ssh/id_ed25519')
+    if os.path.exists(sshkey):
+        default_ssh = f"ssh -i {sshkey} -o BatchMode=yes -o StrictHostKeyChecking=accept-new"
+        env.setdefault('GIT_SSH_COMMAND', default_ssh)
     env['GIT_AUTHOR_NAME'] = 'Hermes Agent'
     env['GIT_AUTHOR_EMAIL'] = 'hermes-agent@users.noreply.github.com'
     env['GIT_COMMITTER_NAME'] = 'Hermes Agent'

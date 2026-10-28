@@ -52,10 +52,18 @@ a:hover{text-decoration:underline}
 .md .src{font-size:12px;color:var(--muted);margin-bottom:8px}
 .empty{color:var(--muted);padding:60px;text-align:center}
 .cal{background:var(--paper);border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-bottom:14px}
-.cal .head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
-.cal .head .m{font-weight:700;font-size:15px;min-width:130px;text-align:center}
+.cal .head{display:flex;align-items:center;gap:6px;margin-bottom:10px;flex-wrap:wrap}
 .cal .nav{border:1px solid var(--border);background:var(--paper);border-radius:8px;width:30px;height:28px;cursor:pointer;font-size:14px}
 .cal .nav:hover{border-color:var(--accent)}
+.msel{border:1px solid var(--border);background:var(--paper);border-radius:8px;padding:4px 6px;font-size:13px;font-weight:600;color:var(--ink);cursor:pointer}
+.msel:hover{border-color:var(--accent)}
+.calfast{margin-top:10px;display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.calfast:empty{margin-top:0}
+.fasthead{font-size:12px;color:var(--muted);width:100%}
+.fastday{border:1px solid var(--border);background:var(--paper);border-radius:999px;padding:3px 10px;font-size:12.5px;cursor:pointer;display:inline-flex;align-items:center;gap:4px}
+.fastday:hover{border-color:var(--accent)}
+.fastday.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.fastday .dot{width:6px;height:6px;border-radius:50%;display:inline-block}
 .cal .grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
 .cal .wd{text-align:center;font-size:11px;color:var(--muted);padding:2px 0}
 .cal .d{position:relative;border:1px solid transparent;border-radius:8px;min-height:40px;padding:4px 3px 2px;cursor:default;font-size:12.5px;display:flex;flex-direction:column;align-items:center;gap:2px}
@@ -97,13 +105,15 @@ a:hover{text-decoration:underline}
     <div class="cal">
       <div class="head">
         <button class="nav" id="calPrev">←</button>
-        <span class="m" id="calMonth"></span>
+        <select id="calYear" class="msel" title="跳年份"></select>
+        <select id="calMonth" class="msel" title="跳月份"></select>
         <button class="nav" id="calNext">→</button>
         <button class="nav" id="calTod" style="width:auto;padding:0 8px;font-size:12px">今天</button>
         <span id="calSel" style="margin-left:auto;font-size:12.5px;color:var(--accent2)"></span>
         <button class="nav" id="calClear" style="width:auto;padding:0 8px;font-size:12px;display:none">✕ 清除</button>
       </div>
       <div class="grid" id="calGrid"></div>
+      <div class="calfast" id="calFast"></div>
       <div class="legend"><span><span class="dot pa"></span> Physical AI</span><span><span class="dot amd"></span> AMD</span><span style="margin-left:auto">点带点日期看当天 · ✕ 清除看最近 14 天</span></div>
     </div>
     <div id="list"><div class="empty">加载中…</div></div>
@@ -119,15 +129,27 @@ let dateIdx = {}; // 'YYYY-MM-DD' -> {pa:bool, amd:bool}
 let showDaysCap = 14; // "全部"视图默认只展示最近 N 天,更早的走日历导航
 
 function todayStr(){ const t=new Date(); return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0'); }
+// 年/月下拉:范围 = 有报告的年份 ∪ 当前年;选择即跳月
+function fillCalSelectors(y, m){
+  const years = new Set([y, new Date().getFullYear()]);
+  REPORTS.forEach(r=>years.add(+r.date.slice(0,4)));
+  const ySel = document.getElementById('calYear'), mSel = document.getElementById('calMonth');
+  if (ySel.options.length !== years.size) {
+    ySel.innerHTML = [...years].sort().map(yy=>`<option value="${yy}"${yy===y?' selected':''}>${yy} 年</option>`).join('');
+  } else ySel.value = y;
+  if (mSel.options.length !== 12) {
+    mSel.innerHTML = Array.from({length:12},(_,i)=>`<option value="${i+1}"${i+1===m?' selected':''}>${i+1} 月</option>`).join('');
+  } else mSel.value = m;
+}
 function renderCal(){
   const grid = document.getElementById('calGrid');
   if (!REPORTS.length) return;
   if (!calYM) { const d = REPORTS.map(r=>r.date).sort().at(-1); calYM = {y:+d.slice(0,4), m:+d.slice(5,7)}; }
   const {y, m} = calYM;
+  fillCalSelectors(y, m);
   const first = new Date(y, m-1, 1);
   const startWd = (first.getDay()+6)%7; // Mon=0
   const daysInMonth = new Date(y, m, 0).getDate();
-  document.getElementById('calMonth').textContent = y+'年'+m+'月';
   let html = ['一','二','三','四','五','六','日'].map(w=>`<div class="wd">${w}</div>`).join('');
   for (let i=0;i<startWd;i++) html += '<div></div>';
   const tds = todayStr();
@@ -143,6 +165,14 @@ function renderCal(){
   }
   grid.innerHTML = html;
   grid.querySelectorAll('.d.has').forEach(el=>el.onclick=()=>selectDate(el.dataset.date));
+  // 快速跳月:列出当前月有报告的全部日期,一点直达
+  const fast = Object.keys(dateIdx).filter(k=>k.startsWith(y+'-'+String(m).padStart(2,'0'))).sort().reverse();
+  const fastEl = document.getElementById('calFast');
+  fastEl.innerHTML = fast.length ?
+    `<div class="fasthead">${y}年${m}月 有报告的日期</div>` +
+    fast.map(k=>`<button class="fastday${k===dateFilter?' on':''}" data-date="${k}">${k.slice(8)}${dateIdx[k].pa?' <span class="dot pa"></span>':''}${dateIdx[k].amd?' <span class="dot amd"></span>':''}</button>`).join('')
+    : '';
+  fastEl.querySelectorAll('.fastday').forEach(el=>el.onclick=()=>selectDate(el.dataset.date));
   const sel = document.getElementById('calSel');
   sel.textContent = dateFilter ? ('已选:'+dateFilter) : '';
   document.getElementById('calClear').style.display = dateFilter ? '' : 'none';
@@ -278,6 +308,8 @@ function moveMonth(delta){
   renderCal();
 }
 ['calPrev','calNext'].forEach(id=>document.getElementById(id).addEventListener('click',()=>moveMonth(id==='calPrev' ? -1 : 1)));
+document.getElementById('calYear').addEventListener('change',e=>{ calYM = {y:+e.target.value, m:calYM?calYM.m:1}; renderCal(); });
+document.getElementById('calMonth').addEventListener('change',e=>{ calYM = {y:calYM?calYM.y:new Date().getFullYear(), m:+e.target.value}; renderCal(); });
 document.getElementById('calTod').addEventListener('click',()=>{
   const t = todayStr();
   calYM = {y:+t.slice(0,4), m:+t.slice(5,7)};

@@ -145,8 +145,8 @@
     "kind": "project",
     "url": "https://github.com/huggingface/lerobot",
     "first_seen": "2026-06-27",
-    "last_seen": "2026-10-08",
-    "mentions": 11,
+    "last_seen": "2026-10-28",
+    "mentions": 12,
     "extra": ""
   },
   {
@@ -1055,8 +1055,8 @@
     "kind": "project",
     "url": "https://github.com/Genesis-Embodied-AI/genesis-world",
     "first_seen": "2026-06-27",
-    "last_seen": "2026-10-08",
-    "mentions": 11,
+    "last_seen": "2026-10-28",
+    "mentions": 12,
     "extra": ""
   },
   {
@@ -3717,6 +3717,36 @@
     "first_seen": "",
     "last_seen": "",
     "mentions": 0,
+    "extra": ""
+  },
+  {
+    "id": "2610.34717",
+    "label": "2610.34717",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.34717",
+    "first_seen": "2026-10-28",
+    "last_seen": "2026-10-28",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.34649",
+    "label": "2610.34649",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.34649",
+    "first_seen": "2026-10-28",
+    "last_seen": "2026-10-28",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2603.19233",
+    "label": "2603.19233",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2603.19233",
+    "first_seen": "2026-10-28",
+    "last_seen": "2026-10-28",
+    "mentions": 1,
     "extra": ""
   }
 ]

@@ -4,7 +4,7 @@ import json, os, sys
 repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 p = sys.argv[1] if len(sys.argv) > 1 else ''
 d = json.load(open(os.path.join(repo, 'jobs', 'jobs.json')))
-j = d['local_job_map'].get(p) or d.get('local_job_map', {}).get(p)
+j = (d.get('jobs') or d.get('local_job_map') or {}).get(p) or d.get(p)
 if not j:
     # try top-level
     j = d.get(p)

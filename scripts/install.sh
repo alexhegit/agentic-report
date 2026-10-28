@@ -95,6 +95,12 @@ json.dump(m, open('$MAP','w'), ensure_ascii=False, indent=2)
 
   prompt=$("$REPO"/scripts/_job_prompt.py "$slug")
   [ -z "$prompt" ] && { err "no prompt for $slug"; bad=$((bad+1)); continue; }
+  # 从 jobs.json 读取锁定模型(若定义里有),防止新机器默认模型漂移
+  model=$(python3 -c "import json; d=json.load(open('$REPO/jobs/jobs.json'))['jobs'].get('$slug',{});print(d.get('model',''))")
+  mprov=$(python3 -c "import json; d=json.load(open('$REPO/jobs/jobs.json'))['jobs'].get('$slug',{});print(d.get('provider',''))")
+  modelargs=()
+  [ -n "$model" ] && modelargs=(--model "$model")
+  [ -n "$mprov" ] && modelargs+=(--provider "$mprov")
 
   say "➕ 新建 cron: $name"
   skillargs=()
@@ -103,6 +109,7 @@ json.dump(m, open('$MAP','w'), ensure_ascii=False, indent=2)
   out=$(hermes cron create "$schedule_utc" "$prompt" \
         --name "$name" \
         "${skillargs[@]}" \
+        "${modelargs[@]}" \
         --deliver "${deliver:-origin}" 2>&1)
   set -u
   newid=$(grep -oE '\b[0-9a-f]{8,16}\b' <<<"$out" | head -1)

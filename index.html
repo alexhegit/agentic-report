@@ -69,6 +69,9 @@ a:hover{text-decoration:underline}
 .cal .d.today .num{color:var(--accent)}
 .cal .d.off{opacity:.35}
 .cal .legend{margin-top:8px;font-size:11.5px;color:var(--muted);display:flex;gap:12px;align-items:center}
+.morewrap{margin-top:14px;text-align:center}
+.morebtn{background:var(--paper);border:1px solid var(--border);border-radius:999px;padding:8px 20px;font-size:13px;cursor:pointer;color:var(--accent2)}
+.morebtn:hover{border-color:var(--accent);transform:translateY(-1px)}
 @media (max-width:900px){.layout{grid-template-columns:1fr}.side{position:static;flex-direction:row;flex-wrap:wrap}.cal .d{min-height:34px}}
 </style>
 </head>
@@ -101,7 +104,7 @@ a:hover{text-decoration:underline}
         <button class="nav" id="calClear" style="width:auto;padding:0 8px;font-size:12px;display:none">✕ 清除</button>
       </div>
       <div class="grid" id="calGrid"></div>
-      <div class="legend"><span><span class="dot pa"></span> Physical AI</span><span><span class="dot amd"></span> AMD</span><span style="margin-left:auto">点击带点的日期查看当天报告</span></div>
+      <div class="legend"><span><span class="dot pa"></span> Physical AI</span><span><span class="dot amd"></span> AMD</span><span style="margin-left:auto">点带点日期看当天 · ✕ 清除看最近 14 天</span></div>
     </div>
     <div id="list"><div class="empty">加载中…</div></div>
   </div>
@@ -113,6 +116,7 @@ let query = '';
 let dateFilter = '';
 let calYM = null; // {y, m} currently displayed month; null = month of most recent report
 let dateIdx = {}; // 'YYYY-MM-DD' -> {pa:bool, amd:bool}
+let showDaysCap = 14; // "全部"视图默认只展示最近 N 天,更早的走日历导航
 
 function todayStr(){ const t=new Date(); return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0'); }
 function renderCal(){
@@ -145,9 +149,10 @@ function renderCal(){
 }
 function selectDate(key){
   dateFilter = key;
+  if (!key) showDaysCap = 14; // 回到"全部"视图时重置
   renderCal();
   render();
-  document.getElementById('list').scrollIntoView({behavior:'smooth', block:'start'});
+  if (key) document.getElementById('list').scrollIntoView({behavior:'smooth', block:'start'});
 }
 async function load(){
   try {
@@ -157,6 +162,11 @@ async function load(){
     renderStats();
     renderCal();
     render();
+    // 无深链日期时,默认选中最新一天(避免一上来铺开全部历史)
+    if (!dateFilter) {
+      const latest = REPORTS.map(r=>r.date).sort().at(-1);
+      if (latest) selectDate(latest);
+    }
   } catch(e) {
     document.getElementById('list').innerHTML = '<div class="empty">加载 data/reports.json 失败 — 请通过 HTTP 服务访问。<br>本机可用 <code>cd /root/agentic-report && python3 -m http.server 8731</code></div>';
   }
@@ -213,8 +223,17 @@ function render(){
     document.getElementById('list').innerHTML = '<div class="empty">没有匹配的报告</div>';
     return;
   }
+  const allDays = Object.keys(groups).sort().reverse();
+  // "全部"视图(未筛选日期、未搜索)只展示最近 showDaysCap 天,更早的按日历导航或点更多
+  const searching = !!q;
+  let days = allDays;
+  let moreCount = 0;
+  if (!dateFilter && !searching) {
+    moreCount = Math.max(0, allDays.length - showDaysCap);
+    if (moreCount > 0) days = allDays.slice(0, showDaysCap);
+  }
   let html = '';
-  for (const d of Object.keys(groups).sort().reverse()) {
+  for (const d of days) {
     const reps = groups[d];
     html += `<details class="day"${d===dateFilter?' open':''}><summary><span class="date">${d}</span>` +
       reps.map(r2=>`<span class="tag ${r2.site}">${r2.site==='physical-ai'?'Physical AI':'AMD'} · ${r2.kind}</span>`).join('') +
@@ -225,7 +244,12 @@ function render(){
       </div>`).join('') +
       `</div></details>`;
   }
+  if (moreCount > 0) {
+    html += `<div class="morewrap"><button class="morebtn" id="moreBtn">显示更早的 ${moreCount} 天(或点上方日历定位)</button></div>`;
+  }
   document.getElementById('list').innerHTML = html;
+  const mb = document.getElementById('moreBtn');
+  if (mb) mb.onclick = ()=>{ showDaysCap += 14; render(); };
 }
 document.querySelectorAll('.filterbar .btn').forEach(b=>b.addEventListener('click',()=>{
   siteFilter = b.dataset.s;

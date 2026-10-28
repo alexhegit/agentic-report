@@ -178,7 +178,7 @@ def main():
                         env=env, capture_output=True, text=True)
     if r2.returncode != 0:
         print('git commit failed:', r2.stderr); return 1
-    r3 = subprocess.run(['git','-C',REPO,'push','origin','HEAD:main' if os.popen('git -C '+REPO+' branch --show-current').read().strip()!='main' else 'origin','main'],
+    r3 = subprocess.run(['git','-C',REPO,'push','origin','HEAD:main'],
                         env=env, capture_output=True, text=True)
     if r3.returncode != 0:
         print('git push FAILED:', r3.stderr[:300])

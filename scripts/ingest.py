@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """Ingest new cron outputs into agentic-report and git-commit.
-Runs after any of the 4 periodic-report cron jobs finishes.
-Pure stdlib. Idempotent (skips already-ingested files by report id).
+Pure stdlib. Idempotent (skips already-ingested files by source path).
 """
-import json, os, re, sys, hashlib, subprocess
+import fcntl, hashlib, json, os, re, sys, subprocess
 from datetime import datetime, timezone
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # 仓库根目录(相对脚本位置,可迁移)
 CRON = os.environ.get('HERMES_CRON_DIR', os.path.expanduser('~/.hermes/cron/output'))
-ENV = os.environ.get('AGENTIC_ENV_FILE', os.path.expanduser('~/.hermes/.env'))
+SKIP_GIT = os.environ.get('AGENTIC_SKIP_GIT') == '1'
 
 # slug -> 元数据(与 jobs/jobs.json 的 slug 对齐)
 JOBS = {
     'physical-ai-daily':   ('physical-ai', '日报', 'Physical AI 日报'),
     'physical-ai-weekly':  ('physical-ai', '周报', 'Physical AI 周报'),
+    'nvidia-physical-ai-labs-weekly': ('physical-ai', '周报', 'NVIDIA 物理 AI 实验室周报'),
     'amd-daily':           ('amd',        '日报', 'AMD 美股日报'),
     'amd-weekly':          ('amd',        '周报', 'AMD 股市周报'),
 }
@@ -22,6 +22,7 @@ JOBS = {
 DIR_TO_SLUG = {
     '17abfd193223': 'physical-ai-daily', 'e3325cc31dd3': 'physical-ai-weekly',
     '2bb7831e0820': 'amd-daily', '8245979b3f86': 'amd-weekly',
+    '190487496b7d': 'nvidia-physical-ai-labs-weekly',
 }
 def load_dir_map():
     m = dict(DIR_TO_SLUG)
@@ -40,19 +41,67 @@ def save_json(path, obj):
     with open(tmp, 'w', encoding='utf-8') as f: json.dump(obj, f, ensure_ascii=False, indent=2)
     os.replace(tmp, path)
 
-def get_token():
-    if os.environ.get('GITHUB_TOKEN'): return os.environ['GITHUB_TOKEN']
-    for l in open(ENV, encoding='utf-8').read().splitlines():
-        if l.startswith('COPILOT_GITHUB_TOKEN='):
-            return l.split('=', 1)[1].strip()
-    return None
+def git_env():
+    env = dict(os.environ)
+    sshkey = os.path.expanduser('~/.ssh/id_ed25519')
+    if os.path.exists(sshkey):
+        env.setdefault('GIT_SSH_COMMAND',
+                       f"ssh -i {sshkey} -o BatchMode=yes -o StrictHostKeyChecking=accept-new")
+    env['GIT_AUTHOR_NAME'] = 'Hermes Agent'
+    env['GIT_AUTHOR_EMAIL'] = 'hermes-agent@users.noreply.github.com'
+    env['GIT_COMMITTER_NAME'] = 'Hermes Agent'
+    env['GIT_COMMITTER_EMAIL'] = 'hermes-agent@users.noreply.github.com'
+    return env
+
+def run_git(args, env, check=True):
+    r = subprocess.run(['git', '-C', REPO, *args], env=env,
+                       capture_output=True, text=True)
+    if check and r.returncode != 0:
+        # Do not echo Git stderr: a misconfigured remote may contain credentials.
+        raise RuntimeError(f"git {' '.join(args)} failed (exit {r.returncode})")
+    return r
+
+def validate_worktree(env):
+    branch = run_git(['symbolic-ref', '--quiet', '--short', 'HEAD'], env, check=False)
+    if branch.returncode != 0 or branch.stdout.strip() != 'main':
+        raise RuntimeError('repository must be on local branch main; refusing to ingest')
+    if run_git(['status', '--porcelain'], env).stdout.strip():
+        raise RuntimeError('repository has uncommitted changes; refusing to ingest')
+
+def sync_main(env):
+    """Sync without rewriting history; preserve a clean unpushed local commit."""
+    validate_worktree(env)
+    run_git(['fetch', 'origin', 'main'], env)
+    local = run_git(['rev-parse', 'HEAD'], env).stdout.strip()
+    remote = run_git(['rev-parse', 'origin/main'], env).stdout.strip()
+    if local == remote:
+        return False
+    local_behind = run_git(['merge-base', '--is-ancestor', local, remote], env, check=False).returncode == 0
+    remote_behind = run_git(['merge-base', '--is-ancestor', remote, local], env, check=False).returncode == 0
+    if local_behind:
+        run_git(['merge', '--ff-only', 'origin/main'], env)
+    elif not remote_behind:
+        raise RuntimeError('local main and origin/main diverged; refusing to rewrite history')
+    return remote_behind
+
+def push_main(env):
+    r = run_git(['push', 'origin', 'HEAD:main'], env, check=False)
+    if r.returncode != 0:
+        print(f'git push FAILED (exit {r.returncode}); local commit preserved', file=sys.stderr)
+        return False
+    print('pushed ✓')
+    return True
 
 def extract_response(path):
-    txt = open(path, encoding='utf-8').read()
-    m = re.search(r'^## Response\s*$\n(.*?)(?=^⚠️|\Z)', txt, re.M | re.S)
+    # Universal-newline mode accepts both LF and CRLF cron artifacts.
+    txt = open(path, encoding='utf-8', newline=None).read()
+    m = re.search(r'^## Response[ \t]*\n', txt, re.M)
     if not m: return ''
-    body = re.sub(r'^⚠️.*\Z', '', m.group(1), flags=re.S).strip()
-    return body
+    body = txt[m.end():]
+    # Cron artifacts put one visual separator line after the marker.
+    if body.startswith('\n'):
+        body = body[1:]
+    return body.rstrip('\n')
 
 def first_date(body):
     m = re.search(r'(\d{4}-\d{2}-\d{2})', body)
@@ -61,7 +110,24 @@ def first_date(body):
 GH   = re.compile(r'github\.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)')
 ARX  = re.compile(r'(?:arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})|arXiv\s*\[?(\d{4}\.\d{4,5}))')
 
-def main():
+def ingest_locked():
+    env = git_env()
+    pending_push = False
+    if SKIP_GIT:
+        # Test/export mode suppresses Git writes, not safety checks. A copied
+        # fixture without .git is also supported for isolated parser tests.
+        if os.path.exists(os.path.join(REPO, '.git')):
+            try:
+                validate_worktree(env)
+            except RuntimeError as exc:
+                print(exc, file=sys.stderr)
+                return 1
+    else:
+        try:
+            pending_push = sync_main(env)
+        except RuntimeError as exc:
+            print(exc, file=sys.stderr)
+            return 1
     os.makedirs(os.path.dirname(STATE), exist_ok=True)
     reports = load_json(f'{REPO}/data/reports.json', [])
     entities = {e['id']: e for e in load_json(f'{REPO}/data/entities.json', [])}
@@ -72,6 +138,7 @@ def main():
 
     seen_reports = {r['id'] for r in reports}
     seen_sources = {r.get('source') for r in reports}
+    new_logs = []
 
     dir_map = load_dir_map()  # uuid -> slug(本机默认 + jobs/local_map.json 覆盖)
     for job_dir, slug in dir_map.items():
@@ -102,6 +169,7 @@ def main():
             os.makedirs(f'{REPO}/logs', exist_ok=True)
             with open(f'{REPO}/logs/{logsug}', 'w', encoding='utf-8') as f:
                 f.write(f"---\nid: {rid}\ndate: {bd}\ntitle: {title}\ntype: {kind}\n---\n\n{body}\n")
+            new_logs.append(f'logs/{logsug}')
             added += 1
             # entities
             for owner_repo in GH.findall(body):
@@ -146,9 +214,10 @@ def main():
                 added += 1
 
     if added == 0:
-        print('no new reports to ingest');
-        # still refresh state
-        save_state()
+        if pending_push:
+            print('no new reports; retrying previously unpushed commit')
+            return 0 if push_main(env) else 1
+        print('no new reports to ingest')
         return 0
 
     save_json(f'{REPO}/data/reports.json', reports)
@@ -157,34 +226,36 @@ def main():
     save_state()
 
     print(f'ingested {added} new entries')
+    if SKIP_GIT:
+        print('git commit/push skipped (AGENTIC_SKIP_GIT=1)')
+        return 0
     # git commit and push
-    env = dict(os.environ)
-    # 可选:有 SSH key 时优先走 SSH(本仓库 remote 通常是 git@github.com)
-    sshkey = os.path.expanduser('~/.ssh/id_ed25519')
-    if os.path.exists(sshkey):
-        default_ssh = f"ssh -i {sshkey} -o BatchMode=yes -o StrictHostKeyChecking=accept-new"
-        env.setdefault('GIT_SSH_COMMAND', default_ssh)
-    env['GIT_AUTHOR_NAME'] = 'Hermes Agent'
-    env['GIT_AUTHOR_EMAIL'] = 'hermes-agent@users.noreply.github.com'
-    env['GIT_COMMITTER_NAME'] = 'Hermes Agent'
-    env['GIT_COMMITTER_EMAIL'] = 'hermes-agent@users.noreply.github.com'
-    r0 = subprocess.run(['git','-C',REPO,'add','-A'], env=env, capture_output=True, text=True)
+    owned_paths = ['data/reports.json', 'data/entities.json', 'data/edges.json',
+                   'scripts/state.json', *new_logs]
+    r0 = subprocess.run(['git','-C',REPO,'add','--', *owned_paths], env=env,
+                        capture_output=True, text=True)
     if r0.returncode != 0:
-        print('git add failed:', r0.stderr); return 1
+        print(f'git add failed (exit {r0.returncode})', file=sys.stderr); return 1
     r1 = subprocess.run(['git','-C',REPO,'status', '--porcelain'], env=env, capture_output=True, text=True)
     if not r1.stdout.strip():
         print('no git changes (already up to date)'); return 0
     r2 = subprocess.run(['git','-C',REPO,'commit','-m',f'ingest: +{added} entries @ {datetime.now(timezone.utc).isoformat(timespec="seconds")}'],
                         env=env, capture_output=True, text=True)
     if r2.returncode != 0:
-        print('git commit failed:', r2.stderr); return 1
-    r3 = subprocess.run(['git','-C',REPO,'push','origin','HEAD:main'],
-                        env=env, capture_output=True, text=True)
-    if r3.returncode != 0:
-        print('git push FAILED:', r3.stderr[:300])
-    else:
-        print('pushed ✓')
-    return 0
+        print(f'git commit failed (exit {r2.returncode})', file=sys.stderr); return 1
+    return 0 if push_main(env) else 1
+
+def main():
+    # Serialize the entire read/merge/write/commit/push transaction. The lock
+    # lives outside the repository so it never dirties the Git worktree.
+    lock_root = os.path.expanduser(os.environ.get(
+        'AGENTIC_LOCK_DIR', '~/.hermes/cache/locks'))
+    os.makedirs(lock_root, exist_ok=True)
+    lock_id = hashlib.sha256(os.path.realpath(REPO).encode()).hexdigest()[:16]
+    lock_path = os.path.join(lock_root, f'agentic-report-{lock_id}.lock')
+    with open(lock_path, 'a+', encoding='utf-8') as lock:
+        fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
+        return ingest_locked()
 
 def load_state(): return load_json(STATE, {})
 def save_state():

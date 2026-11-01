@@ -1,6 +1,6 @@
 # 📋 Agentic Report
 
-Hermes Agent 驱动的**自动情报知识库**:两个定时研究任务(物理 AI 进展 + AMD 市场)每天产出报告,自动沉淀为可检索的网页站点与知识图谱。纯静态站、无后端、无数据库,部署在 GitHub Pages,电脑/手机直接访问。
+Hermes Agent 驱动的**自动情报知识库**:周期研究任务产出报告,自动沉淀为可检索的网页站点与知识图谱。纯静态站、无后端、无数据库,部署在 GitHub Pages,电脑/手机直接访问。
 
 🌐 **在线站点**:https://alexhegit.github.io/agentic-report/
 
@@ -19,6 +19,7 @@ Hermes Agent 驱动的**自动情报知识库**:两个定时研究任务(物理 
 |---|---|---|
 | 🤖 Physical AI 日报 | 周一~五 08:00 | VLA / 世界模型 / 具身智能 / 触觉 |
 | 🤖 Physical AI 周报 | 周日 08:00 | 周度趋势 + 融资 / 合同 / 论文 |
+| 🧪 NVIDIA 物理 AI 实验室周报 | 周日 08:00 | GEAR / SRL / Cosmos / ASPIRE / SIL / PAIS / Physics Research |
 | 📈 AMD 美股日报 | 周一~五 19:00 | 最近一个已收盘交易日总结;美股休市日跳过 |
 | 📈 AMD 股市周报 | 周日 08:00 | 上一完整交易周综述 |
 
@@ -33,7 +34,7 @@ bash scripts/install.sh    # 装 skill + 重建 4 个定时任务 + 生成本机
 python3 scripts/ingest.py # 验证数据链路(无新报告时打印 no new reports 即正常)
 ```
 
-完成后,4 个任务按上表周期自动运行;每期报告入库后自动 commit + push,站点即刷新。无需配置数据库、无需构建步骤、无需后端服务。
+完成后,核心任务按上表周期运行;`jobs/local_map.json` 还可挂载本机已有的外部任务（当前包含 NVIDIA 实验室周报）。每期报告由 `ingest.py` 幂等入库并 commit + push,站点即刷新。无需配置数据库、无需构建步骤、无需后端服务。
 
 > 本地预览:`python3 -m http.server 8731` → http://localhost:8731
 

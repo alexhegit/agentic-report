@@ -10,7 +10,7 @@
   "date": "2026-10-27",              // 生成日(以 cron 输出文件名时间戳为准,北京时间)
   "site": "physical-ai",             // physical-ai | amd
   "kind": "日报",                     // 日报 | 周报
-  "title": "Physical AI 日报",
+  "title": "Physical AI 日报",          // 或 NVIDIA 物理 AI 实验室周报等固定标题
   "summary": "240 字以内纯文本摘要",
   "full_text": "…报告全文(Markdown)…",
   "source": "{job_uuid}/{filename}", // cron 产出相对路径

@@ -2065,8 +2065,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2610.30136",
     "first_seen": "2026-10-22",
-    "last_seen": "2026-10-22",
-    "mentions": 2,
+    "last_seen": "2026-10-25",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -2745,8 +2745,8 @@
     "kind": "project",
     "url": "https://github.com/NVIDIA/cosmos",
     "first_seen": "2026-06-27",
-    "last_seen": "2026-06-27",
-    "mentions": 2,
+    "last_seen": "2026-10-25",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -3747,6 +3747,26 @@
     "first_seen": "2026-10-28",
     "last_seen": "2026-10-28",
     "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "ZhuoyangLiu2005/agentic-wam",
+    "label": "ZhuoyangLiu2005/agentic-wam",
+    "kind": "project",
+    "url": "https://github.com/ZhuoyangLiu2005/agentic-wam",
+    "first_seen": "2026-10-25",
+    "last_seen": "2026-10-25",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "NVLabs/RoboLab",
+    "label": "NVLabs/RoboLab",
+    "kind": "project",
+    "url": "https://github.com/NVLabs/RoboLab",
+    "first_seen": "2026-11-01",
+    "last_seen": "2026-11-01",
+    "mentions": 3,
     "extra": ""
   }
 ]

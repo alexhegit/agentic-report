@@ -1,0 +1,69 @@
+{
+  "watch_slug": "nvidia-physical-ai-labs-weekly",
+  "title": "NVIDIA 物理 AI 实验室周报",
+  "timezone": "Asia/Shanghai",
+  "cadence": "每周日 08:00",
+  "lookback": "自上次成功运行以来；首次运行向前 7 天，并为延迟索引保留 24 小时重叠",
+  "language": "zh-CN",
+  "watchlist": [
+    {
+      "name": "GEAR — Generalist Embodied Agent Research",
+      "official": "https://research.nvidia.com/labs/gear/",
+      "topics": ["GR00T", "VLA", "具身基础模型", "人形机器人", "仿真与合成数据"]
+    },
+    {
+      "name": "NVIDIA Seattle Robotics Lab",
+      "official": "https://research.nvidia.com/labs/srl/",
+      "topics": ["机器人感知", "规划控制", "强化学习", "模仿学习", "Sim-to-Real", "工业装配"]
+    },
+    {
+      "name": "NVIDIA Cosmos Lab",
+      "official": "https://research.nvidia.com/labs/cosmos-lab/",
+      "topics": ["世界基础模型", "视频生成", "物理推理", "机器人策略", "自动驾驶仿真"]
+    },
+    {
+      "name": "ASPIRE — Autonomous Systems and Physical AI Research",
+      "official": "https://research.nvidia.com/labs/aspire/",
+      "topics": ["自主系统", "具身推理", "长时规划", "VLA", "安全评估", "自动驾驶"]
+    },
+    {
+      "name": "NVIDIA Spatial Intelligence Lab",
+      "official": "https://research.nvidia.com/labs/sil/",
+      "topics": ["3D/4D 场景理解", "空间智能", "三维生成", "神经重建", "物理交互"]
+    },
+    {
+      "name": "PAIS — Physical AI Systems Research",
+      "official": "https://research.nvidia.com/labs/av-applied-research/",
+      "topics": ["自动驾驶", "数据闭环", "端到端学习", "评测", "合成数据"]
+    },
+    {
+      "name": "NVIDIA High-Fidelity Physics Research",
+      "official": "https://research.nvidia.com/labs/prl/",
+      "topics": ["高精度物理仿真", "神经物理", "图形学", "数字孪生", "Sim-to-Real"]
+    }
+  ],
+  "source_priority": [
+    "实验室官网与 NVIDIA Research 页面",
+    "NVIDIA Technical Blog、NVIDIA Blog、NVIDIA Developer Blog",
+    "论文正式页面与 arXiv",
+    "实验室或 NVIDIA 官方 GitHub 组织/仓库的 Release、重要提交和 README",
+    "NVIDIA 官方 Hugging Face 模型与数据集页面",
+    "顶级会议项目页",
+    "可靠行业媒体，仅用于补充且必须回链一手来源"
+  ],
+  "materiality": [
+    "新论文、正式接收或公开技术报告",
+    "新模型、数据集、基准、代码仓库或重大版本发布",
+    "开源项目的重要功能、性能、许可证或兼容性变化",
+    "真实机器人、自动驾驶或仿真系统的重要演示和部署结果",
+    "重要合作、团队方向变化或研究平台发布"
+  ],
+  "exclude": [
+    "纯营销转发",
+    "没有技术增量的重复报道",
+    "仅文案或页面样式调整",
+    "自动依赖更新和无关紧要的小提交",
+    "无法确认与监控实验室相关的弱匹配内容"
+  ],
+  "monitoring_state": {}
+}

@@ -8,7 +8,7 @@
 {
   "id": "17abfd_2026-10-27_090226",  // {job6}_{YYYY-MM-DD}[_{HHMMSS}]
   "date": "2026-10-27",              // 生成日(以 cron 输出文件名时间戳为准,北京时间)
-  "site": "physical-ai",             // physical-ai | amd
+  "site": "physical-ai",             // physical-ai | nvidia | amd
   "kind": "日报",                     // 日报 | 周报
   "title": "Physical AI 日报",          // 或 NVIDIA 物理 AI 实验室周报等固定标题
   "summary": "240 字以内纯文本摘要",

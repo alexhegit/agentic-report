@@ -6,7 +6,7 @@ Hermes Agent 驱动的**自动情报知识库**:周期研究任务产出报告,�
 
 ## ✨ 功能
 
-- 🗞 **报告时间线** — 100+ 份 AI 日报/周报,按日期分组,月历点选、全文搜索、域名筛选,支持 `?date=&site=` 深链直达
+- 🗞 **报告时间线** — 100+ 份 AI 日报/周报,按日期分组,月历点选、全文搜索、独立的 Physical AI / NVIDIA 实验室 / AMD 标签页,支持 `?date=&site=` 深链直达
 - 🗺 **知识图谱** — 370+ 项目/论文/公司实体,力导向布局,显式关系(复现/构建)与同周期共现分线型,离线可用
 - 📇 **实体目录** — 卡片式浏览每个项目/论文/公司,按提及热度排序
 - 📬 **飞书同步** — 每份报告推送时附站点深链,点进即见当天内容
@@ -30,11 +30,11 @@ Hermes Agent 驱动的**自动情报知识库**:周期研究任务产出报告,�
 ```bash
 git clone git@github.com:alexhegit/agentic-report.git
 cd agentic-report
-bash scripts/install.sh    # 装 skill + 重建 4 个定时任务 + 生成本机任务映射(幂等,可重复执行)
+bash scripts/install.sh    # 装 skill/监控合同 + 重建 5 个定时任务 + 生成本机任务映射(幂等,可重复执行)
 python3 scripts/ingest.py # 验证数据链路(无新报告时打印 no new reports 即正常)
 ```
 
-完成后,核心任务按上表周期运行;`jobs/local_map.json` 还可挂载本机已有的外部任务（当前包含 NVIDIA 实验室周报）。每期报告由 `ingest.py` 幂等入库并 commit + push,站点即刷新。无需配置数据库、无需构建步骤、无需后端服务。
+完成后,5 个任务按上表周期运行;每期报告由 `ingest.py` 幂等入库并 commit + push,站点即刷新。无需配置数据库、无需构建步骤、无需后端服务。
 
 > 本地预览:`python3 -m http.server 8731` → http://localhost:8731
 
@@ -44,8 +44,9 @@ python3 scripts/ingest.py # 验证数据链路(无新报告时打印 no new repo
 ├── index.html / graph.html / entities.html   ← 三个页面(纯静态)
 ├── data/                                      ← reports / entities / edges JSON(站点唯一数据源)
 ├── logs/                                      ← 每期报告原文(Markdown + frontmatter)
-├── jobs/jobs.json                             ← 4 个任务的权威定义(prompt/周期)
-├── jobs/local_map.json                        ← 本机 job UUID → slug(install.sh 生成)
+├── jobs/jobs.json                             ← 5 个任务的权威定义(prompt/周期/skills)
+├── jobs/watch-contracts/                      ← NVIDIA 实验室监控合同模板
+├── jobs/local_map.json                        ← 本机 job UUID → slug（install.sh 生成，不入库）
 ├── skills/robotics-ai-digest/                 ← 任务所用 skill(方法论+脚本)
 ├── scripts/install.sh · ingest.py             ← 部署器 · 数据入库器
 ├── vendor/                                    ← cytoscape + fcose 本地副本(离线可开)
@@ -58,7 +59,7 @@ python3 scripts/ingest.py # 验证数据链路(无新报告时打印 no new repo
 
 1. `git remote set-url origin <新仓库>`
 2. 改 `site.json` 的 `site_base` 为新 Pages 地址
-3. 用 `hermes cron update` 把 4 个任务 prompt 末尾的 📎 深链同步为新地址,并回写 `jobs/jobs.json`
+3. 用 `hermes cron update` 把 5 个任务 prompt 末尾的 📎 深链同步为新地址,并回写 `jobs/jobs.json`
 4. 新仓库 Settings 开启 Pages(分支 `main`,根目录;Free 版要求仓库 public)
 
 ## 📚 文档

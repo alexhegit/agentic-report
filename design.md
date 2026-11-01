@@ -18,7 +18,8 @@
 │  Hermes Agent ──cron──┬─► Physical AI 日报  (周一~五 08:00 北京) │
 │   │  skills/           ├─► Physical AI 周报  (周日 08:00)        │
 │   │  (robotics-         ├─► AMD 美股日报     (周一~五 19:00)     │
-│   │   ai-digest)        └─► AMD 股市周报     (周日 08:00)        │
+│   │   ai-digest)        ├─► NVIDIA 实验室周报 (周日 08:00)       │
+│   │                     └─► AMD 股市周报     (周日 08:00)        │
 │   │                                                             │
 │   ▼ 定时触发,按 jobs/jobs.json 的权威 prompt 执行                │
 │  LLM 研究 + 写作 ──► ~/.hermes/cron/output/<uuid>/latest.md      │
@@ -54,7 +55,7 @@
 |---|---|
 | `id` | `{job6}_{YYYY-MM-DD}[_{HHMMSS}]` — job 目录名前 6 位 + 生成时间;同一天多份报告靠 HHMMSS 区分 |
 | `date` | **以 cron 输出文件名时间戳为准**(北京生成日),绝不用正文中出现的日期——正文常引用前一天的行情/论文日期,用正文日期会把报告归错天(已踩过) |
-| `site` | `physical-ai` \| `amd` |
+| `site` | `physical-ai` \| `nvidia` \| `amd` |
 | `kind` / `title` | 日报/周报 + 固定标题(来自 jobs 定义,不自由发挥) |
 | `summary` | 前 N 行剥离 Markdown 符号的纯文本,时间线折叠态用 |
 | `full_text` | 报告全文(仅存于 JSON;logs/*.md 存同一份 + frontmatter) |
@@ -94,7 +95,7 @@ cron 触发(UTC 表达式见 jobs/jobs.json)
       3) 新文件 → 追加 report + 重算实体 mentions/时间窗 + 加共现边
       4) 写 logs/*.md(frontmatter 带 id/date/title/type)
       5) 落 data/*.json(UTF-8,indent=2) + state.json
-      6) git add -A → commit(Hermes Agent 匿名身份)→ push
+      6) 仅 stage 本次入库拥有的 data/state/log 路径 → commit(Hermes Agent 匿名身份)→ push
   → GitHub Pages 拾取 main 分支 → 浏览器 refresh 即见
 ```
 
@@ -105,7 +106,7 @@ cron 触发(UTC 表达式见 jobs/jobs.json)
 
 | 页 | 数据源 | 要点 |
 |---|---|---|
-| `index.html` | reports.json | 日期分组时间线;站点 filter + 全文搜索;**月历点选**(有报告的日期带 🔴/🟢 点);**深链** `?date=YYYY-MM-DD&site=amd\|physical-ai` 直达 |
+| `index.html` | reports.json | 日期分组时间线;独立 Physical AI / NVIDIA 实验室 / AMD filter + 全文搜索;**月历点选**;**深链** `?date=YYYY-MM-DD&site=amd\|physical-ai\|nvidia` 直达 |
 | `graph.html` | entities.json + edges.json | Cytoscape.js + fcose 力导向;显式关系实线/共现淡虚线;节点半径=mention 次数;hover 出简介、click 出邻接关系;`#focus=` 锚点 |
 | `entities.html` | entities.json | kind 卡片目录,按提及次数排序,搜索 |
 
@@ -122,13 +123,14 @@ cron 触发(UTC 表达式见 jobs/jobs.json)
 
 | 系统身份(仓库内,稳定) | 机器相关(运行时,可变) |
 |---|---|
-| `jobs/jobs.json` — 4 任务的 slug 键权威定义(周期/prompt/skills) | `jobs/local_map.json` — 本机 uuid→slug(install.sh 生成) |
+| `jobs/jobs.json` — 5 任务的 slug 键权威定义(周期/prompt/skills) | `jobs/local_map.json` — 本机 uuid→slug（install.sh 生成，不入库） |
+| `jobs/watch-contracts/` — NVIDIA 监控合同初始模板 | `~/.hermes/competitor-watches/` — 含运行游标的状态合同 |
 | `skills/robotics-ai-digest/` — 任务所用 skill 全文 | `~/.hermes/skills/` — 实际安装位置 |
 | `site.json` — 站点 base | 飞书推送渠道(每机 hermes 自带) |
 | `data/` + `logs/` — 全部历史 | `~/.hermes/cron/output/<uuid>/` — 产出目录 |
 | `scripts/` — ingest/install | git 凭据 — `GIT_SSH_COMMAND` 或 token,不入仓 |
 
-`install.sh`(幂等):装 skill → 按 jobs.json 建任务(同名已存在则只挂映射,绝不重复建)→ 写 local_map.json。从此生产侧与仓库解耦:仓库知道"要哪 4 个任务、每个长什么样",机器只负责"给 UUID"。
+`install.sh`(幂等):装 skill/监控合同 → 按 jobs.json 建任务(同名已存在则只挂映射,绝不重复建)→ 写 local_map.json。已有监控状态合同绝不覆盖。从此生产侧与仓库解耦:仓库知道"要哪 5 个任务、每个长什么样",机器只负责"给 UUID"和保存运行游标。
 
 **迁移验收标准**:clone → install.sh → 手动触发一次任务 → 飞书收到带 📎 链接的推送 → 站点出现新条目。四步都过,迁移成功。
 

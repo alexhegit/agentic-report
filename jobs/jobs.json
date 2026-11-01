@@ -1,5 +1,5 @@
 {
-  "_comment": "4个周期报告的权威定义(slug 为键)。scripts/install.sh 在新机器上按此重建 hermes cron 任务,prompt 逐字复用。schedule 为 UTC cron 表达式(本仓库所有机器的 Hermes 都用 UTC)。",
+  "_comment": "5个周期报告的权威定义(slug 为键)。scripts/install.sh 在新机器上按此重建 hermes cron 任务,prompt 逐字复用。schedule 为 UTC cron 表达式(本仓库所有机器的 Hermes 都用 UTC)。",
   "jobs": {
     "amd-daily": {
       "name": "AMD 美股日报（交易日）",
@@ -36,6 +36,19 @@
       "prompt": "You are a Physical AI & Robotics industry analyst. Generate a comprehensive weekly digest in Chinese for a technical audience.\n\n## Coverage areas (prioritize open-source projects and hot topics):\n\n1. **VLA / World Models**: OpenVLA, Octo, RT-2, V-WHALE, WaM, RT-X, etc.\n2. **Humanoid Robots**: Tesla Optimus, Figure 04, Unitree G1/H1, 智元 (Agibot), 小米 CyberDog/CyberOne, Fourier GR-1\n3. **Manipulation Arms**: Unitree arms, Open Manipulator, Mobile ARIANE\n4. **Quadruped**: Unitree B2/X1, Anybotics, Fourier, Boston Dynamics Spot\n5. **Sim/Sim2Real**: Isaac Gym/Orbit, MuJoCo, SAPIEN, WebIsaac, DOMUS\n6. **RL for Robotics**: RDT, Diffusion Policy, ACT, VIP, RVT\n7. **Imitation Learning**: Open X-Embodiment, DROID, X-Anybotics\n8. **Hot Open Source Projects** on GitHub in robotics/AI/simulation space\n\n## What to search this WEEK:\n- arXiv cs.RO and cs.AI top papers (this week)\n- GitHub trending repos in robotics / AI / simulation\n- Company announcements / product updates (Figure, Tesla, Unitree, Agibot, Xiaomi, etc.)\n- New open-source releases or major releases / updates\n- Blog posts / technical deep dives\n- Major industry trends or shifts\n\n## Output format (Chinese):\n```\n## 🤖 Physical AI 周报 [Week of X / Week of Y]\n\n### 🌟 TOP 开源项目 (本周最 hot 的 3-5 个)\n1. **[Repo Name]** - [Why it matters] (GitHub: X stars) [link]\n2. ...\n\n### 📄 TOP 论文 (本周最值得关注 3-5 篇)\n1. **[Title]** - [Key contribution] [link]\n2. ...\n\n### 🏢 行业动态 (本周大事)\n- [Company] - [What happened]\n- ...\n\n### 🔍 趋势分析\n[2-3 sentences analyzing what's interesting this week]\n\n### 💡 下周关注\n[1-2 things to watch for / preview]\n```\n\nBe thorough but concise. Include links everywhere. Total length < 1500 Chinese characters.\n\n**飞书推送附加要求**：在报告最末尾另起一行附网页版链接（用【今天】的北京日期 YYYY-MM-DD）：\n📎 网页版：https://alexhegit.github.io/agentic-report/?date=<今天北京日期>&site=physical-ai",
       "model": "qwen3.8",
       "provider": "ollama-launch"
+    },
+    "nvidia-physical-ai-labs-weekly": {
+      "name": "nvidia-physical-ai-labs-weekly",
+      "schedule_utc": "0 0 * * 0",
+      "schedule_note": "00:00 UTC = 北京 08:00,周日",
+      "skills": [
+        "competitor-news-monitor",
+        "grounded-citations",
+        "arxiv",
+        "github"
+      ],
+      "deliver": "origin",
+      "prompt": "你是“NVIDIA 物理 AI 实验室周报”定时任务。读取并严格遵循当前 Hermes profile 的监控合同：${HERMES_HOME:-$HOME/.hermes}/competitor-watches/nvidia-physical-ai-labs-weekly.json。\n\n每次运行：\n1. 检索自上次成功运行以来的新信息；首次运行只回溯最近 7 天。为延迟收录保留 24 小时重叠，并按底层事件去重。\n2. 覆盖合同中的 7 个实验室：GEAR、Seattle Robotics Lab、Cosmos Lab、ASPIRE、Spatial Intelligence Lab、PAIS、High-Fidelity Physics Research。\n3. 优先检索实验室官网、NVIDIA Research、NVIDIA 官方博客、arXiv/会议页面、NVIDIA 或实验室官方 GitHub 仓库及 Release、官方 Hugging Face 模型与数据集。必要时使用可靠媒体做线索，但结论尽量回链到一手来源。\n4. 只收录重要增量：新论文/录用、模型或数据集、开源项目发布或重大更新、重要性能与部署结果、研究平台、合作及明确的研究方向变化。过滤营销转发、重复报道、自动依赖升级、纯文案变化和弱相关匹配。\n5. 区分“新研究成果”和“既有开源项目的重要更新”。GitHub 信息需要核实仓库归属、Release/提交日期及实际改动，不把 star 变化或普通小提交当作重大更新。\n6. 对每条内容给出：所属实验室、发布日期、标题、2—4 句内容摘要、为何重要、开源状态（代码/模型/数据/仅论文）、一手来源链接、置信度。事实与判断分开写。\n7. 将同一事件的论文、项目页、GitHub 和博客合并成一条，保留最权威的一手链接和必要的补充链接。\n8. 输出中文 Markdown 周报，结构固定为：标题与统计周期、本周重点（最多 5 条）、各实验室动态、开源项目更新表、新论文/模型/数据集表、趋势判断（最多 3 条且标注为分析）、覆盖缺口与抓取失败、Sources。\n9. 所有外部事实使用行内编号引用，末尾列出可点击 Sources。不得编造 URL、版本、日期或实验室归属。\n10. 即使一周内没有重大更新，也要发送简短周报，说明各来源已检查及覆盖缺口；不要用沉默替代周报。\n\n最终回复就是发送到飞书的正文，不要描述检索过程，不要要求用户补充信息。报告末尾另起一行附网页版链接（使用报告生成日的北京时间日期）：\n📎 网页版：https://alexhegit.github.io/agentic-report/?date=<YYYY-MM-DD>&site=nvidia"
     },
     "amd-weekly": {
       "name": "AMD 股市周报",

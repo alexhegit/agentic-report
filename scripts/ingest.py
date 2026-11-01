@@ -6,14 +6,15 @@ import fcntl, hashlib, json, os, re, sys, subprocess
 from datetime import datetime, timezone
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # 仓库根目录(相对脚本位置,可迁移)
-CRON = os.environ.get('HERMES_CRON_DIR', os.path.expanduser('~/.hermes/cron/output'))
+HERMES_HOME = os.path.expanduser(os.environ.get('HERMES_HOME', '~/.hermes'))
+CRON = os.environ.get('HERMES_CRON_DIR', os.path.join(HERMES_HOME, 'cron', 'output'))
 SKIP_GIT = os.environ.get('AGENTIC_SKIP_GIT') == '1'
 
 # slug -> 元数据(与 jobs/jobs.json 的 slug 对齐)
 JOBS = {
     'physical-ai-daily':   ('physical-ai', '日报', 'Physical AI 日报'),
     'physical-ai-weekly':  ('physical-ai', '周报', 'Physical AI 周报'),
-    'nvidia-physical-ai-labs-weekly': ('physical-ai', '周报', 'NVIDIA 物理 AI 实验室周报'),
+    'nvidia-physical-ai-labs-weekly': ('nvidia', '周报', 'NVIDIA 物理 AI 实验室周报'),
     'amd-daily':           ('amd',        '日报', 'AMD 美股日报'),
     'amd-weekly':          ('amd',        '周报', 'AMD 股市周报'),
 }
@@ -249,7 +250,7 @@ def main():
     # Serialize the entire read/merge/write/commit/push transaction. The lock
     # lives outside the repository so it never dirties the Git worktree.
     lock_root = os.path.expanduser(os.environ.get(
-        'AGENTIC_LOCK_DIR', '~/.hermes/cache/locks'))
+        'AGENTIC_LOCK_DIR', os.path.join(HERMES_HOME, 'cache', 'locks')))
     os.makedirs(lock_root, exist_ok=True)
     lock_id = hashlib.sha256(os.path.realpath(REPO).encode()).hexdigest()[:16]
     lock_path = os.path.join(lock_root, f'agentic-report-{lock_id}.lock')

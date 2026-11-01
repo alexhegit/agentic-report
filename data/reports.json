@@ -1190,7 +1190,7 @@
   {
     "id": "190487_2026-10-25_080431",
     "date": "2026-10-25",
-    "site": "physical-ai",
+    "site": "nvidia",
     "kind": "周报",
     "title": "NVIDIA 物理 AI 实验室周报",
     "summary": " NVIDIA 物理 AI 实验室周报 统计周期：20261018 08:00—20261025 08:00（Asia/Shanghai） 首次运行；检索额外向前重叠 24 小时以覆盖延迟收录。经底层事件去重，本期收录 2 项重要增量。 本周重点 1. Cosmos Lab｜Interactive World Simulation with Cosmos for Physical AI 发布日期： 20261020 事实： Cosmos Lab 发布统一的实时、流式交互世界模",
@@ -1201,7 +1201,7 @@
   {
     "id": "190487_2026-11-01_080511",
     "date": "2026-11-01",
-    "site": "physical-ai",
+    "site": "nvidia",
     "kind": "周报",
     "title": "NVIDIA 物理 AI 实验室周报",
     "summary": " NVIDIA 物理 AI 实验室周报 统计周期：20261025 08:00—20261101 08:00（Asia/Shanghai） 检索额外向前重叠 24 小时以覆盖延迟收录。经底层事件去重，本期收录 1 项重要增量。 本周重点 1. Seattle Robotics Lab｜RoboLab 增加 Isaac Lab 3 / Isaac Sim 6 兼容层 发布日期： 20261027（仓库公告日期；合并发生于 20261027 22:25 UTC）。12 事实： R",

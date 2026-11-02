@@ -51,3 +51,4 @@
 - `id` / `date` / `log` 由稳定输入推导,禁止手工改写(破坏幂等)
 - `full_text` 只存于 reports.json;logs/*.md 的正文应与其一致
 - 实体 id 出现 404/HTML 误抓特征且长度 > 80 时应丢弃
+- 前端分类标签统一显示英文并标记 `translate="no"`：`physical-ai → Physical AI`、`nvidia → NVIDIA Labs`、`amd → AMD`、`日报 → Daily`、`周报 → Weekly`；数据层保留原始稳定值，不把浏览器或机器翻译结果写回 JSON

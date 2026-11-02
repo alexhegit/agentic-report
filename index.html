@@ -160,10 +160,10 @@ a:hover{text-decoration:underline}
   </div>
   <div>
     <div class="filterbar">
-      <button class="btn on" data-s="all">全部</button>
-      <button class="btn" data-s="physical-ai">🤖 Physical AI</button>
-      <button class="btn" data-s="nvidia">🧪 NVIDIA 实验室</button>
-      <button class="btn" data-s="amd">📈 AMD</button>
+      <button class="btn on notranslate" translate="no" data-s="all">All</button>
+      <button class="btn notranslate" translate="no" data-s="physical-ai">🤖 Physical AI</button>
+      <button class="btn notranslate" translate="no" data-s="nvidia">🧪 NVIDIA Labs</button>
+      <button class="btn notranslate" translate="no" data-s="amd">📈 AMD</button>
       <div class="search"><input id="q" placeholder="搜索报告标题/摘要/全文…"></div>
     </div>
     <div class="cal">
@@ -178,7 +178,7 @@ a:hover{text-decoration:underline}
       </div>
       <div class="grid" id="calGrid"></div>
       <div class="calfast" id="calFast"></div>
-      <div class="legend"><span><span class="dot pa"></span> Physical AI</span><span><span class="dot nvidia"></span> NVIDIA 实验室</span><span><span class="dot amd"></span> AMD</span><span style="margin-left:auto">点带点日期看当天 · ✕ 清除看最近 14 天</span></div>
+      <div class="legend"><span class="notranslate" translate="no"><span class="dot pa"></span> Physical AI</span><span class="notranslate" translate="no"><span class="dot nvidia"></span> NVIDIA Labs</span><span class="notranslate" translate="no"><span class="dot amd"></span> AMD</span><span style="margin-left:auto">点带点日期看当天 · ✕ 清除看最近 14 天</span></div>
     </div>
     <div id="list"><div class="empty">加载中…</div></div>
   </div>
@@ -191,6 +191,14 @@ let dateFilter = '';
 let calYM = null; // {y, m} currently displayed month; null = month of most recent report
 let dateIdx = {}; // 'YYYY-MM-DD' -> {pa:bool, nvidia:bool, amd:bool}
 let showDaysCap = 14; // "全部"视图默认只展示最近 N 天,更早的走日历导航
+const SITE_TAGS = {
+  'physical-ai': {label:'Physical AI', cls:'pa'},
+  'nvidia': {label:'NVIDIA Labs', cls:'nvidia'},
+  'amd': {label:'AMD', cls:'amd'}
+};
+const KIND_TAGS = {'日报':'Daily', '周报':'Weekly'};
+function siteTag(site){ return SITE_TAGS[site] || {label:String(site||'Other'), cls:''}; }
+function kindTag(kind){ return KIND_TAGS[kind] || String(kind||'Report').replace(/[^A-Za-z0-9._+/# -]/g,'').trim() || 'Report'; }
 
 function todayStr(){ const t=new Date(); return t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0'); }
 // 年/月下拉:范围 = 有报告的年份 ∪ 当前年;选择即跳月
@@ -300,7 +308,7 @@ function renderStats(){
   document.getElementById('stats').innerHTML =
     `<span class="chip"><b>${REPORTS.length}</b> 份报告</span>` +
     `<span class="chip"><b>${dates.length ? dates[0]+' ~ '+dates.at(-1) : '暂无日期'}</b></span>` +
-    `<span class="chip"><b>${Object.keys(sites).map(s=>s==='physical-ai'?'🤖 Physical AI':s==='nvidia'?'🧪 NVIDIA 实验室':'📈 AMD').join(' · ')}</b></span>` +
+    `<span class="chip notranslate" translate="no"><b>${Object.keys(sites).map(s=>siteTag(s).label).join(' · ')}</b></span>` +
     `<span class="chip">自动更新:每个定时任务完成后</span>`;
 }
 function render(){
@@ -330,7 +338,7 @@ function render(){
   for (const d of days) {
     const reps = groups[d];
     html += `<details class="day"${d===dateFilter?' open':''}><summary><span class="date">${d}</span><span class="tags">` +
-      reps.map(r2=>`<span class="tag ${r2.site}">${r2.site==='physical-ai'?'Physical AI':r2.site==='nvidia'?'NVIDIA 实验室':'AMD'} · ${r2.kind}</span>`).join('') + `</span>` +
+      reps.map(r2=>{ const sm=siteTag(r2.site); return `<span class="tag ${sm.cls} notranslate" translate="no">${esc(sm.label)} · ${esc(kindTag(r2.kind))}</span>`; }).join('') + `</span>` +
       `<span class="kind">${reps.length} 份</span><span class="chev">▶</span></summary><div class="body">` +
       reps.map(r=>`<div class="md">
         <div class="src">📎 ${esc(r.title)} · <a href="https://github.com/alexhegit/agentic-report/blob/main/logs/${esc(slug(r))}" target="_blank">GitHub 原文</a></div>

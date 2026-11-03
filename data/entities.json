@@ -165,8 +165,8 @@
     "kind": "project",
     "url": "https://github.com/isaac-sim/IsaacLab",
     "first_seen": "2026-06-27",
-    "last_seen": "2026-10-06",
-    "mentions": 7,
+    "last_seen": "2026-10-31",
+    "mentions": 10,
     "extra": ""
   },
   {
@@ -1735,8 +1735,8 @@
     "kind": "project",
     "url": "https://github.com/rerun-io/rerun",
     "first_seen": "2026-10-16",
-    "last_seen": "2026-10-16",
-    "mentions": 1,
+    "last_seen": "2026-10-29",
+    "mentions": 2,
     "extra": ""
   },
   {
@@ -1905,8 +1905,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2610.26855",
     "first_seen": "2026-10-20",
-    "last_seen": "2026-10-20",
-    "mentions": 1,
+    "last_seen": "2026-10-21",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -2056,7 +2056,7 @@
     "url": "https://arxiv.org/abs/2610.28480",
     "first_seen": "2026-10-22",
     "last_seen": "2026-10-22",
-    "mentions": 2,
+    "mentions": 4,
     "extra": ""
   },
   {
@@ -2066,7 +2066,7 @@
     "url": "https://arxiv.org/abs/2610.30136",
     "first_seen": "2026-10-22",
     "last_seen": "2026-10-25",
-    "mentions": 3,
+    "mentions": 4,
     "extra": ""
   },
   {
@@ -2075,8 +2075,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2610.30097",
     "first_seen": "2026-10-22",
-    "last_seen": "2026-10-22",
-    "mentions": 2,
+    "last_seen": "2026-10-23",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -2265,8 +2265,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2610.35862",
     "first_seen": "2026-10-27",
-    "last_seen": "2026-10-27",
-    "mentions": 2,
+    "last_seen": "2026-10-28",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -2675,8 +2675,8 @@
     "kind": "project",
     "url": "https://github.com/RLinf/RLinf",
     "first_seen": "2026-06-20",
-    "last_seen": "2026-06-20",
-    "mentions": 3,
+    "last_seen": "2026-10-31",
+    "mentions": 5,
     "extra": ""
   },
   {
@@ -3445,8 +3445,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2610.31661",
     "first_seen": "2026-10-24",
-    "last_seen": "2026-10-24",
-    "mentions": 1,
+    "last_seen": "2026-10-26",
+    "mentions": 2,
     "extra": ""
   },
   {
@@ -3465,8 +3465,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2610.31166",
     "first_seen": "2026-10-24",
-    "last_seen": "2026-10-24",
-    "mentions": 2,
+    "last_seen": "2026-10-26",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -3485,8 +3485,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2610.31423",
     "first_seen": "2026-10-24",
-    "last_seen": "2026-10-24",
-    "mentions": 2,
+    "last_seen": "2026-10-26",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -3726,7 +3726,7 @@
     "url": "https://arxiv.org/abs/2610.34717",
     "first_seen": "2026-10-28",
     "last_seen": "2026-10-28",
-    "mentions": 1,
+    "mentions": 2,
     "extra": ""
   },
   {
@@ -3767,6 +3767,646 @@
     "first_seen": "2026-11-01",
     "last_seen": "2026-11-01",
     "mentions": 3,
+    "extra": ""
+  },
+  {
+    "id": "2610.25068",
+    "label": "2610.25068",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.25068",
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.28613",
+    "label": "2610.28613",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.28613",
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2610.28626",
+    "label": "2610.28626",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.28626",
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.28589",
+    "label": "2610.28589",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.28589",
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.26765",
+    "label": "2610.26765",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.26765",
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "Ropedia/ropedia-w0",
+    "label": "Ropedia/ropedia-w0",
+    "kind": "project",
+    "url": "https://github.com/Ropedia/ropedia-w0",
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "TsinghuaC3I/HandsOn",
+    "label": "TsinghuaC3I/HandsOn",
+    "kind": "project",
+    "url": "https://github.com/TsinghuaC3I/HandsOn",
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.28628",
+    "label": "2610.28628",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.28628",
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "WEIRDLabUW/asteroid",
+    "label": "WEIRDLabUW/asteroid",
+    "kind": "project",
+    "url": "https://github.com/WEIRDLabUW/asteroid",
+    "first_seen": "2026-10-23",
+    "last_seen": "2026-10-23",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.28948",
+    "label": "2610.28948",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.28948",
+    "first_seen": "2026-10-23",
+    "last_seen": "2026-10-23",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.30105",
+    "label": "2610.30105",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.30105",
+    "first_seen": "2026-10-23",
+    "last_seen": "2026-10-23",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.30044",
+    "label": "2610.30044",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.30044",
+    "first_seen": "2026-10-23",
+    "last_seen": "2026-10-23",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.30319",
+    "label": "2610.30319",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.30319",
+    "first_seen": "2026-10-26",
+    "last_seen": "2026-10-26",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.31608",
+    "label": "2610.31608",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.31608",
+    "first_seen": "2026-10-26",
+    "last_seen": "2026-10-26",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.35385",
+    "label": "2610.35385",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.35385",
+    "first_seen": "2026-10-28",
+    "last_seen": "2026-10-28",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.35817",
+    "label": "2610.35817",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.35817",
+    "first_seen": "2026-10-28",
+    "last_seen": "2026-10-28",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.35075",
+    "label": "2610.35075",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.35075",
+    "first_seen": "2026-10-28",
+    "last_seen": "2026-10-28",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.37652",
+    "label": "2610.37652",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.37652",
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.37196",
+    "label": "2610.37196",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.37196",
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.37666",
+    "label": "2610.37666",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.37666",
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.37518",
+    "label": "2610.37518",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.37518",
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.36791",
+    "label": "2610.36791",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.36791",
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.40565",
+    "label": "2610.40565",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.40565",
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.40333",
+    "label": "2610.40333",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.40333",
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.40349",
+    "label": "2610.40349",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.40349",
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.40539",
+    "label": "2610.40539",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.40539",
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2610.40646",
+    "label": "2610.40646",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2610.40646",
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "No-518/Tactile-ETA",
+    "label": "No-518/Tactile-ETA",
+    "kind": "project",
+    "url": "https://github.com/No-518/Tactile-ETA",
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "Skywalker-yqz/AffordanceWAM",
+    "label": "Skywalker-yqz/AffordanceWAM",
+    "kind": "project",
+    "url": "https://github.com/Skywalker-yqz/AffordanceWAM",
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "zhangy0822/CofactVLA",
+    "label": "zhangy0822/CofactVLA",
+    "kind": "project",
+    "url": "https://github.com/zhangy0822/CofactVLA",
+    "first_seen": "2026-10-21",
+    "last_seen": "2026-10-21",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "memi-robot/memi",
+    "label": "memi-robot/memi",
+    "kind": "project",
+    "url": "https://github.com/memi-robot/memi",
+    "first_seen": "2026-10-22",
+    "last_seen": "2026-10-22",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "xuyicheng-zju/TARSphere",
+    "label": "xuyicheng-zju/TARSphere",
+    "kind": "project",
+    "url": "https://github.com/xuyicheng-zju/TARSphere",
+    "first_seen": "2026-10-22",
+    "last_seen": "2026-10-22",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "changhaowang/chronospolicy",
+    "label": "changhaowang/chronospolicy",
+    "kind": "project",
+    "url": "https://github.com/changhaowang/chronospolicy",
+    "first_seen": "2026-10-22",
+    "last_seen": "2026-10-22",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "google-deepmind/mujoco",
+    "label": "google-deepmind/mujoco",
+    "kind": "project",
+    "url": "https://github.com/google-deepmind/mujoco",
+    "first_seen": "2026-10-22",
+    "last_seen": "2026-10-24",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "pytorch/rl",
+    "label": "pytorch/rl",
+    "kind": "project",
+    "url": "https://github.com/pytorch/rl",
+    "first_seen": "2026-10-22",
+    "last_seen": "2026-10-22",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "SeeYooLeo/CIG-RoboCasa-Kitchen",
+    "label": "SeeYooLeo/CIG-RoboCasa-Kitchen",
+    "kind": "project",
+    "url": "https://github.com/SeeYooLeo/CIG-RoboCasa-Kitchen",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "suhyeok-jang/FRED",
+    "label": "suhyeok-jang/FRED",
+    "kind": "project",
+    "url": "https://github.com/suhyeok-jang/FRED",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "Motphys/Uni-SuperMimic",
+    "label": "Motphys/Uni-SuperMimic",
+    "kind": "project",
+    "url": "https://github.com/Motphys/Uni-SuperMimic",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "jiabingyang01/AWARE",
+    "label": "jiabingyang01/AWARE",
+    "kind": "project",
+    "url": "https://github.com/jiabingyang01/AWARE",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "suniique/assembly-nist",
+    "label": "suniique/assembly-nist",
+    "kind": "project",
+    "url": "https://github.com/suniique/assembly-nist",
+    "first_seen": "2026-10-24",
+    "last_seen": "2026-10-24",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "HyeonSung11/InternVLA-Latent-Foresight",
+    "label": "HyeonSung11/InternVLA-Latent-Foresight",
+    "kind": "project",
+    "url": "https://github.com/HyeonSung11/InternVLA-Latent-Foresight",
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "KBRASK/UniAction",
+    "label": "KBRASK/UniAction",
+    "kind": "project",
+    "url": "https://github.com/KBRASK/UniAction",
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "VinRobotics/vla.cpp",
+    "label": "VinRobotics/vla.cpp",
+    "kind": "project",
+    "url": "https://github.com/VinRobotics/vla.cpp",
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "CumulusAlpha/Dex-Supermimic",
+    "label": "CumulusAlpha/Dex-Supermimic",
+    "kind": "project",
+    "url": "https://github.com/CumulusAlpha/Dex-Supermimic",
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "dohaerix/manipulation-primitive-recognition-public",
+    "label": "dohaerix/manipulation-primitive-recognition-public",
+    "kind": "project",
+    "url": "https://github.com/dohaerix/manipulation-primitive-recognition-public",
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "gaoxiang12/ga-wm",
+    "label": "gaoxiang12/ga-wm",
+    "kind": "project",
+    "url": "https://github.com/gaoxiang12/ga-wm",
+    "first_seen": "2026-10-29",
+    "last_seen": "2026-10-29",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "jiuyixu25/QbD-VLA",
+    "label": "jiuyixu25/QbD-VLA",
+    "kind": "project",
+    "url": "https://github.com/jiuyixu25/QbD-VLA",
+    "first_seen": "2026-10-29",
+    "last_seen": "2026-10-29",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "X-EraAI/e05",
+    "label": "X-EraAI/e05",
+    "kind": "project",
+    "url": "https://github.com/X-EraAI/e05",
+    "first_seen": "2026-10-29",
+    "last_seen": "2026-10-29",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "patch-gg/crowdbricks",
+    "label": "patch-gg/crowdbricks",
+    "kind": "project",
+    "url": "https://github.com/patch-gg/crowdbricks",
+    "first_seen": "2026-10-29",
+    "last_seen": "2026-10-29",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "Sirui-Xu/InterPrior",
+    "label": "Sirui-Xu/InterPrior",
+    "kind": "project",
+    "url": "https://github.com/Sirui-Xu/InterPrior",
+    "first_seen": "2026-10-29",
+    "last_seen": "2026-10-29",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "Johnny-lauHM/TASTE-Tactile-Articulated-STate-Estimation",
+    "label": "Johnny-lauHM/TASTE-Tactile-Articulated-STate-Estimation",
+    "kind": "project",
+    "url": "https://github.com/Johnny-lauHM/TASTE-Tactile-Articulated-STate-Estimation",
+    "first_seen": "2026-10-29",
+    "last_seen": "2026-10-29",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "Legend717/astra-guide-vla",
+    "label": "Legend717/astra-guide-vla",
+    "kind": "project",
+    "url": "https://github.com/Legend717/astra-guide-vla",
+    "first_seen": "2026-10-29",
+    "last_seen": "2026-10-29",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "openrobokit/robokit",
+    "label": "openrobokit/robokit",
+    "kind": "project",
+    "url": "https://github.com/openrobokit/robokit",
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "gym-anything/robotics",
+    "label": "gym-anything/robotics",
+    "kind": "project",
+    "url": "https://github.com/gym-anything/robotics",
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "openrobokit/roboskills",
+    "label": "openrobokit/roboskills",
+    "kind": "project",
+    "url": "https://github.com/openrobokit/roboskills",
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "yangch0429/TriPhys",
+    "label": "yangch0429/TriPhys",
+    "kind": "project",
+    "url": "https://github.com/yangch0429/TriPhys",
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "openrobokit/graspkit",
+    "label": "openrobokit/graspkit",
+    "kind": "project",
+    "url": "https://github.com/openrobokit/graspkit",
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "openrobokit/retargetingkit",
+    "label": "openrobokit/retargetingkit",
+    "kind": "project",
+    "url": "https://github.com/openrobokit/retargetingkit",
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "DexForce/EmbodiChain",
+    "label": "DexForce/EmbodiChain",
+    "kind": "project",
+    "url": "https://github.com/DexForce/EmbodiChain",
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "BIGAI-General-Vision-Lab/Zero-HLM",
+    "label": "BIGAI-General-Vision-Lab/Zero-HLM",
+    "kind": "project",
+    "url": "https://github.com/BIGAI-General-Vision-Lab/Zero-HLM",
+    "first_seen": "2026-11-03",
+    "last_seen": "2026-11-03",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "ChildTang/ElegantVLA",
+    "label": "ChildTang/ElegantVLA",
+    "kind": "project",
+    "url": "https://github.com/ChildTang/ElegantVLA",
+    "first_seen": "2026-11-03",
+    "last_seen": "2026-11-03",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "ProActRobot/ProAct-Official",
+    "label": "ProActRobot/ProAct-Official",
+    "kind": "project",
+    "url": "https://github.com/ProActRobot/ProAct-Official",
+    "first_seen": "2026-11-03",
+    "last_seen": "2026-11-03",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "LLM4Robot/LLM4Robot-Bench",
+    "label": "LLM4Robot/LLM4Robot-Bench",
+    "kind": "project",
+    "url": "https://github.com/LLM4Robot/LLM4Robot-Bench",
+    "first_seen": "2026-11-03",
+    "last_seen": "2026-11-03",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "ZJC25127/Retrieve-then-Steer",
+    "label": "ZJC25127/Retrieve-then-Steer",
+    "kind": "project",
+    "url": "https://github.com/ZJC25127/Retrieve-then-Steer",
+    "first_seen": "2026-11-03",
+    "last_seen": "2026-11-03",
+    "mentions": 1,
     "extra": ""
   }
 ]

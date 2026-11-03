@@ -17626,5 +17626,1619 @@
     "target": "NVIDIA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
+  },
+  {
+    "source": "2610.28626",
+    "target": "2610.28589",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28626",
+    "target": "2610.28613",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28626",
+    "target": "2610.26855",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28626",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28626",
+    "target": "2610.28480",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28626",
+    "target": "2610.25068",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28626",
+    "target": "2610.26765",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28589",
+    "target": "2610.28613",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28589",
+    "target": "2610.26855",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28589",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28589",
+    "target": "2610.28480",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28589",
+    "target": "2610.25068",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28589",
+    "target": "2610.26765",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28613",
+    "target": "2610.26855",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28613",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28613",
+    "target": "2610.28480",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28613",
+    "target": "2610.25068",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28613",
+    "target": "2610.26765",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.26855",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.26855",
+    "target": "2610.28480",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.26855",
+    "target": "2610.25068",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.26855",
+    "target": "2610.26765",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SuperMimic",
+    "target": "2610.25068",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SuperMimic",
+    "target": "2610.26765",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28480",
+    "target": "2610.25068",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28480",
+    "target": "2610.26765",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.25068",
+    "target": "2610.26765",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28613",
+    "target": "Ropedia/ropedia-w0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28613",
+    "target": "TsinghuaC3I/HandsOn",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28613",
+    "target": "2610.28628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.26855",
+    "target": "Ropedia/ropedia-w0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.26855",
+    "target": "TsinghuaC3I/HandsOn",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.26855",
+    "target": "2610.28628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SuperMimic",
+    "target": "Ropedia/ropedia-w0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SuperMimic",
+    "target": "TsinghuaC3I/HandsOn",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SuperMimic",
+    "target": "2610.28628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28480",
+    "target": "Ropedia/ropedia-w0",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28480",
+    "target": "TsinghuaC3I/HandsOn",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28480",
+    "target": "2610.28628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Ropedia/ropedia-w0",
+    "target": "2610.26765",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Ropedia/ropedia-w0",
+    "target": "TsinghuaC3I/HandsOn",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Ropedia/ropedia-w0",
+    "target": "2610.28628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.26765",
+    "target": "TsinghuaC3I/HandsOn",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.26765",
+    "target": "2610.28628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "TsinghuaC3I/HandsOn",
+    "target": "2610.28628",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30105",
+    "target": "2610.30044",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30105",
+    "target": "2610.30097",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30105",
+    "target": "2610.28948",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30105",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30105",
+    "target": "WEIRDLabUW/asteroid",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30105",
+    "target": "2610.30136",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30044",
+    "target": "2610.30097",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30044",
+    "target": "2610.28948",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30044",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30044",
+    "target": "WEIRDLabUW/asteroid",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30044",
+    "target": "2610.30136",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30097",
+    "target": "2610.28948",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30097",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.30097",
+    "target": "WEIRDLabUW/asteroid",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28948",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28948",
+    "target": "WEIRDLabUW/asteroid",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.28948",
+    "target": "2610.30136",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "WEIRDLabUW/asteroid",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "WEIRDLabUW/asteroid",
+    "target": "2610.30136",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31166",
+    "target": "2610.31608",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31166",
+    "target": "2610.30319",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31661",
+    "target": "2610.31608",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31661",
+    "target": "2610.30319",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31423",
+    "target": "2610.31608",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31423",
+    "target": "2610.30319",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31608",
+    "target": "WholeBodyMem",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.31608",
+    "target": "2610.30319",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "WholeBodyMem",
+    "target": "2610.30319",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.35075",
+    "target": "2610.34717",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.35075",
+    "target": "2610.35385",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.35075",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.35075",
+    "target": "2610.35817",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.35075",
+    "target": "2610.35862",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.34717",
+    "target": "2610.35385",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.34717",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.34717",
+    "target": "2610.35817",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.34717",
+    "target": "2610.35862",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.35385",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.35385",
+    "target": "2610.35817",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.35385",
+    "target": "2610.35862",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2610.35817",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2610.35862",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.35817",
+    "target": "2610.35862",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.37196",
+    "target": "2610.37518",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.37196",
+    "target": "2610.36791",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.37196",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.37196",
+    "target": "2610.37666",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.37196",
+    "target": "2610.37652",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.37518",
+    "target": "2610.36791",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.37518",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.37518",
+    "target": "2610.37666",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.37518",
+    "target": "2610.37652",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.36791",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.36791",
+    "target": "2610.37666",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.36791",
+    "target": "2610.37652",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2610.37666",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2610.37652",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.37666",
+    "target": "2610.37652",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40349",
+    "target": "2610.40539",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40349",
+    "target": "2610.40565",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40349",
+    "target": "2610.40646",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40349",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40349",
+    "target": "2610.40333",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40539",
+    "target": "2610.40565",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40539",
+    "target": "2610.40646",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40539",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40539",
+    "target": "2610.40333",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40565",
+    "target": "2610.40646",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40565",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40565",
+    "target": "2610.40333",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40646",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2610.40646",
+    "target": "2610.40333",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "2610.40333",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "RLinf/RLinf",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "No-518/Tactile-ETA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "zhangy0822/CofactVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "Skywalker-yqz/AffordanceWAM",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "RLinf/RLinf",
+    "target": "No-518/Tactile-ETA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "RLinf/RLinf",
+    "target": "zhangy0822/CofactVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "RLinf/RLinf",
+    "target": "Skywalker-yqz/AffordanceWAM",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "No-518/Tactile-ETA",
+    "target": "zhangy0822/CofactVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "No-518/Tactile-ETA",
+    "target": "Skywalker-yqz/AffordanceWAM",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "zhangy0822/CofactVLA",
+    "target": "Skywalker-yqz/AffordanceWAM",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "changhaowang/chronospolicy",
+    "target": "pytorch/rl",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "changhaowang/chronospolicy",
+    "target": "xuyicheng-zju/TARSphere",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "changhaowang/chronospolicy",
+    "target": "memi-robot/memi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "changhaowang/chronospolicy",
+    "target": "google-deepmind/mujoco",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "pytorch/rl",
+    "target": "xuyicheng-zju/TARSphere",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "pytorch/rl",
+    "target": "memi-robot/memi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "pytorch/rl",
+    "target": "google-deepmind/mujoco",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "xuyicheng-zju/TARSphere",
+    "target": "memi-robot/memi",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "xuyicheng-zju/TARSphere",
+    "target": "google-deepmind/mujoco",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "memi-robot/memi",
+    "target": "google-deepmind/mujoco",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "suniique/assembly-nist",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "suhyeok-jang/FRED",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "Motphys/Uni-SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "SeeYooLeo/CIG-RoboCasa-Kitchen",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "UniSuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "jiabingyang01/AWARE",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "google-deepmind/mujoco",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suniique/assembly-nist",
+    "target": "suhyeok-jang/FRED",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suniique/assembly-nist",
+    "target": "Motphys/Uni-SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suniique/assembly-nist",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suniique/assembly-nist",
+    "target": "SeeYooLeo/CIG-RoboCasa-Kitchen",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suniique/assembly-nist",
+    "target": "UniSuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suniique/assembly-nist",
+    "target": "jiabingyang01/AWARE",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suniique/assembly-nist",
+    "target": "google-deepmind/mujoco",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suhyeok-jang/FRED",
+    "target": "Motphys/Uni-SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suhyeok-jang/FRED",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suhyeok-jang/FRED",
+    "target": "SeeYooLeo/CIG-RoboCasa-Kitchen",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suhyeok-jang/FRED",
+    "target": "UniSuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suhyeok-jang/FRED",
+    "target": "jiabingyang01/AWARE",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "suhyeok-jang/FRED",
+    "target": "google-deepmind/mujoco",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/Uni-SuperMimic",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/Uni-SuperMimic",
+    "target": "SeeYooLeo/CIG-RoboCasa-Kitchen",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/Uni-SuperMimic",
+    "target": "UniSuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/Uni-SuperMimic",
+    "target": "jiabingyang01/AWARE",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/Uni-SuperMimic",
+    "target": "google-deepmind/mujoco",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SuperMimic",
+    "target": "SeeYooLeo/CIG-RoboCasa-Kitchen",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SuperMimic",
+    "target": "jiabingyang01/AWARE",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SuperMimic",
+    "target": "google-deepmind/mujoco",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SeeYooLeo/CIG-RoboCasa-Kitchen",
+    "target": "UniSuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SeeYooLeo/CIG-RoboCasa-Kitchen",
+    "target": "jiabingyang01/AWARE",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SeeYooLeo/CIG-RoboCasa-Kitchen",
+    "target": "google-deepmind/mujoco",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "UniSuperMimic",
+    "target": "jiabingyang01/AWARE",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "UniSuperMimic",
+    "target": "google-deepmind/mujoco",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "jiabingyang01/AWARE",
+    "target": "google-deepmind/mujoco",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "dohaerix/manipulation-primitive-recognition-public",
+    "target": "VinRobotics/vla.cpp",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "dohaerix/manipulation-primitive-recognition-public",
+    "target": "KBRASK/UniAction",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "dohaerix/manipulation-primitive-recognition-public",
+    "target": "HyeonSung11/InternVLA-Latent-Foresight",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "dohaerix/manipulation-primitive-recognition-public",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "dohaerix/manipulation-primitive-recognition-public",
+    "target": "CumulusAlpha/Dex-Supermimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "VinRobotics/vla.cpp",
+    "target": "KBRASK/UniAction",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "VinRobotics/vla.cpp",
+    "target": "HyeonSung11/InternVLA-Latent-Foresight",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "VinRobotics/vla.cpp",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "VinRobotics/vla.cpp",
+    "target": "CumulusAlpha/Dex-Supermimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "KBRASK/UniAction",
+    "target": "HyeonSung11/InternVLA-Latent-Foresight",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "KBRASK/UniAction",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "KBRASK/UniAction",
+    "target": "CumulusAlpha/Dex-Supermimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "HyeonSung11/InternVLA-Latent-Foresight",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "HyeonSung11/InternVLA-Latent-Foresight",
+    "target": "CumulusAlpha/Dex-Supermimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SuperMimic",
+    "target": "CumulusAlpha/Dex-Supermimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "jiuyixu25/QbD-VLA",
+    "target": "Johnny-lauHM/TASTE-Tactile-Articulated-STate-Estimation",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "jiuyixu25/QbD-VLA",
+    "target": "X-EraAI/e05",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "jiuyixu25/QbD-VLA",
+    "target": "patch-gg/crowdbricks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "jiuyixu25/QbD-VLA",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "jiuyixu25/QbD-VLA",
+    "target": "Sirui-Xu/InterPrior",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "jiuyixu25/QbD-VLA",
+    "target": "Legend717/astra-guide-vla",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "jiuyixu25/QbD-VLA",
+    "target": "gaoxiang12/ga-wm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "jiuyixu25/QbD-VLA",
+    "target": "rerun-io/rerun",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Johnny-lauHM/TASTE-Tactile-Articulated-STate-Estimation",
+    "target": "X-EraAI/e05",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Johnny-lauHM/TASTE-Tactile-Articulated-STate-Estimation",
+    "target": "patch-gg/crowdbricks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Johnny-lauHM/TASTE-Tactile-Articulated-STate-Estimation",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Johnny-lauHM/TASTE-Tactile-Articulated-STate-Estimation",
+    "target": "Sirui-Xu/InterPrior",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Johnny-lauHM/TASTE-Tactile-Articulated-STate-Estimation",
+    "target": "Legend717/astra-guide-vla",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Johnny-lauHM/TASTE-Tactile-Articulated-STate-Estimation",
+    "target": "gaoxiang12/ga-wm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Johnny-lauHM/TASTE-Tactile-Articulated-STate-Estimation",
+    "target": "rerun-io/rerun",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "X-EraAI/e05",
+    "target": "patch-gg/crowdbricks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "X-EraAI/e05",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "X-EraAI/e05",
+    "target": "Sirui-Xu/InterPrior",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "X-EraAI/e05",
+    "target": "Legend717/astra-guide-vla",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "X-EraAI/e05",
+    "target": "gaoxiang12/ga-wm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "X-EraAI/e05",
+    "target": "rerun-io/rerun",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "patch-gg/crowdbricks",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "patch-gg/crowdbricks",
+    "target": "Sirui-Xu/InterPrior",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "patch-gg/crowdbricks",
+    "target": "Legend717/astra-guide-vla",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "patch-gg/crowdbricks",
+    "target": "gaoxiang12/ga-wm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "patch-gg/crowdbricks",
+    "target": "rerun-io/rerun",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "Sirui-Xu/InterPrior",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "Legend717/astra-guide-vla",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "gaoxiang12/ga-wm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "rerun-io/rerun",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Sirui-Xu/InterPrior",
+    "target": "Legend717/astra-guide-vla",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Sirui-Xu/InterPrior",
+    "target": "gaoxiang12/ga-wm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Sirui-Xu/InterPrior",
+    "target": "rerun-io/rerun",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Legend717/astra-guide-vla",
+    "target": "gaoxiang12/ga-wm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Legend717/astra-guide-vla",
+    "target": "rerun-io/rerun",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "gaoxiang12/ga-wm",
+    "target": "rerun-io/rerun",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/retargetingkit",
+    "target": "openrobokit/robokit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/retargetingkit",
+    "target": "isaac-sim/IsaacLab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/retargetingkit",
+    "target": "gym-anything/robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/retargetingkit",
+    "target": "DexForce/EmbodiChain",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/retargetingkit",
+    "target": "yangch0429/TriPhys",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/retargetingkit",
+    "target": "openrobokit/roboskills",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/retargetingkit",
+    "target": "RLinf/RLinf",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/retargetingkit",
+    "target": "openrobokit/graspkit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/robokit",
+    "target": "isaac-sim/IsaacLab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/robokit",
+    "target": "gym-anything/robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/robokit",
+    "target": "DexForce/EmbodiChain",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/robokit",
+    "target": "yangch0429/TriPhys",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/robokit",
+    "target": "openrobokit/roboskills",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/robokit",
+    "target": "RLinf/RLinf",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/robokit",
+    "target": "openrobokit/graspkit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "gym-anything/robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "DexForce/EmbodiChain",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "yangch0429/TriPhys",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "openrobokit/roboskills",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "isaac-sim/IsaacLab",
+    "target": "openrobokit/graspkit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "gym-anything/robotics",
+    "target": "DexForce/EmbodiChain",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "gym-anything/robotics",
+    "target": "yangch0429/TriPhys",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "gym-anything/robotics",
+    "target": "openrobokit/roboskills",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "gym-anything/robotics",
+    "target": "RLinf/RLinf",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "gym-anything/robotics",
+    "target": "openrobokit/graspkit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "DexForce/EmbodiChain",
+    "target": "yangch0429/TriPhys",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "DexForce/EmbodiChain",
+    "target": "openrobokit/roboskills",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "DexForce/EmbodiChain",
+    "target": "RLinf/RLinf",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "DexForce/EmbodiChain",
+    "target": "openrobokit/graspkit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "yangch0429/TriPhys",
+    "target": "openrobokit/roboskills",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "yangch0429/TriPhys",
+    "target": "RLinf/RLinf",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "yangch0429/TriPhys",
+    "target": "openrobokit/graspkit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/roboskills",
+    "target": "RLinf/RLinf",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "openrobokit/roboskills",
+    "target": "openrobokit/graspkit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "RLinf/RLinf",
+    "target": "openrobokit/graspkit",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "LLM4Robot/LLM4Robot-Bench",
+    "target": "BIGAI-General-Vision-Lab/Zero-HLM",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "LLM4Robot/LLM4Robot-Bench",
+    "target": "ZJC25127/Retrieve-then-Steer",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "LLM4Robot/LLM4Robot-Bench",
+    "target": "ProActRobot/ProAct-Official",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "LLM4Robot/LLM4Robot-Bench",
+    "target": "ChildTang/ElegantVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "BIGAI-General-Vision-Lab/Zero-HLM",
+    "target": "ZJC25127/Retrieve-then-Steer",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "BIGAI-General-Vision-Lab/Zero-HLM",
+    "target": "ProActRobot/ProAct-Official",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "BIGAI-General-Vision-Lab/Zero-HLM",
+    "target": "ChildTang/ElegantVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "ZJC25127/Retrieve-then-Steer",
+    "target": "ProActRobot/ProAct-Official",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "ZJC25127/Retrieve-then-Steer",
+    "target": "ChildTang/ElegantVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "ProActRobot/ProAct-Official",
+    "target": "ChildTang/ElegantVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
   }
 ]

@@ -3725,8 +3725,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2610.34717",
     "first_seen": "2026-10-28",
-    "last_seen": "2026-10-28",
-    "mentions": 2,
+    "last_seen": "2026-11-03",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -3765,8 +3765,8 @@
     "kind": "project",
     "url": "https://github.com/NVLabs/RoboLab",
     "first_seen": "2026-11-01",
-    "last_seen": "2026-11-01",
-    "mentions": 3,
+    "last_seen": "2026-11-03",
+    "mentions": 4,
     "extra": ""
   },
   {
@@ -3935,8 +3935,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2610.35075",
     "first_seen": "2026-10-28",
-    "last_seen": "2026-10-28",
-    "mentions": 1,
+    "last_seen": "2026-11-03",
+    "mentions": 2,
     "extra": ""
   },
   {
@@ -3995,8 +3995,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2610.40565",
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-02",
-    "mentions": 1,
+    "last_seen": "2026-11-03",
+    "mentions": 2,
     "extra": ""
   },
   {
@@ -4305,8 +4305,8 @@
     "kind": "project",
     "url": "https://github.com/gym-anything/robotics",
     "first_seen": "2026-10-31",
-    "last_seen": "2026-10-31",
-    "mentions": 1,
+    "last_seen": "2026-11-03",
+    "mentions": 2,
     "extra": ""
   },
   {
@@ -4366,7 +4366,7 @@
     "url": "https://github.com/BIGAI-General-Vision-Lab/Zero-HLM",
     "first_seen": "2026-11-03",
     "last_seen": "2026-11-03",
-    "mentions": 1,
+    "mentions": 2,
     "extra": ""
   },
   {

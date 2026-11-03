@@ -4145,8 +4145,8 @@
     "kind": "project",
     "url": "https://github.com/Motphys/Uni-SuperMimic",
     "first_seen": "2026-10-24",
-    "last_seen": "2026-10-24",
-    "mentions": 1,
+    "last_seen": "2026-10-30",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -4456,6 +4456,116 @@
     "url": "https://arxiv.org/abs/2611.02968",
     "first_seen": "2026-11-03",
     "last_seen": "2026-11-03",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "flashrt-project/FlashRT",
+    "label": "flashrt-project/FlashRT",
+    "kind": "project",
+    "url": "https://github.com/flashrt-project/FlashRT",
+    "first_seen": "2026-10-23",
+    "last_seen": "2026-10-30",
+    "mentions": 6,
+    "extra": ""
+  },
+  {
+    "id": "vllm-project/semantic-router",
+    "label": "vllm-project/semantic-router",
+    "kind": "project",
+    "url": "https://github.com/vllm-project/semantic-router",
+    "first_seen": "2026-10-23",
+    "last_seen": "2026-10-23",
+    "mentions": 3,
+    "extra": ""
+  },
+  {
+    "id": "alexhegit/llm-wiki",
+    "label": "alexhegit/llm-wiki",
+    "kind": "project",
+    "url": "https://github.com/alexhegit/llm-wiki",
+    "first_seen": "2026-10-23",
+    "last_seen": "2026-10-23",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "rocPAI-Forge/vla-hip.c",
+    "label": "rocPAI-Forge/vla-hip.c",
+    "kind": "project",
+    "url": "https://github.com/rocPAI-Forge/vla-hip.c",
+    "first_seen": "2026-10-23",
+    "last_seen": "2026-10-30",
+    "mentions": 5,
+    "extra": ""
+  },
+  {
+    "id": "rocPAI-Forge/so101-simstudio",
+    "label": "rocPAI-Forge/so101-simstudio",
+    "kind": "project",
+    "url": "https://github.com/rocPAI-Forge/so101-simstudio",
+    "first_seen": "2026-10-23",
+    "last_seen": "2026-10-30",
+    "mentions": 9,
+    "extra": ""
+  },
+  {
+    "id": "rocPAI-Forge/microduck_rl_unilab",
+    "label": "rocPAI-Forge/microduck_rl_unilab",
+    "kind": "project",
+    "url": "https://github.com/rocPAI-Forge/microduck_rl_unilab",
+    "first_seen": "2026-10-23",
+    "last_seen": "2026-10-23",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "rocPAI-Forge/microduck_rl_tutorial",
+    "label": "rocPAI-Forge/microduck_rl_tutorial",
+    "kind": "project",
+    "url": "https://github.com/rocPAI-Forge/microduck_rl_tutorial",
+    "first_seen": "2026-10-23",
+    "last_seen": "2026-10-23",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "alexhegit/flint-hip.c",
+    "label": "alexhegit/flint-hip.c",
+    "kind": "project",
+    "url": "https://github.com/alexhegit/flint-hip.c",
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "mentions": 3,
+    "extra": ""
+  },
+  {
+    "id": "recursive-oss/rec",
+    "label": "recursive-oss/rec",
+    "kind": "project",
+    "url": "https://github.com/recursive-oss/rec",
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "xiaobiaodu/Mobile-4DGS",
+    "label": "xiaobiaodu/Mobile-4DGS",
+    "kind": "project",
+    "url": "https://github.com/xiaobiaodu/Mobile-4DGS",
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "alexhegit/agentic-report",
+    "label": "alexhegit/agentic-report",
+    "kind": "project",
+    "url": "https://github.com/alexhegit/agentic-report",
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
     "mentions": 2,
     "extra": ""
   }

@@ -19456,5 +19456,365 @@
     "target": "ranpin/pi05-edge",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "flashrt-project/FlashRT",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "rocPAI-Forge/vla-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "vllm-project/semantic-router",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "alexhegit/llm-wiki",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "rocPAI-Forge/microduck_rl_unilab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "rocPAI-Forge/microduck_rl_tutorial",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "flashrt-project/FlashRT",
+    "target": "rocPAI-Forge/vla-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "flashrt-project/FlashRT",
+    "target": "vllm-project/semantic-router",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "flashrt-project/FlashRT",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "flashrt-project/FlashRT",
+    "target": "alexhegit/llm-wiki",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "flashrt-project/FlashRT",
+    "target": "rocPAI-Forge/microduck_rl_unilab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "flashrt-project/FlashRT",
+    "target": "rocPAI-Forge/microduck_rl_tutorial",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "vllm-project/semantic-router",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "alexhegit/llm-wiki",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "rocPAI-Forge/microduck_rl_unilab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "rocPAI-Forge/microduck_rl_tutorial",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "vllm-project/semantic-router",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "vllm-project/semantic-router",
+    "target": "alexhegit/llm-wiki",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "vllm-project/semantic-router",
+    "target": "rocPAI-Forge/microduck_rl_unilab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "vllm-project/semantic-router",
+    "target": "rocPAI-Forge/microduck_rl_tutorial",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "alexhegit/llm-wiki",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "rocPAI-Forge/microduck_rl_unilab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "rocPAI-Forge/microduck_rl_tutorial",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/llm-wiki",
+    "target": "rocPAI-Forge/microduck_rl_unilab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/llm-wiki",
+    "target": "rocPAI-Forge/microduck_rl_tutorial",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "rocPAI-Forge/microduck_rl_tutorial",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "recursive-oss/rec",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "alexhegit/flint-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "xiaobiaodu/Mobile-4DGS",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "alexhegit/agentic-report",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "Motphys/Uni-SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "recursive-oss/rec",
+    "target": "alexhegit/flint-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "recursive-oss/rec",
+    "target": "flashrt-project/FlashRT",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "recursive-oss/rec",
+    "target": "rocPAI-Forge/vla-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "recursive-oss/rec",
+    "target": "xiaobiaodu/Mobile-4DGS",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "recursive-oss/rec",
+    "target": "alexhegit/agentic-report",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "recursive-oss/rec",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "recursive-oss/rec",
+    "target": "Motphys/Uni-SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/flint-hip.c",
+    "target": "flashrt-project/FlashRT",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/flint-hip.c",
+    "target": "rocPAI-Forge/vla-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/flint-hip.c",
+    "target": "xiaobiaodu/Mobile-4DGS",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/flint-hip.c",
+    "target": "alexhegit/agentic-report",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/flint-hip.c",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/flint-hip.c",
+    "target": "Motphys/Uni-SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "flashrt-project/FlashRT",
+    "target": "xiaobiaodu/Mobile-4DGS",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "flashrt-project/FlashRT",
+    "target": "alexhegit/agentic-report",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "flashrt-project/FlashRT",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "flashrt-project/FlashRT",
+    "target": "Motphys/Uni-SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "xiaobiaodu/Mobile-4DGS",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "alexhegit/agentic-report",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "Motphys/Uni-SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "xiaobiaodu/Mobile-4DGS",
+    "target": "alexhegit/agentic-report",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "xiaobiaodu/Mobile-4DGS",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "xiaobiaodu/Mobile-4DGS",
+    "target": "Motphys/Uni-SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/agentic-report",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/agentic-report",
+    "target": "Motphys/Uni-SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
   }
 ]

@@ -14,6 +14,8 @@ SKIP_GIT = os.environ.get('AGENTIC_SKIP_GIT') == '1'
 JOBS = {
     'physical-ai-daily':   ('physical-ai', '日报', 'Physical AI 日报'),
     'physical-ai-weekly':  ('physical-ai', '周报', 'Physical AI 周报'),
+    'physical-ai-arxiv-scout': ('physical-ai', '论文监测', 'Physical AI 高质量论文监测'),
+    'physical-ai-github-scout': ('physical-ai', '项目监测', 'GitHub Physical AI 项目监测'),
     'nvidia-physical-ai-labs-weekly': ('nvidia', '周报', 'NVIDIA 物理 AI 实验室周报'),
     'amd-daily':           ('amd',        '日报', 'AMD 美股日报'),
     'amd-weekly':          ('amd',        '周报', 'AMD 股市周报'),

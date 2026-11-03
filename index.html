@@ -196,7 +196,7 @@ const SITE_TAGS = {
   'nvidia': {label:'NVIDIA Labs', cls:'nvidia'},
   'amd': {label:'AMD', cls:'amd'}
 };
-const KIND_TAGS = {'日报':'Daily', '周报':'Weekly'};
+const KIND_TAGS = {'日报':'Daily', '周报':'Weekly', '论文监测':'Paper Scout', '项目监测':'Project Scout'};
 function siteTag(site){ return SITE_TAGS[site] || {label:String(site||'Other'), cls:''}; }
 function kindTag(kind){ return KIND_TAGS[kind] || String(kind||'Report').replace(/[^A-Za-z0-9._+/# -]/g,'').trim() || 'Report'; }
 

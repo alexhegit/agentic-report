@@ -13,6 +13,7 @@ SKIP_GIT = os.environ.get('AGENTIC_SKIP_GIT') == '1'
 # slug -> 元数据(与 jobs/jobs.json 的 slug 对齐)
 JOBS = {
     'physical-ai-daily':   ('physical-ai', '日报', 'Physical AI 日报'),
+    'physical-ai-daily-scout': ('physical-ai', '日报', 'Physical AI Daily Scout'),
     'physical-ai-weekly':  ('physical-ai', '周报', 'Physical AI 周报'),
     'physical-ai-arxiv-scout': ('physical-ai', '论文监测', 'Physical AI 高质量论文监测'),
     'physical-ai-github-scout': ('physical-ai', '项目监测', 'GitHub Physical AI 项目监测'),

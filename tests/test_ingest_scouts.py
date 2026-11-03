@@ -19,6 +19,10 @@ class ScoutIngestContractTests(unittest.TestCase):
         ingest = load_ingest_module()
 
         self.assertEqual(
+            ingest.JOBS["physical-ai-daily-scout"],
+            ("physical-ai", "日报", "Physical AI Daily Scout"),
+        )
+        self.assertEqual(
             ingest.JOBS["physical-ai-arxiv-scout"],
             ("physical-ai", "论文监测", "Physical AI 高质量论文监测"),
         )

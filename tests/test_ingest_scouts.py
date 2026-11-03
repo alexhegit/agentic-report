@@ -38,6 +38,10 @@ class ScoutIngestContractTests(unittest.TestCase):
             ingest.JOBS["physical-ai-weekly-synthesis"],
             ("physical-ai", "周度综合", "Physical AI Weekly Synthesis"),
         )
+        self.assertEqual(
+            ingest.JOBS["github-weekly-work-summary"],
+            ("github", "周报", "GitHub 周度工作总结"),
+        )
 
     def test_default_view_shows_recent_reports_without_forcing_latest_date(self):
         html = (REPO / "index.html").read_text(encoding="utf-8")
@@ -52,6 +56,15 @@ class ScoutIngestContractTests(unittest.TestCase):
         self.assertIn("'项目监测':'Project Scout'", html)
         self.assertIn("'行业监测':'Industry Watch'", html)
         self.assertIn("'周度综合':'Weekly Synthesis'", html)
+
+    def test_frontend_has_github_site_filter_and_calendar_mapping(self):
+        html = (REPO / "index.html").read_text(encoding="utf-8")
+
+        self.assertIn("data-s=\"github\"", html)
+        self.assertIn("'github': {label:'GitHub'", html)
+        self.assertIn("else if(r0.site==='amd') a.amd=true", html)
+        self.assertIn("else if(r0.site==='github') a.github=true", html)
+        self.assertNotIn("else a.amd=true", html)
 
 
 if __name__ == "__main__":

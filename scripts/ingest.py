@@ -20,6 +20,7 @@ JOBS = {
     'physical-ai-industry-watch': ('physical-ai', '行业监测', 'Physical AI Industry Watch'),
     'physical-ai-weekly-synthesis': ('physical-ai', '周度综合', 'Physical AI Weekly Synthesis'),
     'nvidia-physical-ai-labs-weekly': ('nvidia', '周报', 'NVIDIA 物理 AI 实验室周报'),
+    'github-weekly-work-summary': ('github', '周报', 'GitHub 周度工作总结'),
     'amd-daily':           ('amd',        '日报', 'AMD 美股日报'),
     'amd-weekly':          ('amd',        '周报', 'AMD 股市周报'),
 }

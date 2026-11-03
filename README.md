@@ -6,7 +6,7 @@ Hermes Agent 驱动的**自动情报知识库**:周期研究任务产出报告,�
 
 ## ✨ 功能
 
-- 🗞 **报告时间线** — 100+ 份 AI 日报/周报,按日期分组,月历点选、全文搜索、独立的 Physical AI / NVIDIA 实验室 / AMD 标签页,支持 `?date=&site=` 深链直达
+- 🗞 **报告时间线** — 100+ 份 AI 日报/周报,按日期分组,月历点选、全文搜索、独立的 Physical AI / NVIDIA 实验室 / AMD / GitHub 标签页,支持 `?date=&site=` 深链直达
 - 🗺 **知识图谱** — 370+ 项目/论文/公司实体,力导向布局,显式关系(复现/构建)与同周期共现分线型,离线可用
 - 📇 **实体目录** — 卡片式浏览每个项目/论文/公司,按提及热度排序
 - 📬 **飞书同步** — 每份报告推送时附站点深链,点进即见当天内容
@@ -22,6 +22,8 @@ Hermes Agent 驱动的**自动情报知识库**:周期研究任务产出报告,�
 | 🧪 NVIDIA 物理 AI 实验室周报 | 周日 08:00 | GEAR / SRL / Cosmos / ASPIRE / SIL / PAIS / Physics Research |
 | 📈 AMD 美股日报 | 周一~五 19:00 | 最近一个已收盘交易日总结;美股休市日跳过 |
 | 📈 AMD 股市周报 | 周日 08:00 | 上一完整交易周综述 |
+
+当前发布主机还可接入 **publish-only stream**（例如合并后的 Physical AI Daily Scout、Weekly Synthesis 和 GitHub 周度工作总结）。这些任务由当前 Hermes profile 管理，`jobs/local_map.json` 只保存本机 UUID→slug 映射；它们不会写入共享安装清单，避免 `install.sh` 在其他主机重复创建生产者。无论任务来自安装器还是当前 profile，只要映射存在，统一 ingester 都按同一幂等路径发布。
 
 ## 🚀 安装 / 部署
 
@@ -44,7 +46,7 @@ python3 scripts/ingest.py # 验证数据链路(无新报告时打印 no new repo
 ├── index.html / graph.html / entities.html   ← 三个页面(纯静态)
 ├── data/                                      ← reports / entities / edges JSON(站点唯一数据源)
 ├── logs/                                      ← 每期报告原文(Markdown + frontmatter)
-├── jobs/jobs.json                             ← 5 个任务的权威定义(prompt/周期/skills)
+├── jobs/jobs.json                             ← 安装器管理的 5 个基线任务定义
 ├── jobs/watch-contracts/                      ← NVIDIA 实验室监控合同模板
 ├── jobs/local_map.json                        ← 本机 job UUID → slug（install.sh 生成，不入库）
 ├── skills/robotics-ai-digest/                 ← 任务所用 skill(方法论+脚本)
@@ -59,7 +61,7 @@ python3 scripts/ingest.py # 验证数据链路(无新报告时打印 no new repo
 
 1. `git remote set-url origin <新仓库>`
 2. 改 `site.json` 的 `site_base` 为新 Pages 地址
-3. 用 `hermes cron update` 把 5 个任务 prompt 末尾的 📎 深链同步为新地址,并回写 `jobs/jobs.json`
+3. 用 `hermes cron update` 把安装器管理任务及本机 publish-only stream 的 📎 深链同步为新地址；基线任务同时回写 `jobs/jobs.json`
 4. 新仓库 Settings 开启 Pages(分支 `main`,根目录;Free 版要求仓库 public)
 
 ## 📚 文档

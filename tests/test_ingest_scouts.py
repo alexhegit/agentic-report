@@ -26,6 +26,14 @@ class ScoutIngestContractTests(unittest.TestCase):
             ingest.JOBS["physical-ai-github-scout"],
             ("physical-ai", "项目监测", "GitHub Physical AI 项目监测"),
         )
+        self.assertEqual(
+            ingest.JOBS["physical-ai-industry-watch"],
+            ("physical-ai", "行业监测", "Physical AI Industry Watch"),
+        )
+        self.assertEqual(
+            ingest.JOBS["physical-ai-weekly-synthesis"],
+            ("physical-ai", "周度综合", "Physical AI Weekly Synthesis"),
+        )
 
     def test_default_view_shows_recent_reports_without_forcing_latest_date(self):
         html = (REPO / "index.html").read_text(encoding="utf-8")
@@ -38,6 +46,8 @@ class ScoutIngestContractTests(unittest.TestCase):
 
         self.assertIn("'论文监测':'Paper Scout'", html)
         self.assertIn("'项目监测':'Project Scout'", html)
+        self.assertIn("'行业监测':'Industry Watch'", html)
+        self.assertIn("'周度综合':'Weekly Synthesis'", html)
 
 
 if __name__ == "__main__":

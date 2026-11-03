@@ -16,6 +16,8 @@ JOBS = {
     'physical-ai-weekly':  ('physical-ai', '周报', 'Physical AI 周报'),
     'physical-ai-arxiv-scout': ('physical-ai', '论文监测', 'Physical AI 高质量论文监测'),
     'physical-ai-github-scout': ('physical-ai', '项目监测', 'GitHub Physical AI 项目监测'),
+    'physical-ai-industry-watch': ('physical-ai', '行业监测', 'Physical AI Industry Watch'),
+    'physical-ai-weekly-synthesis': ('physical-ai', '周度综合', 'Physical AI Weekly Synthesis'),
     'nvidia-physical-ai-labs-weekly': ('nvidia', '周报', 'NVIDIA 物理 AI 实验室周报'),
     'amd-daily':           ('amd',        '日报', 'AMD 美股日报'),
     'amd-weekly':          ('amd',        '周报', 'AMD 股市周报'),

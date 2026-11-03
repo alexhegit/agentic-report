@@ -9,7 +9,7 @@
   "id": "17abfd_2026-10-27_090226",  // {job6}_{YYYY-MM-DD}[_{HHMMSS}]
   "date": "2026-10-27",              // 生成日(以 cron 输出文件名时间戳为准,北京时间)
   "site": "physical-ai",             // physical-ai | nvidia | amd
-  "kind": "日报",                     // 日报 | 周报 | 论文监测 | 项目监测
+  "kind": "日报",                     // 日报 | 周报 | 论文监测 | 项目监测 | 行业监测 | 周度综合
   "title": "Physical AI 日报",          // 或 NVIDIA 物理 AI 实验室周报等固定标题
   "summary": "240 字以内纯文本摘要",
   "full_text": "…报告全文(Markdown)…",
@@ -51,4 +51,4 @@
 - `id` / `date` / `log` 由稳定输入推导,禁止手工改写(破坏幂等)
 - `full_text` 只存于 reports.json;logs/*.md 的正文应与其一致
 - 实体 id 出现 404/HTML 误抓特征且长度 > 80 时应丢弃
-- 前端分类标签统一显示英文并标记 `translate="no"`：`physical-ai → Physical AI`、`nvidia → NVIDIA Labs`、`amd → AMD`、`日报 → Daily`、`周报 → Weekly`、`论文监测 → Paper Scout`、`项目监测 → Project Scout`；数据层保留原始稳定值，不把浏览器或机器翻译结果写回 JSON
+- 前端分类标签统一显示英文并标记 `translate="no"`：`physical-ai → Physical AI`、`nvidia → NVIDIA Labs`、`amd → AMD`、`日报 → Daily`、`周报 → Weekly`、`论文监测 → Paper Scout`、`项目监测 → Project Scout`、`行业监测 → Industry Watch`、`周度综合 → Weekly Synthesis`；数据层保留原始稳定值，不把浏览器或机器翻译结果写回 JSON

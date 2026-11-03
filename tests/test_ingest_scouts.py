@@ -27,6 +27,12 @@ class ScoutIngestContractTests(unittest.TestCase):
             ("physical-ai", "项目监测", "GitHub Physical AI 项目监测"),
         )
 
+    def test_default_view_shows_recent_reports_without_forcing_latest_date(self):
+        html = (REPO / "index.html").read_text(encoding="utf-8")
+        load_body = html.split("async function load(){", 1)[1].split("\nfunction esc", 1)[0]
+
+        self.assertNotIn("selectDate(latest)", load_body)
+
     def test_frontend_has_english_labels_for_scout_streams(self):
         html = (REPO / "index.html").read_text(encoding="utf-8")
 

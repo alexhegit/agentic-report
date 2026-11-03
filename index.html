@@ -264,11 +264,6 @@ async function load(){
     renderStats();
     renderCal();
     render();
-    // 无深链日期时,默认选中最新一天(避免一上来铺开全部历史)
-    if (!dateFilter) {
-      const latest = REPORTS.map(r=>r.date).sort().at(-1);
-      if (latest) selectDate(latest);
-    }
   } catch(e) {
     document.getElementById('list').innerHTML = '<div class="empty">加载 data/reports.json 失败 — 请通过 HTTP 服务访问。<br>本机可用 <code>cd /root/agentic-report && python3 -m http.server 8731</code></div>';
   }

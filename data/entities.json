@@ -4568,5 +4568,55 @@
     "last_seen": "2026-10-30",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "nikocallas/show-and-tell-robotics",
+    "label": "nikocallas/show-and-tell-robotics",
+    "kind": "project",
+    "url": "https://github.com/nikocallas/show-and-tell-robotics",
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-04",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "liesliy/rda-audits",
+    "label": "liesliy/rda-audits",
+    "kind": "project",
+    "url": "https://github.com/liesliy/rda-audits",
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-04",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.03501",
+    "label": "2611.03501",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.03501",
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-04",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.03268",
+    "label": "2611.03268",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.03268",
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-04",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.03168",
+    "label": "2611.03168",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.03168",
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-04",
+    "mentions": 2,
+    "extra": ""
   }
 ]

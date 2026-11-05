@@ -1735,8 +1735,8 @@
     "kind": "project",
     "url": "https://github.com/rerun-io/rerun",
     "first_seen": "2026-10-16",
-    "last_seen": "2026-10-29",
-    "mentions": 2,
+    "last_seen": "2026-11-05",
+    "mentions": 4,
     "extra": ""
   },
   {
@@ -4616,6 +4616,46 @@
     "url": "https://arxiv.org/abs/2611.03168",
     "first_seen": "2026-11-04",
     "last_seen": "2026-11-04",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "newton-physics/newton",
+    "label": "newton-physics/newton",
+    "kind": "project",
+    "url": "https://github.com/newton-physics/newton",
+    "first_seen": "2026-11-05",
+    "last_seen": "2026-11-05",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.05093",
+    "label": "2611.05093",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.05093",
+    "first_seen": "2026-11-05",
+    "last_seen": "2026-11-05",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.05320",
+    "label": "2611.05320",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.05320",
+    "first_seen": "2026-11-05",
+    "last_seen": "2026-11-05",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.04870",
+    "label": "2611.04870",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.04870",
+    "first_seen": "2026-11-05",
+    "last_seen": "2026-11-05",
     "mentions": 2,
     "extra": ""
   }

@@ -19990,5 +19990,341 @@
     "target": "Agility Robotics",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "Motphys/Uni-SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "rocPAI-Forge/tech-blog-pub",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "alexhegit/h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "alexhegit/agentic-report",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "ROCm/rocm-systems",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "recursive-oss/rec",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/Uni-SuperMimic",
+    "target": "rocPAI-Forge/tech-blog-pub",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/Uni-SuperMimic",
+    "target": "vllm-project/semantic-router",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/Uni-SuperMimic",
+    "target": "alexhegit/h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/Uni-SuperMimic",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/Uni-SuperMimic",
+    "target": "ROCm/rocm-systems",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/tech-blog-pub",
+    "target": "vllm-project/semantic-router",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/tech-blog-pub",
+    "target": "rocPAI-Forge/vla-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/tech-blog-pub",
+    "target": "rocPAI-Forge/so101-simstudio",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/tech-blog-pub",
+    "target": "alexhegit/h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/tech-blog-pub",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/tech-blog-pub",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/tech-blog-pub",
+    "target": "alexhegit/agentic-report",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/tech-blog-pub",
+    "target": "ROCm/rocm-systems",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/tech-blog-pub",
+    "target": "recursive-oss/rec",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "vllm-project/semantic-router",
+    "target": "alexhegit/h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "vllm-project/semantic-router",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "vllm-project/semantic-router",
+    "target": "alexhegit/agentic-report",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "vllm-project/semantic-router",
+    "target": "ROCm/rocm-systems",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "vllm-project/semantic-router",
+    "target": "recursive-oss/rec",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "alexhegit/h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "ROCm/rocm-systems",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "alexhegit/h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "ROCm/rocm-systems",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "SuperMimic",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "alexhegit/agentic-report",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "ROCm/rocm-systems",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "recursive-oss/rec",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SuperMimic",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "SuperMimic",
+    "target": "ROCm/rocm-systems",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "alexhegit/agentic-report",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "ROCm/rocm-systems",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "NVIDIA",
+    "target": "recursive-oss/rec",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/agentic-report",
+    "target": "ROCm/rocm-systems",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "ROCm/rocm-systems",
+    "target": "recursive-oss/rec",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.06908",
+    "target": "Bedrock Robotics",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.06908",
+    "target": "Pudu",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.06908",
+    "target": "2611.06905",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.06908",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.06908",
+    "target": "2611.06913",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Bedrock Robotics",
+    "target": "Pudu",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Bedrock Robotics",
+    "target": "2611.06905",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Bedrock Robotics",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Bedrock Robotics",
+    "target": "2611.06913",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Pudu",
+    "target": "2611.06905",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Pudu",
+    "target": "2611.06913",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.06905",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.06905",
+    "target": "2611.06913",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "2611.06913",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
   }
 ]

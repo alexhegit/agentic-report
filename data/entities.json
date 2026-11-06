@@ -145,8 +145,8 @@
     "kind": "project",
     "url": "https://github.com/huggingface/lerobot",
     "first_seen": "2026-06-27",
-    "last_seen": "2026-10-28",
-    "mentions": 12,
+    "last_seen": "2026-11-06",
+    "mentions": 14,
     "extra": ""
   },
   {
@@ -4145,8 +4145,8 @@
     "kind": "project",
     "url": "https://github.com/Motphys/Uni-SuperMimic",
     "first_seen": "2026-10-24",
-    "last_seen": "2026-10-30",
-    "mentions": 3,
+    "last_seen": "2026-11-06",
+    "mentions": 5,
     "extra": ""
   },
   {
@@ -4475,8 +4475,8 @@
     "kind": "project",
     "url": "https://github.com/vllm-project/semantic-router",
     "first_seen": "2026-10-23",
-    "last_seen": "2026-10-23",
-    "mentions": 3,
+    "last_seen": "2026-11-06",
+    "mentions": 4,
     "extra": ""
   },
   {
@@ -4495,8 +4495,8 @@
     "kind": "project",
     "url": "https://github.com/rocPAI-Forge/vla-hip.c",
     "first_seen": "2026-10-23",
-    "last_seen": "2026-10-30",
-    "mentions": 5,
+    "last_seen": "2026-11-06",
+    "mentions": 11,
     "extra": ""
   },
   {
@@ -4505,8 +4505,8 @@
     "kind": "project",
     "url": "https://github.com/rocPAI-Forge/so101-simstudio",
     "first_seen": "2026-10-23",
-    "last_seen": "2026-10-30",
-    "mentions": 9,
+    "last_seen": "2026-11-06",
+    "mentions": 14,
     "extra": ""
   },
   {
@@ -4515,8 +4515,8 @@
     "kind": "project",
     "url": "https://github.com/rocPAI-Forge/microduck_rl_unilab",
     "first_seen": "2026-10-23",
-    "last_seen": "2026-10-23",
-    "mentions": 2,
+    "last_seen": "2026-11-06",
+    "mentions": 6,
     "extra": ""
   },
   {
@@ -4545,8 +4545,8 @@
     "kind": "project",
     "url": "https://github.com/recursive-oss/rec",
     "first_seen": "2026-10-30",
-    "last_seen": "2026-10-30",
-    "mentions": 2,
+    "last_seen": "2026-11-06",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -4565,8 +4565,8 @@
     "kind": "project",
     "url": "https://github.com/alexhegit/agentic-report",
     "first_seen": "2026-10-30",
-    "last_seen": "2026-10-30",
-    "mentions": 2,
+    "last_seen": "2026-11-06",
+    "mentions": 4,
     "extra": ""
   },
   {
@@ -4656,6 +4656,66 @@
     "url": "https://arxiv.org/abs/2611.04870",
     "first_seen": "2026-11-05",
     "last_seen": "2026-11-05",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "alexhegit/h3-hip.c",
+    "label": "alexhegit/h3-hip.c",
+    "kind": "project",
+    "url": "https://github.com/alexhegit/h3-hip.c",
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06",
+    "mentions": 4,
+    "extra": ""
+  },
+  {
+    "id": "ROCm/rocm-systems",
+    "label": "ROCm/rocm-systems",
+    "kind": "project",
+    "url": "https://github.com/ROCm/rocm-systems",
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "rocPAI-Forge/tech-blog-pub",
+    "label": "rocPAI-Forge/tech-blog-pub",
+    "kind": "project",
+    "url": "https://github.com/rocPAI-Forge/tech-blog-pub",
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2611.06913",
+    "label": "2611.06913",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.06913",
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.06908",
+    "label": "2611.06908",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.06908",
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.06905",
+    "label": "2611.06905",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.06905",
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06",
     "mentions": 2,
     "extra": ""
   }

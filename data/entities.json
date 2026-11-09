@@ -1055,8 +1055,8 @@
     "kind": "project",
     "url": "https://github.com/Genesis-Embodied-AI/genesis-world",
     "first_seen": "2026-06-27",
-    "last_seen": "2026-10-28",
-    "mentions": 12,
+    "last_seen": "2026-11-09",
+    "mentions": 14,
     "extra": ""
   },
   {
@@ -4716,6 +4716,56 @@
     "url": "https://arxiv.org/abs/2611.06905",
     "first_seen": "2026-11-06",
     "last_seen": "2026-11-06",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "provael/provael",
+    "label": "provael/provael",
+    "kind": "project",
+    "url": "https://github.com/provael/provael",
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.07513",
+    "label": "2611.07513",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.07513",
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.08449",
+    "label": "2611.08449",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.08449",
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.08425",
+    "label": "2611.08425",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.08425",
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.08338",
+    "label": "2611.08338",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.08338",
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
     "mentions": 2,
     "extra": ""
   }

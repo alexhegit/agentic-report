@@ -20476,5 +20476,95 @@
     "target": "huggingface/lerobot",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
+  },
+  {
+    "source": "2611.08449",
+    "target": "Genesis-Embodied-AI/genesis-world",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08449",
+    "target": "2611.07513",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08449",
+    "target": "2611.08425",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08449",
+    "target": "provael/provael",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08449",
+    "target": "2611.08338",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "2611.07513",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "2611.08425",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "provael/provael",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Genesis-Embodied-AI/genesis-world",
+    "target": "2611.08338",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.07513",
+    "target": "2611.08425",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.07513",
+    "target": "provael/provael",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.07513",
+    "target": "2611.08338",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08425",
+    "target": "provael/provael",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08425",
+    "target": "2611.08338",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "provael/provael",
+    "target": "2611.08338",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
   }
 ]

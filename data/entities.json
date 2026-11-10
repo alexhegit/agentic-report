@@ -4768,5 +4768,55 @@
     "last_seen": "2026-11-09",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "ustcwhy/BitVLA",
+    "label": "ustcwhy/BitVLA",
+    "kind": "project",
+    "url": "https://github.com/ustcwhy/BitVLA",
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-10",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "ioai-tech/rosview",
+    "label": "ioai-tech/rosview",
+    "kind": "project",
+    "url": "https://github.com/ioai-tech/rosview",
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-10",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.09892",
+    "label": "2611.09892",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.09892",
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-10",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.09864",
+    "label": "2611.09864",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.09864",
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-10",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.09877",
+    "label": "2611.09877",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.09877",
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-10",
+    "mentions": 2,
+    "extra": ""
   }
 ]

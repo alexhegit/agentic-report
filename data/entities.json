@@ -4818,5 +4818,45 @@
     "last_seen": "2026-11-10",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "Robbyant/lingbot-touch",
+    "label": "Robbyant/lingbot-touch",
+    "kind": "project",
+    "url": "https://github.com/Robbyant/lingbot-touch",
+    "first_seen": "2026-11-11",
+    "last_seen": "2026-11-11",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "codestrongestx/vla-lag-bench",
+    "label": "codestrongestx/vla-lag-bench",
+    "kind": "project",
+    "url": "https://github.com/codestrongestx/vla-lag-bench",
+    "first_seen": "2026-11-11",
+    "last_seen": "2026-11-11",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.11854",
+    "label": "2611.11854",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.11854",
+    "first_seen": "2026-11-11",
+    "last_seen": "2026-11-11",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.11554",
+    "label": "2611.11554",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.11554",
+    "first_seen": "2026-11-11",
+    "last_seen": "2026-11-11",
+    "mentions": 2,
+    "extra": ""
   }
 ]

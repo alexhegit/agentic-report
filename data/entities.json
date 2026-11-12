@@ -4858,5 +4858,45 @@
     "last_seen": "2026-11-11",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "EchoOSLab/EchoOS",
+    "label": "EchoOSLab/EchoOS",
+    "kind": "project",
+    "url": "https://github.com/EchoOSLab/EchoOS",
+    "first_seen": "2026-11-12",
+    "last_seen": "2026-11-12",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "unixyhuang/blindfold",
+    "label": "unixyhuang/blindfold",
+    "kind": "project",
+    "url": "https://github.com/unixyhuang/blindfold",
+    "first_seen": "2026-11-12",
+    "last_seen": "2026-11-12",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.14488",
+    "label": "2611.14488",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.14488",
+    "first_seen": "2026-11-12",
+    "last_seen": "2026-11-12",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.13819",
+    "label": "2611.13819",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.13819",
+    "first_seen": "2026-11-12",
+    "last_seen": "2026-11-12",
+    "mentions": 2,
+    "extra": ""
   }
 ]

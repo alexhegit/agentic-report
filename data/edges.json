@@ -20704,5 +20704,137 @@
     "target": "mrwangyajun/dexhand-urdf-studio",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "URLab-Sim/UnrealRoboticsLab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "alexhegit/edenlive-rocm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "alexhegit/h3-spark.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "alexhegit/minimax-h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "URLab-Sim/UnrealRoboticsLab",
+    "target": "alexhegit/edenlive-rocm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "URLab-Sim/UnrealRoboticsLab",
+    "target": "rocPAI-Forge/so101-simstudio",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "URLab-Sim/UnrealRoboticsLab",
+    "target": "alexhegit/h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "URLab-Sim/UnrealRoboticsLab",
+    "target": "alexhegit/h3-spark.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "URLab-Sim/UnrealRoboticsLab",
+    "target": "alexhegit/minimax-h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "URLab-Sim/UnrealRoboticsLab",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/edenlive-rocm",
+    "target": "rocPAI-Forge/so101-simstudio",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/edenlive-rocm",
+    "target": "alexhegit/h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/edenlive-rocm",
+    "target": "alexhegit/h3-spark.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/edenlive-rocm",
+    "target": "alexhegit/minimax-h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/edenlive-rocm",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "alexhegit/h3-spark.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "alexhegit/minimax-h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "alexhegit/h3-spark.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "alexhegit/minimax-h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-spark.c",
+    "target": "alexhegit/minimax-h3-hip.c",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-spark.c",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/minimax-h3-hip.c",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
   }
 ]

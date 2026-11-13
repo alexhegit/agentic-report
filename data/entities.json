@@ -4495,8 +4495,8 @@
     "kind": "project",
     "url": "https://github.com/rocPAI-Forge/vla-hip.c",
     "first_seen": "2026-10-23",
-    "last_seen": "2026-11-06",
-    "mentions": 11,
+    "last_seen": "2026-11-13",
+    "mentions": 17,
     "extra": ""
   },
   {
@@ -4505,8 +4505,8 @@
     "kind": "project",
     "url": "https://github.com/rocPAI-Forge/so101-simstudio",
     "first_seen": "2026-10-23",
-    "last_seen": "2026-11-06",
-    "mentions": 14,
+    "last_seen": "2026-11-13",
+    "mentions": 18,
     "extra": ""
   },
   {
@@ -4665,8 +4665,8 @@
     "kind": "project",
     "url": "https://github.com/alexhegit/h3-hip.c",
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-06",
-    "mentions": 4,
+    "last_seen": "2026-11-13",
+    "mentions": 10,
     "extra": ""
   },
   {
@@ -4917,6 +4917,46 @@
     "first_seen": "2026-11-13",
     "last_seen": "2026-11-13",
     "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "alexhegit/h3-spark.c",
+    "label": "alexhegit/h3-spark.c",
+    "kind": "project",
+    "url": "https://github.com/alexhegit/h3-spark.c",
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "alexhegit/edenlive-rocm",
+    "label": "alexhegit/edenlive-rocm",
+    "kind": "project",
+    "url": "https://github.com/alexhegit/edenlive-rocm",
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "URLab-Sim/UnrealRoboticsLab",
+    "label": "URLab-Sim/UnrealRoboticsLab",
+    "kind": "project",
+    "url": "https://github.com/URLab-Sim/UnrealRoboticsLab",
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "alexhegit/minimax-h3-hip.c",
+    "label": "alexhegit/minimax-h3-hip.c",
+    "kind": "project",
+    "url": "https://github.com/alexhegit/minimax-h3-hip.c",
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13",
+    "mentions": 1,
     "extra": ""
   }
 ]

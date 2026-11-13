@@ -4898,5 +4898,25 @@
     "last_seen": "2026-11-12",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "mrwangyajun/dexhand-urdf-studio",
+    "label": "mrwangyajun/dexhand-urdf-studio",
+    "kind": "project",
+    "url": "https://github.com/mrwangyajun/dexhand-urdf-studio",
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "KalanosAI/kalanos-action",
+    "label": "KalanosAI/kalanos-action",
+    "kind": "project",
+    "url": "https://github.com/KalanosAI/kalanos-action",
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13",
+    "mentions": 2,
+    "extra": ""
   }
 ]

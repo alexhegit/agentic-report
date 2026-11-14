@@ -20836,5 +20836,11 @@
     "target": "NVIDIA",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
+  },
+  {
+    "source": "mit-han-lab/pear",
+    "target": "vedevpatel/kinema",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
   }
 ]

@@ -4958,5 +4958,25 @@
     "last_seen": "2026-11-13",
     "mentions": 1,
     "extra": ""
+  },
+  {
+    "id": "mit-han-lab/pear",
+    "label": "mit-han-lab/pear",
+    "kind": "project",
+    "url": "https://github.com/mit-han-lab/pear",
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "vedevpatel/kinema",
+    "label": "vedevpatel/kinema",
+    "kind": "project",
+    "url": "https://github.com/vedevpatel/kinema",
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "mentions": 3,
+    "extra": ""
   }
 ]

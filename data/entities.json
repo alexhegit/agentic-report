@@ -4755,8 +4755,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2611.08425",
     "first_seen": "2026-11-09",
-    "last_seen": "2026-11-09",
-    "mentions": 2,
+    "last_seen": "2026-11-15",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -4765,8 +4765,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2611.08338",
     "first_seen": "2026-11-09",
-    "last_seen": "2026-11-09",
-    "mentions": 2,
+    "last_seen": "2026-11-15",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -4775,8 +4775,8 @@
     "kind": "project",
     "url": "https://github.com/ustcwhy/BitVLA",
     "first_seen": "2026-11-10",
-    "last_seen": "2026-11-10",
-    "mentions": 2,
+    "last_seen": "2026-11-15",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -4835,8 +4835,8 @@
     "kind": "project",
     "url": "https://github.com/codestrongestx/vla-lag-bench",
     "first_seen": "2026-11-11",
-    "last_seen": "2026-11-11",
-    "mentions": 2,
+    "last_seen": "2026-11-15",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -4845,8 +4845,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2611.11854",
     "first_seen": "2026-11-11",
-    "last_seen": "2026-11-11",
-    "mentions": 2,
+    "last_seen": "2026-11-15",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -4875,8 +4875,8 @@
     "kind": "project",
     "url": "https://github.com/unixyhuang/blindfold",
     "first_seen": "2026-11-12",
-    "last_seen": "2026-11-12",
-    "mentions": 2,
+    "last_seen": "2026-11-15",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -4885,8 +4885,8 @@
     "kind": "paper",
     "url": "https://arxiv.org/abs/2611.14488",
     "first_seen": "2026-11-12",
-    "last_seen": "2026-11-12",
-    "mentions": 2,
+    "last_seen": "2026-11-15",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -4965,8 +4965,8 @@
     "kind": "project",
     "url": "https://github.com/mit-han-lab/pear",
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-14",
-    "mentions": 2,
+    "last_seen": "2026-11-15",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -4986,7 +4986,7 @@
     "url": "https://github.com/NVlabs/GR00T-DataHardwarePrototypes",
     "first_seen": "2026-11-15",
     "last_seen": "2026-11-15",
-    "mentions": 1,
+    "mentions": 2,
     "extra": ""
   }
 ]

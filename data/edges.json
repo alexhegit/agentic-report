@@ -20848,5 +20848,251 @@
     "target": "NVlabs/GR00T-DataHardwarePrototypes",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
+  },
+  {
+    "source": "2611.08425",
+    "target": "2611.14488",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08425",
+    "target": "ustcwhy/BitVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08425",
+    "target": "2611.11854",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08425",
+    "target": "mit-han-lab/pear",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08425",
+    "target": "codestrongestx/vla-lag-bench",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08425",
+    "target": "unixyhuang/blindfold",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08425",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08425",
+    "target": "NVlabs/GR00T-DataHardwarePrototypes",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.14488",
+    "target": "2611.08338",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.14488",
+    "target": "ustcwhy/BitVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.14488",
+    "target": "2611.11854",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.14488",
+    "target": "mit-han-lab/pear",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.14488",
+    "target": "codestrongestx/vla-lag-bench",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.14488",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.14488",
+    "target": "NVlabs/GR00T-DataHardwarePrototypes",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08338",
+    "target": "ustcwhy/BitVLA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08338",
+    "target": "2611.11854",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08338",
+    "target": "mit-han-lab/pear",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08338",
+    "target": "codestrongestx/vla-lag-bench",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08338",
+    "target": "unixyhuang/blindfold",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08338",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.08338",
+    "target": "NVlabs/GR00T-DataHardwarePrototypes",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "ustcwhy/BitVLA",
+    "target": "2611.11854",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "ustcwhy/BitVLA",
+    "target": "mit-han-lab/pear",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "ustcwhy/BitVLA",
+    "target": "codestrongestx/vla-lag-bench",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "ustcwhy/BitVLA",
+    "target": "unixyhuang/blindfold",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "ustcwhy/BitVLA",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "ustcwhy/BitVLA",
+    "target": "NVlabs/GR00T-DataHardwarePrototypes",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.11854",
+    "target": "mit-han-lab/pear",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.11854",
+    "target": "unixyhuang/blindfold",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.11854",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.11854",
+    "target": "NVlabs/GR00T-DataHardwarePrototypes",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "mit-han-lab/pear",
+    "target": "codestrongestx/vla-lag-bench",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "mit-han-lab/pear",
+    "target": "unixyhuang/blindfold",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "mit-han-lab/pear",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "mit-han-lab/pear",
+    "target": "NVlabs/GR00T-DataHardwarePrototypes",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "codestrongestx/vla-lag-bench",
+    "target": "unixyhuang/blindfold",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "codestrongestx/vla-lag-bench",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "codestrongestx/vla-lag-bench",
+    "target": "NVlabs/GR00T-DataHardwarePrototypes",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "unixyhuang/blindfold",
+    "target": "NVIDIA",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "unixyhuang/blindfold",
+    "target": "NVlabs/GR00T-DataHardwarePrototypes",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
   }
 ]

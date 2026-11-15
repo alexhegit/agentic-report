@@ -4978,5 +4978,15 @@
     "last_seen": "2026-11-14",
     "mentions": 3,
     "extra": ""
+  },
+  {
+    "id": "NVlabs/GR00T-DataHardwarePrototypes",
+    "label": "NVlabs/GR00T-DataHardwarePrototypes",
+    "kind": "project",
+    "url": "https://github.com/NVlabs/GR00T-DataHardwarePrototypes",
+    "first_seen": "2026-11-15",
+    "last_seen": "2026-11-15",
+    "mentions": 1,
+    "extra": ""
   }
 ]

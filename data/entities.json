@@ -155,8 +155,8 @@
     "kind": "project",
     "url": "https://github.com/Hebbian-Robotics/hflow",
     "first_seen": "2026-08-21",
-    "last_seen": "2026-09-01",
-    "mentions": 4,
+    "last_seen": "2026-11-16",
+    "mentions": 6,
     "extra": ""
   },
   {
@@ -4355,8 +4355,8 @@
     "kind": "project",
     "url": "https://github.com/DexForce/EmbodiChain",
     "first_seen": "2026-10-31",
-    "last_seen": "2026-10-31",
-    "mentions": 1,
+    "last_seen": "2026-11-16",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -4986,6 +4986,16 @@
     "url": "https://github.com/NVlabs/GR00T-DataHardwarePrototypes",
     "first_seen": "2026-11-15",
     "last_seen": "2026-11-15",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "mujocolab/mjlab",
+    "label": "mujocolab/mjlab",
+    "kind": "project",
+    "url": "https://github.com/mujocolab/mjlab",
+    "first_seen": "2026-11-16",
+    "last_seen": "2026-11-16",
     "mentions": 2,
     "extra": ""
   }

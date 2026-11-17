@@ -4998,5 +4998,15 @@
     "last_seen": "2026-11-16",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "amazon-far/dreamfar",
+    "label": "amazon-far/dreamfar",
+    "kind": "project",
+    "url": "https://github.com/amazon-far/dreamfar",
+    "first_seen": "2026-11-17",
+    "last_seen": "2026-11-17",
+    "mentions": 2,
+    "extra": ""
   }
 ]

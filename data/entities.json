@@ -5008,5 +5008,45 @@
     "last_seen": "2026-11-17",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "touchbridge2026/TouchBridge",
+    "label": "touchbridge2026/TouchBridge",
+    "kind": "project",
+    "url": "https://github.com/touchbridge2026/TouchBridge",
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "General-Sequences/sequence-ai",
+    "label": "General-Sequences/sequence-ai",
+    "kind": "project",
+    "url": "https://github.com/General-Sequences/sequence-ai",
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.21607",
+    "label": "2611.21607",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.21607",
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.21517",
+    "label": "2611.21517",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.21517",
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18",
+    "mentions": 2,
+    "extra": ""
   }
 ]

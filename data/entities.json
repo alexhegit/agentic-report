@@ -5048,5 +5048,55 @@
     "last_seen": "2026-11-18",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "suho-yoo/VSpark",
+    "label": "suho-yoo/VSpark",
+    "kind": "project",
+    "url": "https://github.com/suho-yoo/VSpark",
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "ICE-CUBA/lucen-sdk",
+    "label": "ICE-CUBA/lucen-sdk",
+    "kind": "project",
+    "url": "https://github.com/ICE-CUBA/lucen-sdk",
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.23143",
+    "label": "2611.23143",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.23143",
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.23118",
+    "label": "2611.23118",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.23118",
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.22395",
+    "label": "2611.22395",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.22395",
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19",
+    "mentions": 2,
+    "extra": ""
   }
 ]

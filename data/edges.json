@@ -21262,5 +21262,59 @@
     "target": "2611.23143",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/vla-hip.c",
+    "target": "amd/playbooks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "amd/playbooks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "amd/playbooks",
+    "target": "rocPAI-Forge/microduck_rl_unilab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.23916",
+    "target": "2611.24100",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.23916",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.23916",
+    "target": "2611.23676",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.24100",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "2611.24100",
+    "target": "2611.23676",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "2611.23676",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
   }
 ]

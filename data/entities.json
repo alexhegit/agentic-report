@@ -145,8 +145,8 @@
     "kind": "project",
     "url": "https://github.com/huggingface/lerobot",
     "first_seen": "2026-06-27",
-    "last_seen": "2026-11-20",
-    "mentions": 18,
+    "last_seen": "2026-11-21",
+    "mentions": 20,
     "extra": ""
   },
   {
@@ -5136,6 +5136,46 @@
     "url": "https://arxiv.org/abs/2611.24100",
     "first_seen": "2026-11-20",
     "last_seen": "2026-11-20",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "protortyp/smolvla-jetson-onnx",
+    "label": "protortyp/smolvla-jetson-onnx",
+    "kind": "project",
+    "url": "https://github.com/protortyp/smolvla-jetson-onnx",
+    "first_seen": "2026-11-21",
+    "last_seen": "2026-11-21",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.26420",
+    "label": "2611.26420",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.26420",
+    "first_seen": "2026-11-21",
+    "last_seen": "2026-11-21",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.26565",
+    "label": "2611.26565",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.26565",
+    "first_seen": "2026-11-21",
+    "last_seen": "2026-11-21",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.26613",
+    "label": "2611.26613",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.26613",
+    "first_seen": "2026-11-21",
+    "last_seen": "2026-11-21",
     "mentions": 2,
     "extra": ""
   }

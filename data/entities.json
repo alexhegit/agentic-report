@@ -5178,5 +5178,75 @@
     "last_seen": "2026-11-21",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "NVlabs/Grana",
+    "label": "NVlabs/Grana",
+    "kind": "project",
+    "url": "https://github.com/NVlabs/Grana",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "NVlabs/RoboLab",
+    "label": "NVlabs/RoboLab",
+    "kind": "project",
+    "url": "https://github.com/NVlabs/RoboLab",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "NVlabs/alpasim",
+    "label": "NVlabs/alpasim",
+    "kind": "project",
+    "url": "https://github.com/NVlabs/alpasim",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "NVlabs/GRAIL",
+    "label": "NVlabs/GRAIL",
+    "kind": "project",
+    "url": "https://github.com/NVlabs/GRAIL",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2611.24926",
+    "label": "2611.24926",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.24926",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2611.25340",
+    "label": "2611.25340",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.25340",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "2611.25338",
+    "label": "2611.25338",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.25338",
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "mentions": 1,
+    "extra": ""
   }
 ]

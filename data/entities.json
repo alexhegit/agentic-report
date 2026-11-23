@@ -145,8 +145,8 @@
     "kind": "project",
     "url": "https://github.com/huggingface/lerobot",
     "first_seen": "2026-06-27",
-    "last_seen": "2026-11-21",
-    "mentions": 20,
+    "last_seen": "2026-11-23",
+    "mentions": 22,
     "extra": ""
   },
   {
@@ -5247,6 +5247,26 @@
     "first_seen": "2026-11-22",
     "last_seen": "2026-11-22",
     "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "mitos-robotics/MRCF",
+    "label": "mitos-robotics/MRCF",
+    "kind": "project",
+    "url": "https://github.com/mitos-robotics/MRCF",
+    "first_seen": "2026-11-23",
+    "last_seen": "2026-11-23",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "bageldotcom/Bagel-Robotics-1",
+    "label": "bageldotcom/Bagel-Robotics-1",
+    "kind": "project",
+    "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
+    "first_seen": "2026-11-23",
+    "last_seen": "2026-11-23",
+    "mentions": 2,
     "extra": ""
   }
 ]

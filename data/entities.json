@@ -5268,5 +5268,25 @@
     "last_seen": "2026-11-23",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "X-Square-Robot/xr-harness",
+    "label": "X-Square-Robot/xr-harness",
+    "kind": "project",
+    "url": "https://github.com/X-Square-Robot/xr-harness",
+    "first_seen": "2026-11-24",
+    "last_seen": "2026-11-24",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "X-Square-Robot/xinfer",
+    "label": "X-Square-Robot/xinfer",
+    "kind": "project",
+    "url": "https://github.com/X-Square-Robot/xinfer",
+    "first_seen": "2026-11-24",
+    "last_seen": "2026-11-24",
+    "mentions": 2,
+    "extra": ""
   }
 ]

@@ -21916,5 +21916,11 @@
     "target": "bageldotcom/Bagel-Robotics-1",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
+  },
+  {
+    "source": "X-Square-Robot/xinfer",
+    "target": "X-Square-Robot/xr-harness",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
   }
 ]

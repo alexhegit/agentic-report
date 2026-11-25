@@ -5288,5 +5288,35 @@
     "last_seen": "2026-11-24",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "lmsdss/Skeptic",
+    "label": "lmsdss/Skeptic",
+    "kind": "project",
+    "url": "https://github.com/lmsdss/Skeptic",
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.31205",
+    "label": "2611.31205",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.31205",
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.28387",
+    "label": "2611.28387",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.28387",
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25",
+    "mentions": 2,
+    "extra": ""
   }
 ]

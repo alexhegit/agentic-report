@@ -5318,5 +5318,55 @@
     "last_seen": "2026-11-25",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "HorizonRobotics/RoboOrchardLab",
+    "label": "HorizonRobotics/RoboOrchardLab",
+    "kind": "project",
+    "url": "https://github.com/HorizonRobotics/RoboOrchardLab",
+    "first_seen": "2026-11-26",
+    "last_seen": "2026-11-26",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "Einsia/RoboUniverse-10K",
+    "label": "Einsia/RoboUniverse-10K",
+    "kind": "project",
+    "url": "https://github.com/Einsia/RoboUniverse-10K",
+    "first_seen": "2026-11-26",
+    "last_seen": "2026-11-26",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.33141",
+    "label": "2611.33141",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.33141",
+    "first_seen": "2026-11-26",
+    "last_seen": "2026-11-26",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.33130",
+    "label": "2611.33130",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.33130",
+    "first_seen": "2026-11-26",
+    "last_seen": "2026-11-26",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "2611.32665",
+    "label": "2611.32665",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2611.32665",
+    "first_seen": "2026-11-26",
+    "last_seen": "2026-11-26",
+    "mentions": 2,
+    "extra": ""
   }
 ]

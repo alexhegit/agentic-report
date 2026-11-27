@@ -22030,5 +22030,425 @@
     "target": "2611.33141",
     "relation": "同周期共现 (co-mentioned in same report)",
     "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "Google",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "alexhegit/llm-wiki",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "alexhegit/lerobot-rocm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "Motphys/MotrixLab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "rocPAI-Forge/so101-agent-harness",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "rocPAI-Forge/microduck-playground",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "embodied-ai-nexus/Eden",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/h3-hip.c",
+    "target": "SHI-Labs/NATTEN",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Google",
+    "target": "alexhegit/llm-wiki",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Google",
+    "target": "rocPAI-Forge/microduck_rl_unilab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Google",
+    "target": "alexhegit/lerobot-rocm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Google",
+    "target": "Motphys/MotrixLab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Google",
+    "target": "rocPAI-Forge/so101-agent-harness",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Google",
+    "target": "rocPAI-Forge/microduck-playground",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Google",
+    "target": "embodied-ai-nexus/Eden",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Google",
+    "target": "amd/playbooks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Google",
+    "target": "rocPAI-Forge/so101-simstudio",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Google",
+    "target": "SHI-Labs/NATTEN",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/llm-wiki",
+    "target": "alexhegit/lerobot-rocm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/llm-wiki",
+    "target": "Motphys/MotrixLab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/llm-wiki",
+    "target": "rocPAI-Forge/so101-agent-harness",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/llm-wiki",
+    "target": "rocPAI-Forge/microduck-playground",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/llm-wiki",
+    "target": "embodied-ai-nexus/Eden",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/llm-wiki",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/llm-wiki",
+    "target": "amd/playbooks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/llm-wiki",
+    "target": "SHI-Labs/NATTEN",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "alexhegit/lerobot-rocm",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "Motphys/MotrixLab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "rocPAI-Forge/so101-agent-harness",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "rocPAI-Forge/microduck-playground",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "embodied-ai-nexus/Eden",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck_rl_unilab",
+    "target": "SHI-Labs/NATTEN",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/lerobot-rocm",
+    "target": "Motphys/MotrixLab",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/lerobot-rocm",
+    "target": "rocPAI-Forge/so101-agent-harness",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/lerobot-rocm",
+    "target": "rocPAI-Forge/microduck-playground",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/lerobot-rocm",
+    "target": "embodied-ai-nexus/Eden",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/lerobot-rocm",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/lerobot-rocm",
+    "target": "amd/playbooks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/lerobot-rocm",
+    "target": "rocPAI-Forge/so101-simstudio",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "alexhegit/lerobot-rocm",
+    "target": "SHI-Labs/NATTEN",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/MotrixLab",
+    "target": "rocPAI-Forge/so101-agent-harness",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/MotrixLab",
+    "target": "rocPAI-Forge/microduck-playground",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/MotrixLab",
+    "target": "embodied-ai-nexus/Eden",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/MotrixLab",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/MotrixLab",
+    "target": "amd/playbooks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/MotrixLab",
+    "target": "rocPAI-Forge/so101-simstudio",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "Motphys/MotrixLab",
+    "target": "SHI-Labs/NATTEN",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-agent-harness",
+    "target": "rocPAI-Forge/microduck-playground",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-agent-harness",
+    "target": "embodied-ai-nexus/Eden",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-agent-harness",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-agent-harness",
+    "target": "amd/playbooks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-agent-harness",
+    "target": "rocPAI-Forge/so101-simstudio",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-agent-harness",
+    "target": "SHI-Labs/NATTEN",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck-playground",
+    "target": "embodied-ai-nexus/Eden",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck-playground",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck-playground",
+    "target": "amd/playbooks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck-playground",
+    "target": "rocPAI-Forge/so101-simstudio",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/microduck-playground",
+    "target": "SHI-Labs/NATTEN",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "embodied-ai-nexus/Eden",
+    "target": "huggingface/lerobot",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "embodied-ai-nexus/Eden",
+    "target": "amd/playbooks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "embodied-ai-nexus/Eden",
+    "target": "rocPAI-Forge/so101-simstudio",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "embodied-ai-nexus/Eden",
+    "target": "SHI-Labs/NATTEN",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "amd/playbooks",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "rocPAI-Forge/so101-simstudio",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "huggingface/lerobot",
+    "target": "SHI-Labs/NATTEN",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "amd/playbooks",
+    "target": "rocPAI-Forge/so101-simstudio",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "amd/playbooks",
+    "target": "SHI-Labs/NATTEN",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
+  },
+  {
+    "source": "rocPAI-Forge/so101-simstudio",
+    "target": "SHI-Labs/NATTEN",
+    "relation": "同周期共现 (co-mentioned in same report)",
+    "implicit": true
   }
 ]

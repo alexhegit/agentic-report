@@ -145,8 +145,8 @@
     "kind": "project",
     "url": "https://github.com/huggingface/lerobot",
     "first_seen": "2026-06-27",
-    "last_seen": "2026-11-23",
-    "mentions": 22,
+    "last_seen": "2026-11-27",
+    "mentions": 28,
     "extra": ""
   },
   {
@@ -4485,8 +4485,8 @@
     "kind": "project",
     "url": "https://github.com/alexhegit/llm-wiki",
     "first_seen": "2026-10-23",
-    "last_seen": "2026-10-23",
-    "mentions": 1,
+    "last_seen": "2026-11-27",
+    "mentions": 2,
     "extra": ""
   },
   {
@@ -4505,8 +4505,8 @@
     "kind": "project",
     "url": "https://github.com/rocPAI-Forge/so101-simstudio",
     "first_seen": "2026-10-23",
-    "last_seen": "2026-11-13",
-    "mentions": 18,
+    "last_seen": "2026-11-27",
+    "mentions": 19,
     "extra": ""
   },
   {
@@ -4515,8 +4515,8 @@
     "kind": "project",
     "url": "https://github.com/rocPAI-Forge/microduck_rl_unilab",
     "first_seen": "2026-10-23",
-    "last_seen": "2026-11-20",
-    "mentions": 13,
+    "last_seen": "2026-11-27",
+    "mentions": 20,
     "extra": ""
   },
   {
@@ -4665,8 +4665,8 @@
     "kind": "project",
     "url": "https://github.com/alexhegit/h3-hip.c",
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-20",
-    "mentions": 16,
+    "last_seen": "2026-11-27",
+    "mentions": 19,
     "extra": ""
   },
   {
@@ -5105,8 +5105,8 @@
     "kind": "project",
     "url": "https://github.com/amd/playbooks",
     "first_seen": "2026-11-20",
-    "last_seen": "2026-11-20",
-    "mentions": 2,
+    "last_seen": "2026-11-27",
+    "mentions": 3,
     "extra": ""
   },
   {
@@ -5374,6 +5374,66 @@
     "label": "real2worlds2real/real2worlds2real",
     "kind": "project",
     "url": "https://github.com/real2worlds2real/real2worlds2real",
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "alexhegit/lerobot-rocm",
+    "label": "alexhegit/lerobot-rocm",
+    "kind": "project",
+    "url": "https://github.com/alexhegit/lerobot-rocm",
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "SHI-Labs/NATTEN",
+    "label": "SHI-Labs/NATTEN",
+    "kind": "project",
+    "url": "https://github.com/SHI-Labs/NATTEN",
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "Motphys/MotrixLab",
+    "label": "Motphys/MotrixLab",
+    "kind": "project",
+    "url": "https://github.com/Motphys/MotrixLab",
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "mentions": 1,
+    "extra": ""
+  },
+  {
+    "id": "rocPAI-Forge/so101-agent-harness",
+    "label": "rocPAI-Forge/so101-agent-harness",
+    "kind": "project",
+    "url": "https://github.com/rocPAI-Forge/so101-agent-harness",
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "rocPAI-Forge/microduck-playground",
+    "label": "rocPAI-Forge/microduck-playground",
+    "kind": "project",
+    "url": "https://github.com/rocPAI-Forge/microduck-playground",
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "embodied-ai-nexus/Eden",
+    "label": "embodied-ai-nexus/Eden",
+    "kind": "project",
+    "url": "https://github.com/embodied-ai-nexus/Eden",
     "first_seen": "2026-11-27",
     "last_seen": "2026-11-27",
     "mentions": 2,

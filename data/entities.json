@@ -5438,5 +5438,25 @@
     "last_seen": "2026-11-27",
     "mentions": 2,
     "extra": ""
+  },
+  {
+    "id": "jerryliujy/wrist-video-policy",
+    "label": "jerryliujy/wrist-video-policy",
+    "kind": "project",
+    "url": "https://github.com/jerryliujy/wrist-video-policy",
+    "first_seen": "2026-11-28",
+    "last_seen": "2026-11-28",
+    "mentions": 2,
+    "extra": ""
+  },
+  {
+    "id": "ZhibanpandaRobot/mozi_rl",
+    "label": "ZhibanpandaRobot/mozi_rl",
+    "kind": "project",
+    "url": "https://github.com/ZhibanpandaRobot/mozi_rl",
+    "first_seen": "2026-11-28",
+    "last_seen": "2026-11-28",
+    "mentions": 2,
+    "extra": ""
   }
 ]
